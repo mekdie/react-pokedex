@@ -2,6 +2,7 @@ import PokemonList from "./components/PokemonList";
 import Pagination from "./components/Pagination";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Search from "./components/Search";
 
 function App() {
     const [pokemon, setPokemon] = useState([]);
@@ -44,7 +45,8 @@ function App() {
 
     return (
         <>
-            <h1>Pokemon List Generator</h1>
+            <h1>Pokedex</h1>
+            <Search />
             <Pagination
                 nextPage={nextUrl ? goNextPage : null}
                 prevPage={prevUrl ? goPreviousPage : null}
