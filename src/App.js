@@ -10,6 +10,7 @@ function App() {
     const [nextUrl, setNextUrl] = useState(`${pokeAPI}/pokemon`);
     const [prevUrl, setPreviousUrl] = useState(`${pokeAPI}/pokemon`);
     const [loading, setLoading] = useState(true);
+    const [limit, setLimit] = useState(20);
 
     //rerun the useEffect whenever the currentPageUrl changes
     useEffect(() => {
@@ -17,7 +18,7 @@ function App() {
         const signal = controller.signal;
         setLoading(true);
         axios
-            .get(currentUrl, { signal })
+            .get(`${currentUrl}?limit=${limit}`, { signal })
             .then((res) => {
                 setLoading(false); //set loading to false to indication get url has succeed
                 setNextUrl(res.data.next);
@@ -31,7 +32,7 @@ function App() {
         return function cleanup() {
             controller.abort();
         };
-    }, [currentUrl]);
+    }, [currentUrl, limit]);
 
     function goNextPage() {
         setCurrentUrl(nextUrl);
@@ -40,12 +41,15 @@ function App() {
     function goPreviousPage() {
         setCurrentUrl(prevUrl);
     }
+
     return (
         <>
             <h1>Pokemon List Generator</h1>
             <Pagination
                 nextPage={nextUrl ? goNextPage : null}
                 prevPage={prevUrl ? goPreviousPage : null}
+                limit={limit}
+                applyLimit={(e) => setLimit(e.target.value)}
             />
             <PokemonList pokemon={pokemon} loading={loading} />
         </>
