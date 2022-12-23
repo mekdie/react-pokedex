@@ -8,9 +8,11 @@ const Search = ({ searchQuery }) => {
             <input
                 onChange={(e) => setQuery(e.target.value)}
                 type="text"
-                placeholder="Search.."
+                placeholder="coming soon... (search)"
+                value={query}
+                disabled={true}
             />
-            <p>Search results for "{query}..."</p>
+            {query && <p>Search results for "{query}..."</p>}
         </div>
     );
 };

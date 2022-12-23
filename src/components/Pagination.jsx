@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pagination = ({ nextPage, prevPage, applyFilter, limit, applyLimit }) => {
+const Pagination = ({ nextPage, prevPage, limit, applyLimit }) => {
     return (
         <div>
             <form>
