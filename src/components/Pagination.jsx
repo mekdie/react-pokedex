@@ -5,7 +5,7 @@ const Pagination = ({ nextPage, prevPage, limit, applyLimit }) => {
         <div>
             <form>
                 <label htmlFor="limit">
-                    Generate&nbsp;
+                    Generate (NOT WORKING)&nbsp;
                     <select
                         id="limit"
                         name="limit"
