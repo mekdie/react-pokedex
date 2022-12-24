@@ -29,6 +29,12 @@ const PokemonList = ({ pokemon, loading }) => {
                                         <img
                                             src={p.imageUrl}
                                             alt={`${p.name} model`}
+                                            width={150}
+                                        />
+                                        <img
+                                            src={p.pixelImage}
+                                            alt={`${p.name} model`}
+                                            width={150}
                                         />
                                     </li>
                                 </ul>

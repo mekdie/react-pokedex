@@ -40,7 +40,10 @@ function App() {
                 base_experience: data.base_experience,
                 stats: data.stats,
                 types: data.types,
-                imageUrl: data.sprites.front_default,
+                imageUrl: `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${data.id
+                    .toString()
+                    .padStart(3, "0")}.png`,
+                pixelImage: data.sprites.front_default,
                 speciesUrl: data.species.url,
                 abilities: data.abilities,
             };
