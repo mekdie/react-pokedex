@@ -75,6 +75,7 @@ function App() {
     function updateLimit(limit) {
         setLimit(limit);
         //remove limit query (&limit) before assigning a new limit query (hardcoded)
+        let updatedUrl;
         //the problem was the URL that messedup with the limit
 
         //only slice in certain conditions
@@ -86,28 +87,24 @@ function App() {
         if (currentUrl.includes("?")) {
             // condition 3
             if (currentUrl.includes("offset")) {
-                setCurrentUrl(
-                    `${currentUrl.slice(
-                        0,
-                        currentUrl.indexOf("&")
-                    )}&limit=${limit}`
-                );
+                updatedUrl = `${currentUrl.slice(
+                    0,
+                    currentUrl.indexOf("&")
+                )}&limit=${limit}`;
             }
             // condition 2
             else {
-                setCurrentUrl(
-                    `${currentUrl.slice(
-                        0,
-                        currentUrl.indexOf("?")
-                    )}?limit=${limit}`
-                );
+                updatedUrl = `${currentUrl.slice(
+                    0,
+                    currentUrl.indexOf("?")
+                )}?limit=${limit}`;
             }
         }
         //condition 1
         else {
-            console.log("else 2");
-            setCurrentUrl(`${currentUrl}?limit=${limit}`);
+            updatedUrl = `${currentUrl}?limit=${limit}`;
         }
+        setCurrentUrl(updatedUrl);
     }
     return (
         <>
