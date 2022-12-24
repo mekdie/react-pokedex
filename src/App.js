@@ -9,67 +9,105 @@ function App() {
 
     const [pokemon, setPokemon] = useState([]);
     const [currentUrl, setCurrentUrl] = useState(`${pokeAPI}/pokemon`);
-    const [nextUrl, setNextUrl] = useState(`${pokeAPI}/pokemon`);
-    const [prevUrl, setPreviousUrl] = useState(`${pokeAPI}/pokemon`);
+    const [nextUrl, setNextUrl] = useState("");
+    const [prevUrl, setPreviousUrl] = useState("");
     const [loading, setLoading] = useState(true);
     const [limit, setLimit] = useState(20);
 
-    //rerun the useEffect whenever the currentPageUrl changes
-    const fetchPokemons = async () => {};
+    //rerun the useEffect whenever the currentPageUrl or limit changes
+    async function fetchPokemons() {
+        // console.log(currentUrl);
+        let fetchUrl = `${currentUrl}`;
+        let res = await fetch(fetchUrl);
+        let data = await res.json();
 
-    //get all the pokemon names
-    useEffect(() => {
-        async function fetchData() {
-            setLoading(true);
-            let res = await fetch(`${currentUrl}?limit=${limit}`);
+        setNextUrl(data.next);
+        setPreviousUrl(data.previous);
+        // setPokemon(data.results.map((p) => p.name));
+
+        let pokemonArr = data.results;
+
+        var pokemonsObject = [];
+        // //get the pokemon data
+        for (let i = 0; i < pokemonArr.length; i++) {
+            let res = await fetch(`${pokeAPI}/pokemon/${pokemonArr[i].name}`);
             let data = await res.json();
 
-            setNextUrl(data.next);
-            setPreviousUrl(data.previous);
-            // setPokemon(data.results.map((p) => p.name));
-
-            let pokemonArr = data.results;
-            console.log(pokemonArr);
-
-            var pokemonsObject = [];
-            // //get the pokemon data
-            for (let i = 0; i < pokemonArr.length; i++) {
-                let res = await fetch(
-                    `${pokeAPI}/pokemon/${pokemonArr[i].name}`
-                );
-                let data = await res.json();
-
-                let obj = {
-                    name: data.name,
-                    id: data.id,
-                    number: data.id.toString().padStart(3, "0"),
-                    base_experience: data.base_experience,
-                    stats: data.stats,
-                    types: data.types,
-                    imageUrl: data.sprites.front_default,
-                    speciesUrl: data.species.url,
-                    abilities: data.abilities,
-                };
-                //push the data into allPokemon
-                //so id = 0 equals to id = 1 in pokemon
-                // setPokemon([...pokemon, obj]);
-                pokemonsObject.push(obj);
-            }
-            // let sorted = pokemonsObject.sort((a, b) => a.id - b.id);
-            setPokemon(pokemonsObject);
+            let obj = {
+                name: data.name,
+                id: data.id,
+                number: data.id.toString().padStart(3, "0"),
+                base_experience: data.base_experience,
+                stats: data.stats,
+                types: data.types,
+                imageUrl: data.sprites.front_default,
+                speciesUrl: data.species.url,
+                abilities: data.abilities,
+            };
+            //push the data into allPokemon
+            //so id = 0 equals to id = 1 in pokemon
+            // setPokemon([...pokemon, obj]);
+            pokemonsObject.push(obj);
         }
-        fetchData();
+        // let sorted = pokemonsObject.sort((a, b) => a.id - b.id);
+        setPokemon(pokemonsObject);
+    }
+    //get all the pokemon names
+    useEffect(() => {
+        fetchPokemons();
         setLoading(false);
-
-        //currently cant do both limit and currentURl (can only do next and previous)
     }, [currentUrl, limit]);
 
     function goNextPage() {
-        setCurrentUrl(nextUrl);
+        //this to keep the limit when click previous / next after setting up the limit in the previous/next page
+        setCurrentUrl(
+            `${nextUrl.slice(0, nextUrl.indexOf("&"))}&limit=${limit}`
+        );
     }
 
     function goPreviousPage() {
-        setCurrentUrl(prevUrl);
+        //this to keep the limit when click previous / next after setting up the limit in the previous/next page
+        setCurrentUrl(
+            `${prevUrl.slice(0, prevUrl.indexOf("&"))}&limit=${limit}`
+        );
+    }
+
+    function updateLimit(limit) {
+        setLimit(limit);
+        //remove limit query (&limit) before assigning a new limit query (hardcoded)
+        //the problem was the URL that messedup with the limit
+
+        //only slice in certain conditions
+
+        //conditions:
+        // 1. when changing limit for the first time
+        // 2. when changing limit for the second time onwards
+        // 3. when changing limit after paginate
+        if (currentUrl.includes("?")) {
+            // condition 3
+            if (currentUrl.includes("offset")) {
+                setCurrentUrl(
+                    `${currentUrl.slice(
+                        0,
+                        currentUrl.indexOf("&")
+                    )}&limit=${limit}`
+                );
+            }
+            // condition 2
+            else {
+                setCurrentUrl(
+                    `${currentUrl.slice(
+                        0,
+                        currentUrl.indexOf("?")
+                    )}?limit=${limit}`
+                );
+            }
+        }
+        //condition 1
+        else {
+            console.log("else 2");
+            setCurrentUrl(`${currentUrl}?limit=${limit}`);
+        }
     }
     return (
         <>
@@ -79,7 +117,7 @@ function App() {
                 nextPage={nextUrl ? goNextPage : null}
                 prevPage={prevUrl ? goPreviousPage : null}
                 limit={limit}
-                applyLimit={(e) => setLimit(e.target.value)}
+                applyLimit={(e) => updateLimit(e.target.value)}
             />
             <PokemonList pokemon={pokemon} loading={loading} />
         </>
