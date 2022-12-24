@@ -17,6 +17,7 @@ function App() {
     //rerun the useEffect whenever the currentPageUrl or limit changes
     async function fetchPokemons() {
         // console.log(currentUrl);
+        setLoading(true);
         let fetchUrl = `${currentUrl}`;
         let res = await fetch(fetchUrl);
         let data = await res.json();
