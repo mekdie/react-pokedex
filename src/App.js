@@ -1,8 +1,10 @@
 import PokemonList from "./components/PokemonList";
 import Pagination from "./components/Pagination";
 import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
-import Search from "./components/Search";
+import SearchBar from "./components/SearchBar";
+import SearchResults from "./components/SearchResults";
 
 function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
@@ -55,14 +57,15 @@ function App() {
         }
         // let sorted = pokemonsObject.sort((a, b) => a.id - b.id);
         setPokemon(pokemonsObject);
+        setLoading(false);
     }
     //get all the pokemon names
     useEffect(() => {
         fetchPokemons();
-        setLoading(false);
     }, [currentUrl, limit]);
 
     function goNextPage() {
+        // setLoading(true);
         //this to keep the limit when click previous / next after setting up the limit in the previous/next page
         setCurrentUrl(
             `${nextUrl.slice(0, nextUrl.indexOf("&"))}&limit=${limit}`
@@ -70,6 +73,7 @@ function App() {
     }
 
     function goPreviousPage() {
+        // setLoading(true);
         //this to keep the limit when click previous / next after setting up the limit in the previous/next page
         setCurrentUrl(
             `${prevUrl.slice(0, prevUrl.indexOf("&"))}&limit=${limit}`
@@ -112,15 +116,33 @@ function App() {
     }
     return (
         <>
-            <h1>Pokedex</h1>
-            <Search />
-            <Pagination
-                nextPage={nextUrl ? goNextPage : null}
-                prevPage={prevUrl ? goPreviousPage : null}
-                limit={limit}
-                applyLimit={(e) => updateLimit(e.target.value)}
-            />
-            <PokemonList pokemon={pokemon} loading={loading} />
+            <BrowserRouter>
+                <h1>Pokedex</h1>
+                <SearchBar />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <>
+                                {" "}
+                                <Pagination
+                                    nextPage={nextUrl ? goNextPage : null}
+                                    prevPage={prevUrl ? goPreviousPage : null}
+                                    limit={limit}
+                                    applyLimit={(e) =>
+                                        updateLimit(e.target.value)
+                                    }
+                                />
+                                <PokemonList
+                                    pokemon={pokemon}
+                                    loading={loading}
+                                />
+                            </>
+                        }
+                    ></Route>
+                    <Route path="/search" element={<SearchResults />}></Route>
+                </Routes>
+            </BrowserRouter>
         </>
     );
 }
