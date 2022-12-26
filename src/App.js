@@ -59,13 +59,13 @@ function App() {
         setPokemon(pokemonsObject);
         setLoading(false);
     }
-    //get all the pokemon names
+    //get all the pokemon names for each page
     useEffect(() => {
         fetchPokemons();
     }, [currentUrl, limit]);
 
     function goNextPage() {
-        // setLoading(true);
+        setLoading(true);
         //this to keep the limit when click previous / next after setting up the limit in the previous/next page
         setCurrentUrl(
             `${nextUrl.slice(0, nextUrl.indexOf("&"))}&limit=${limit}`
@@ -73,7 +73,7 @@ function App() {
     }
 
     function goPreviousPage() {
-        // setLoading(true);
+        setLoading(true);
         //this to keep the limit when click previous / next after setting up the limit in the previous/next page
         setCurrentUrl(
             `${prevUrl.slice(0, prevUrl.indexOf("&"))}&limit=${limit}`
@@ -132,6 +132,7 @@ function App() {
                                     applyLimit={(e) =>
                                         updateLimit(e.target.value)
                                     }
+                                    isLoading={loading}
                                 />
                                 <PokemonList
                                     pokemon={pokemon}
