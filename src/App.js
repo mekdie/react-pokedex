@@ -9,6 +9,8 @@ import NotFound from "./NotFound";
 
 //importing 1000 pokemons data
 import pokemonsData from "./data/pokemons";
+import Filters from "./components/Filters";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
@@ -174,6 +176,7 @@ function App() {
                 <h1>Pokedex</h1>
                 {/* only show search bar if it is not on not found page  */}
                 {!notFound && <SearchBar />}
+                <Filters />
                 <Routes>
                     <Route
                         path="/"
@@ -208,6 +211,7 @@ function App() {
                         }
                     ></Route>
                 </Routes>
+                <ScrollToTop />
             </BrowserRouter>
         </>
     );

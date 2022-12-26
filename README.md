@@ -24,8 +24,8 @@ https://mekdie-reactpokedex.netlify.app/
     -   Quantity ✔️
     -   Region
     -   Types
+-   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) ✔️
 -   Sort Pokemons (Number and Letters)
--   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) [on progress 🔄]
 -   Designs on all pages using CSS Framework (Either bootstrap, Tailwind, or Material UI)
 -   Modal box on pokemon info
 -   Separate / Router page for pokemon info
