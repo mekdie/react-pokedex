@@ -13,13 +13,13 @@ Pokédex app from Pokémon Franchise built with React and Open Source PokeAPI to
 
 ## Features (and TO-DO):
 
--   Pagination
+-   Pagination ✔️
 -   Filters:
-    -   Quantity
+    -   Quantity ✔️
     -   Region
     -   Types
 -   Sort Pokemons
--   Search Pokemons by name and ID (live search inspired / referring to Netflix's search)
+-   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) [on progress 🔄]
 -   Designs on all pages using CSS Framework (Either bootstrap, Tailwind, or Material UI)
 -   Modal box on pokemon info
 -   Separate / Router page for pokemon info
