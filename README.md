@@ -5,6 +5,7 @@ Pokédex app from Pokémon Franchise built with React and Open Source PokeAPI to
 ## Demo
 
 View this Pokédex Project live [here](https://mekdie-reactpokedex.netlify.app/).
+<br>
 https://mekdie-reactpokedex.netlify.app/
 
 ## Technologies
