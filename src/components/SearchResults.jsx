@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 
-const SearchResults = () => {
+const SearchResults = ({ pokemons }) => {
     // Get the q param from the URL
     const [searchParams] = useSearchParams();
     const searchQuery = searchParams.get("q");
@@ -26,169 +26,24 @@ const SearchResults = () => {
 
     // ===== PROTOTYPES HARDCODED FOR TESTING ==== //
 
-    const allPokemons = [
-        "Bulbasaur",
-        "Ivysaur",
-        "Venusaur",
-        "Charmander",
-        "Charmeleon",
-        "Charizard",
-        "Squirtle",
-        "Wartortle",
-        "Blastoise",
-        "Caterpie",
-        "Metapod",
-        "Butterfree",
-        "Weedle",
-        "Kakuna",
-        "Beedrill",
-        "Pidgey",
-        "Pidgeotto",
-        "Pidgeot",
-        "Rattata",
-        "Raticate",
-        "Spearow",
-        "Fearow",
-        "Ekans",
-        "Arbok",
-        "Pikachu",
-        "Raichu",
-        "Sandshrew",
-        "Sandslash",
-        "Nidoran",
-        "Nidorina",
-        "Nidoqueen",
-        "Nidoran",
-        "Nidorino",
-        "Nidoking",
-        "Clefairy",
-        "Clefable",
-        "Vulpix",
-        "Ninetales",
-        "Jigglypuff",
-        "Wigglytuff",
-        "Zubat",
-        "Golbat",
-        "Oddish",
-        "Gloom",
-        "Vileplume",
-        "Paras",
-        "Parasect",
-        "Venonat",
-        "Venomoth",
-        "Diglett",
-        "Dugtrio",
-        "Meowth",
-        "Persian",
-        "Psyduck",
-        "Golduck",
-        "Mankey",
-        "Primeape",
-        "Growlithe",
-        "Arcanine",
-        "Poliwag",
-        "Poliwhirl",
-        "Poliwrath",
-        "Abra",
-        "Kadabra",
-        "Alakazam",
-        "Machop",
-        "Machoke",
-        "Machamp",
-        "Bellsprout",
-        "Weepinbell",
-        "Victreebel",
-        "Tentacool",
-        "Tentacruel",
-        "Geodude",
-        "Graveler",
-        "Golem",
-        "Ponyta",
-        "Rapidash",
-        "Slowpoke",
-        "Slowbro",
-        "Magnemite",
-        "Magneton",
-        "Farfetch'd",
-        "Doduo",
-        "Dodrio",
-        "Seel",
-        "Dewgong",
-        "Grimer",
-        "Muk",
-        "Shellder",
-        "Cloyster",
-        "Gastly",
-        "Haunter",
-        "Gengar",
-        "Onix",
-        "Drowzee",
-        "Hypno",
-        "Krabby",
-        "Kingler",
-        "Voltorb",
-        "Electrode",
-        "Exeggcute",
-        "Exeggutor",
-        "Cubone",
-        "Marowak",
-        "Hitmonlee",
-        "Hitmonchan",
-        "Lickitung",
-        "Koffing",
-        "Weezing",
-        "Rhyhorn",
-        "Rhydon",
-        "Chansey",
-        "Tangela",
-        "Kangaskhan",
-        "Horsea",
-        "Seadra",
-        "Goldeen",
-        "Seaking",
-        "Staryu",
-        "Starmie",
-        "Mr. Mime",
-        "Scyther",
-        "Jynx",
-        "Electabuzz",
-        "Magmar",
-        "Pinsir",
-        "Tauros",
-        "Magikarp",
-        "Gyarados",
-        "Lapras",
-        "Ditto",
-        "Eevee",
-        "Vaporeon",
-        "Jolteon",
-        "Flareon",
-        "Porygon",
-        "Omanyte",
-        "Omastar",
-        "Kabuto",
-        "Kabutops",
-        "Aerodactyl",
-        "Snorlax",
-        "Articuno",
-        "Zapdos",
-        "Moltres",
-        "Dratini",
-        "Dragonair",
-        "Dragonite",
-        "Mewtwo",
-        "Mew",
-    ];
+    const allPokemons = pokemons;
+
     // var insensitiveRegex = new RegExp(allPokemons.join("|"), "i");
-
     // const regex = insensitiveRegex.test(searchQuery);
-
     // console.log(regex);
-    const result = allPokemons
-        .map((element) => element.toLowerCase())
-        .filter((pokemon) => pokemon.includes(searchQuery));
 
-    // console.log(result);
+    //capitalize first letter function
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    //filtering the result according to name or number
+
+    const result = allPokemons.filter(
+        (pokemon) =>
+            pokemon.name.includes(searchQuery.toLowerCase()) ||
+            pokemon.number.includes(searchQuery)
+    );
 
     return (
         <>
@@ -198,8 +53,39 @@ const SearchResults = () => {
             <div>
                 <h1>Pokemon search results here</h1>
                 <h3>
-                    {result.map((e) => {
-                        return <p>{e}</p>;
+                    {result.map((pokemon) => {
+                        return (
+                            <div key={pokemon.id}>
+                                <p>{capitalizeFirstLetter(pokemon.name)}</p>
+                                <ul>
+                                    <li>Number: #{pokemon.number}</li>
+                                    <li>
+                                        Types:{" "}
+                                        {pokemon.types.map(({ type }) => (
+                                            <span key={type.url}>
+                                                {type.name}{" "}
+                                            </span>
+                                        ))}
+                                    </li>
+                                    <li>
+                                        <img
+                                            src={pokemon.imageUrl}
+                                            alt={`${pokemon.name} model`}
+                                            width={150}
+                                            onError={(e) => {
+                                                e.target.onerror = null;
+                                                e.target.src = `${pokemon.pixelImage}`;
+                                            }}
+                                        />
+                                        <img
+                                            src={pokemon.pixelImage}
+                                            alt={`${pokemon.name} model`}
+                                            width={150}
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
+                        );
                     })}
                 </h3>
             </div>

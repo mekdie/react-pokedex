@@ -7,21 +7,27 @@ import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
 import NotFound from "./NotFound";
 
+//importing 1000 pokemons data
+import pokemonsData from "./data/pokemons";
+
 function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
 
-    const [pokemon, setPokemon] = useState([]);
+    const [pokemonPaginate, setPokemonPaginate] = useState([]);
     const [currentUrl, setCurrentUrl] = useState(`${pokeAPI}/pokemon`);
     const [nextUrl, setNextUrl] = useState("");
     const [prevUrl, setPreviousUrl] = useState("");
     const [loading, setLoading] = useState(true);
     const [limit, setLimit] = useState(20);
 
+    //all pokemon
+    const [pokemons, setPokemons] = useState([]);
+
     //set notFound conditional
     const [notFound, setNotFound] = useState(false);
 
     //rerun the useEffect whenever the currentPageUrl or limit changes
-    async function fetchPokemons() {
+    async function paginatePokemons() {
         // console.log(currentUrl);
         setLoading(true);
         let fetchUrl = `${currentUrl}`;
@@ -60,15 +66,58 @@ function App() {
             pokemonsObject.push(obj);
         }
         // let sorted = pokemonsObject.sort((a, b) => a.id - b.id);
-        setPokemon(pokemonsObject);
+        setPokemonPaginate(pokemonsObject);
         setLoading(false);
+    }
+
+    //get 1000++ of pokemons data
+    function getAllPokemons() {
+        //uncomment to generate the API and objects
+
+        // setLoading(true);
+        // let fetchUrl = `${pokeAPI}/pokemon?limit=905&offset=0`;
+        // let res = await fetch(fetchUrl);
+        // let data = await res.json();
+
+        // let pokemonsArr = data.results;
+        // // //get the pokemon data
+        // var pokemonsObject = [];
+        // for (let i = 0; i < pokemonsArr.length; i++) {
+        //     let res = await fetch(`${pokeAPI}/pokemon/${pokemonsArr[i].name}`);
+        //     let data = await res.json();
+
+        //     let obj = {
+        //         name: data.name,
+        //         id: data.id,
+        //         number: data.id.toString().padStart(3, "0"),
+        //         types: data.types,
+        //         imageUrl: `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${data.id
+        //             .toString()
+        //             .padStart(3, "0")}.png`,
+        //         pixelImage: data.sprites.front_default,
+        //     };
+        //     // console.log(pokemons);
+        //     // setPokemons([...pokemons, obj]);
+        //     pokemonsObject.push(obj);
+        // }
+
+        // //get pokemons data from data javascript
+        // console.log(pokemonsObject);
+        // setPokemons(pokemonsObject); //fetching API object result
+        setPokemons(pokemonsData);
     }
     //get all the pokemon names for each page
     useEffect(() => {
         setNotFound(false);
-        fetchPokemons();
+        paginatePokemons();
     }, [currentUrl, limit]);
 
+    useEffect(() => {
+        //get all pokemons
+        getAllPokemons();
+    }, []);
+
+    // setTimeout(console.log(pokemons), 10000);
     function goNextPage() {
         setLoading(true);
         //this to keep the limit when click previous / next after setting up the limit in the previous/next page
@@ -140,13 +189,16 @@ function App() {
                                     isLoading={loading}
                                 />
                                 <PokemonList
-                                    pokemon={pokemon}
+                                    paginate={pokemonPaginate}
                                     loading={loading}
                                 />
                             </>
                         }
                     ></Route>
-                    <Route path="/search" element={<SearchResults />}></Route>
+                    <Route
+                        path="/search"
+                        element={<SearchResults pokemons={pokemons} />}
+                    ></Route>
                     <Route
                         path="*"
                         element={

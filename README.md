@@ -1,6 +1,11 @@
 # Pokédex built with React
 
-Pokédex app from Pokémon Franchise built with React and Open Source PokeAPI to support with its data generation. Thanks to PokeAPI, all the data for this project can be generated. Pokémon and Pokémon character names are trademarks of Nintendo. This project is merely for learning purposes (personal project to enhance ReactJS knowledge)
+Pokédex app from Pokémon Franchise built with React and Open Source PokeAPI to support with its data generation. Thanks to PokeAPI, all the data for this project can be generated. Pokémon and Pokémon character names are trademarks of Nintendo. This project is merely for learning purposes (personal project to enhance ReactJS knowledge).
+
+## Demo
+
+View this Pokédex Project live [here](https://mekdie-reactpokedex.netlify.app/).
+https://mekdie-reactpokedex.netlify.app/
 
 ## Technologies
 
@@ -18,7 +23,7 @@ Pokédex app from Pokémon Franchise built with React and Open Source PokeAPI to
     -   Quantity ✔️
     -   Region
     -   Types
--   Sort Pokemons
+-   Sort Pokemons (Number and Letters)
 -   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) [on progress 🔄]
 -   Designs on all pages using CSS Framework (Either bootstrap, Tailwind, or Material UI)
 -   Modal box on pokemon info

@@ -1,6 +1,6 @@
 import React from "react";
 // import axios from "axios";
-const PokemonList = ({ pokemon, loading }) => {
+const PokemonList = ({ paginate, loading }) => {
     return (
         <>
             {loading ? (
@@ -9,7 +9,7 @@ const PokemonList = ({ pokemon, loading }) => {
                 </h3>
             ) : (
                 <ul>
-                    {pokemon.map((p) => {
+                    {paginate.map((p) => {
                         // console.log(p.name);
                         return (
                             // <p key={p.id}>{p.name}</p>
