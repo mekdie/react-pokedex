@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
+import NotFound from "./NotFound";
 
 function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
@@ -15,6 +16,9 @@ function App() {
     const [prevUrl, setPreviousUrl] = useState("");
     const [loading, setLoading] = useState(true);
     const [limit, setLimit] = useState(20);
+
+    //set notFound conditional
+    const [notFound, setNotFound] = useState(false);
 
     //rerun the useEffect whenever the currentPageUrl or limit changes
     async function fetchPokemons() {
@@ -61,6 +65,7 @@ function App() {
     }
     //get all the pokemon names for each page
     useEffect(() => {
+        setNotFound(false);
         fetchPokemons();
     }, [currentUrl, limit]);
 
@@ -118,13 +123,13 @@ function App() {
         <>
             <BrowserRouter>
                 <h1>Pokedex</h1>
-                <SearchBar />
+                {/* only show search bar if it is not on not found page  */}
+                {!notFound && <SearchBar />}
                 <Routes>
                     <Route
                         path="/"
                         element={
                             <>
-                                {" "}
                                 <Pagination
                                     nextPage={nextUrl ? goNextPage : null}
                                     prevPage={prevUrl ? goPreviousPage : null}
@@ -142,6 +147,14 @@ function App() {
                         }
                     ></Route>
                     <Route path="/search" element={<SearchResults />}></Route>
+                    <Route
+                        path="*"
+                        element={
+                            <NotFound
+                                notFound={(child) => setNotFound(child)}
+                            />
+                        }
+                    ></Route>
                 </Routes>
             </BrowserRouter>
         </>
