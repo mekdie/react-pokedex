@@ -1,10 +1,19 @@
-import React from "react";
-import { useSearchParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useSearchParams, useNavigate } from "react-router-dom";
 
 const SearchResults = () => {
     // Get the q param from the URL
     const [searchParams] = useSearchParams();
     const searchQuery = searchParams.get("q");
+
+    const navigate = useNavigate();
+
+    //if the query is empty or only search param without q then go back to home
+    useEffect(() => {
+        if (!searchParams.get("q")) {
+            navigate("/");
+        }
+    }, []);
 
     //generate all pokemons here
 
@@ -179,7 +188,7 @@ const SearchResults = () => {
         .map((element) => element.toLowerCase())
         .filter((pokemon) => pokemon.includes(searchQuery));
 
-    console.log(result);
+    // console.log(result);
 
     return (
         <>
