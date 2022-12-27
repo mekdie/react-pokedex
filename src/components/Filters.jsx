@@ -6,10 +6,10 @@ const Filters = ({ types, selectedType }) => {
             Types &nbsp;
             <select
                 onChange={(e) => selectedType(e.target.value)}
-                name="cars"
-                id="cars"
+                name="typeFilters"
+                id="typeFilters"
             >
-                <option value="all">All Types</option>
+                <option value="all">all types</option>
                 {types.map((type) => (
                     <option value={type}>{type}</option>
                 ))}

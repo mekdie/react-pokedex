@@ -26,6 +26,7 @@ function App() {
 
     //all pokemon
     const [pokemons, setPokemons] = useState([]);
+    const [totalPokemons, setTotalPokemons] = useState(0);
 
     //pokemon paginate
     const [pokemonsPaginate, setPokemonsPaginate] = useState([]);
@@ -51,7 +52,7 @@ function App() {
         "steel",
         "fairy",
     ];
-    const [type, setType] = useState("all");
+    const [selectedType, setSelectedType] = useState("all");
 
     //set notFound conditional
     const [notFound, setNotFound] = useState(false);
@@ -175,12 +176,30 @@ function App() {
             setCurrentPage(1);
         }
 
-        const pokemonsPaginate = pokemons.slice(firstRecordIdx, lastRecordIdx);
+        //filter bug at the end, need to find the current filter pokemons
+        const typeFilter = pokemons.filter((pokemon) =>
+            pokemon.types.some(
+                (type) => type === selectedType || selectedType === "all"
+            )
+        );
+
+        //condition if reached end of page (no more pokemons found)
+        if (typeFilter.length < firstRecordIdx) {
+            //disable next button BUG2
+            setCurrentPage(1);
+            firstRecordIdx = 0;
+            lastRecordIdx = typeFilter.length;
+        }
+
+        const pokemonsPaginate = typeFilter.slice(
+            firstRecordIdx,
+            lastRecordIdx
+        );
 
         // console.log(firstRecordIdx, lastRecordIdx);
-        // console.log("repeat this");
+        // console.log(pokemonsPaginate.length);
         setPokemonsPaginate(pokemonsPaginate);
-    }, [currentPage, limit]);
+    }, [currentPage, limit, selectedType]);
 
     //run only when the limit changes
     // useEffect(() => {
@@ -211,6 +230,9 @@ function App() {
 
         //initial paginate 20 records
         setPokemonsPaginate(pokemonsData.slice(0, 20));
+
+        //set the number of pokemons
+        setTotalPokemons(pokemonsData.length);
     }, []);
 
     // setTimeout(console.log(pokemons), 10000);
@@ -267,20 +289,35 @@ function App() {
         // setCurrentUrl(updatedUrl);
     }
     function onTypeSelect(selected) {
-        setType(selected);
+        setSelectedType(selected);
+
+        //set the number of selected filter here instead for instant update
+        const filterLength = pokemons.filter((pokemon) =>
+            pokemon.types.some(
+                (type) => type === selected || selected === "all"
+            )
+        ).length;
+
+        setTotalPokemons(filterLength);
     }
 
     //home props
     // https://stackoverflow.com/questions/51148064/reacts-props-with-the-same-name-as-their-value
     const homeProps = {
-        limit,
+        limit, //limit={limit}
         goNextPage,
         goPreviousPage,
         currentPage,
         loading,
         pokemonsPaginate,
         updateLimit,
+        totalPokemons,
+        type: selectedType, //type={selectedType}
+        // nextFilterBtn = {}
     };
+
+    // state not updating immediatelly
+    // https://stackoverflow.com/questions/54069253/the-usestate-set-method-is-not-reflecting-a-change-immediately
 
     return (
         <>
@@ -302,7 +339,7 @@ function App() {
                             element={
                                 <SearchResults
                                     pokemons={pokemons}
-                                    typeFilter={type}
+                                    typeFilter={selectedType}
                                 />
                             }
                         ></Route>

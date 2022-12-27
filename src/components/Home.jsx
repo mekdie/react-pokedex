@@ -10,6 +10,8 @@ const Home = ({
     loading,
     pokemonsPaginate,
     updateLimit,
+    totalPokemons,
+    type,
 }) => {
     return (
         <>
@@ -22,7 +24,11 @@ const Home = ({
                 applyLimit={(e) => updateLimit(e.target.value)}
                 isLoading={loading}
             />
-            <PokemonList pokemons={pokemonsPaginate} loading={loading} />;
+            <h3>
+                Showing {totalPokemons} Pokémons of {type} type
+                {type === "all" ? "s" : null}
+            </h3>
+            <PokemonList pokemons={pokemonsPaginate} loading={loading} />
         </>
     );
 };
