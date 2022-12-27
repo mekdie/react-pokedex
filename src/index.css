@@ -23,9 +23,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.loading-description {
+    text-align: center;
+}
+
 .preloader-wrapper {
-    position: absolute;
-    left: 25%;
+    /* position: absolute; */
+    padding-left: 25%;
 }
 
 .pokeball {

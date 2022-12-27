@@ -1,9 +1,12 @@
 import React from "react";
 
-const Preloader = () => {
+const Preloader = ({ loadingProgress }) => {
     return (
         <div className="wrapper">
-            <p className="loading-description">Loading Pokedex</p>
+            <div className="loading-description">
+                <p>Loading Pokedex</p>
+                <p>{loadingProgress}%</p>
+            </div>
             <div className="preloader-wrapper">
                 <div className="pokeball"></div>
             </div>

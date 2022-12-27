@@ -18,10 +18,10 @@ const PokemonList = ({ pokemons, loading }) => {
                                 <ul>
                                     <li>Number: #{p.number}</li>
                                     <li>
-                                        Types:{" "}
-                                        {p.types.map(({ type }) => (
-                                            <span key={type}>{type} </span>
-                                        ))}
+                                        Types:&nbsp;
+                                        <span key={p.types}>
+                                            {p.types.toString()}
+                                        </span>
                                     </li>
                                     <li>
                                         <img

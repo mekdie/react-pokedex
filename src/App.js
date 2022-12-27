@@ -21,6 +21,7 @@ function App() {
     // const [nextUrl, setNextUrl] = useState("");
     // const [prevUrl, setPreviousUrl] = useState("");
     const [loading, setLoading] = useState(true);
+    const [loadingProgress, setLoadingProgress] = useState(0);
     const [limit, setLimit] = useState(20);
 
     //all pokemon
@@ -96,6 +97,15 @@ function App() {
     //     setLoading(false);
     // }
 
+    // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+
+    // a function to scale a range of number into another range of number
+    function scale(number, inMin, inMax, outMin, outMax) {
+        return (
+            ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin
+        );
+    }
+
     //get 1000++ of pokemons data
     async function getAllPokemons() {
         //uncomment to generate the API and objects
@@ -109,6 +119,10 @@ function App() {
         // //get the pokemon data
         var pokemonsObject = [];
         for (let i = 0; i < pokemonsArr.length; i++) {
+            setLoadingProgress(
+                scale(i, 0, pokemonsArr.length, 0, 100).toFixed(0)
+            );
+
             let res = await fetch(`${pokeAPI}/pokemon/${pokemonsArr[i].name}`);
             let data = await res.json();
 
@@ -128,7 +142,6 @@ function App() {
             // setPokemons([...pokemons, obj]);
             pokemonsObject.push(obj);
         }
-
         // //get pokemons data from data javascript
         // console.log(pokemonsObject);
         setPokemons(pokemonsObject); //fetching API object result
@@ -204,7 +217,7 @@ function App() {
     }
     return (
         <>
-            {loading && <Preloader />}
+            {loading && <Preloader loadingProgress={loadingProgress} />}
             {!loading && (
                 <BrowserRouter>
                     <h1>Pokedex</h1>
