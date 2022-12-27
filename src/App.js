@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
-import NotFound from "./NotFound";
+import NotFound from "./components/NotFound";
 
 //importing 1000 pokemons data
 import { pokemonsData } from "./data/pokemons";
@@ -151,24 +151,6 @@ function App() {
         // // console.log(pokemonsObject);
         // setPokemons(pokemonsObject); //fetching API object result
         // setLoading(true);
-        // setTimeout(function () {'
-
-        //set a fake loading / artificial loading
-        var i = 1;
-        function artificialLoading() {
-            setTimeout(function () {
-                if (i < 100) {
-                    setLoadingProgress(scale(i, 0, 100, 0, 100).toFixed(0));
-                    i++;
-                    artificialLoading();
-                } else {
-                    //100% flick
-                    setLoadingProgress(100);
-                    setTimeout(() => setLoading(false), 100);
-                }
-            }, 15);
-        }
-        artificialLoading();
 
         //set Loading to false after finish "loading"
         // console.log("sopmthing");
@@ -212,6 +194,22 @@ function App() {
         //get all pokemons
         setNotFound(false);
         getAllPokemons();
+        //set a fake loading / artificial loading
+        var i = 1;
+        function artificialLoading() {
+            setTimeout(function () {
+                if (i < 100) {
+                    setLoadingProgress(scale(i, 0, 100, 0, 100).toFixed(0));
+                    i++;
+                    artificialLoading();
+                } else {
+                    //100% flick
+                    setLoadingProgress(100);
+                    setTimeout(() => setLoading(false), 100);
+                }
+            }, 15);
+        }
+        artificialLoading();
 
         //initial paginate 20 records
         setPokemonsPaginate(pokemonsData.slice(0, 20));
@@ -279,9 +277,12 @@ function App() {
             {!loading && (
                 <BrowserRouter>
                     <h1>Pokedex</h1>
-                    {/* only show search bar if it is not on not found page  */}
+
+                    {/* Only show this part when NOT in not found page, going to optimize these further */}
                     {!notFound && <SearchBar />}
-                    <Filters types={allTypes} selectedType={onTypeSelect} />
+                    {!notFound && (
+                        <Filters types={allTypes} selectedType={onTypeSelect} />
+                    )}
                     <Routes>
                         <Route
                             path="/"
@@ -317,6 +318,7 @@ function App() {
                             path="*"
                             element={
                                 <NotFound
+                                    back={() => setNotFound(false)}
                                     notFound={(child) => setNotFound(child)}
                                 />
                             }
