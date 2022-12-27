@@ -1,18 +1,16 @@
-import PokemonList from "./components/PokemonList";
-import Pagination from "./components/Pagination";
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
-import SearchBar from "./components/SearchBar";
 import SearchResults from "./components/SearchResults";
 import NotFound from "./components/NotFound";
 
 //importing 1000 pokemons data
 import { pokemonsData } from "./data/pokemons";
-import Filters from "./components/Filters";
 import ScrollToTop from "./components/ScrollToTop";
 import Preloader from "./components/Preloader";
-
+import SearchBar from "./components/SearchBar";
+import Filters from "./components/Filters";
+import Home from "./components/Home";
 function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
 
@@ -271,14 +269,25 @@ function App() {
     function onTypeSelect(selected) {
         setType(selected);
     }
+
+    //home props
+    // https://stackoverflow.com/questions/51148064/reacts-props-with-the-same-name-as-their-value
+    const homeProps = {
+        limit,
+        goNextPage,
+        goPreviousPage,
+        currentPage,
+        loading,
+        pokemonsPaginate,
+        updateLimit,
+    };
+
     return (
         <>
             {loading && <Preloader loadingProgress={loadingProgress} />}
             {!loading && (
                 <BrowserRouter>
                     <h1>Pokedex</h1>
-
-                    {/* Only show this part when NOT in not found page, going to optimize these further */}
                     {!notFound && <SearchBar />}
                     {!notFound && (
                         <Filters types={allTypes} selectedType={onTypeSelect} />
@@ -286,24 +295,7 @@ function App() {
                     <Routes>
                         <Route
                             path="/"
-                            element={
-                                <>
-                                    <Pagination
-                                        limit={limit}
-                                        nextPage={goNextPage}
-                                        prevPage={goPreviousPage}
-                                        currentPage={currentPage}
-                                        applyLimit={(e) =>
-                                            updateLimit(e.target.value)
-                                        }
-                                        isLoading={loading}
-                                    />
-                                    <PokemonList
-                                        pokemons={pokemonsPaginate}
-                                        loading={loading}
-                                    />
-                                </>
-                            }
+                            element={<Home {...homeProps} />}
                         ></Route>
                         <Route
                             path="/search"
