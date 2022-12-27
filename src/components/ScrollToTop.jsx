@@ -19,6 +19,9 @@ const ScrollToTop = () => {
                 onClick={() => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }}
+                // onScroll={(e) => {
+                //     e.style.display = window.scrollY > 20 ? "block" : "none";
+                // }}
                 style={{
                     position: "fixed",
                     right: "1rem",
