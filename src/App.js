@@ -8,7 +8,7 @@ import SearchResults from "./components/SearchResults";
 import NotFound from "./NotFound";
 
 //importing 1000 pokemons data
-import pokemonsData from "./data/pokemons";
+import { pokemonsData } from "./data/pokemons";
 import Filters from "./components/Filters";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -24,6 +24,29 @@ function App() {
 
     //all pokemon
     const [pokemons, setPokemons] = useState([]);
+
+    //all types
+    const allTypes = [
+        "normal",
+        "fire",
+        "water",
+        "grass",
+        "electric",
+        "ice",
+        "fighting",
+        "poison",
+        "ground",
+        "flying",
+        "psychic",
+        "bug",
+        "rock",
+        "ghost",
+        "dark",
+        "dragon",
+        "steel",
+        "fairy",
+    ];
+    const [type, setType] = useState("all");
 
     //set notFound conditional
     const [notFound, setNotFound] = useState(false);
@@ -92,7 +115,9 @@ function App() {
         //         name: data.name,
         //         id: data.id,
         //         number: data.id.toString().padStart(3, "0"),
-        //         types: data.types,
+        //         types: data.types.map((types) => {
+        //             return types.type.name;
+        //         }),
         //         imageUrl: `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${data.id
         //             .toString()
         //             .padStart(3, "0")}.png`,
@@ -103,10 +128,11 @@ function App() {
         //     pokemonsObject.push(obj);
         // }
 
-        // //get pokemons data from data javascript
+        // // //get pokemons data from data javascript
         // console.log(pokemonsObject);
         // setPokemons(pokemonsObject); //fetching API object result
-        setPokemons(pokemonsData);
+
+        setPokemons(pokemonsData); //hardcode
     }
     //get all the pokemon names for each page
     useEffect(() => {
@@ -170,13 +196,16 @@ function App() {
         }
         setCurrentUrl(updatedUrl);
     }
+    function onTypeSelect(selected) {
+        setType(selected);
+    }
     return (
         <>
             <BrowserRouter>
                 <h1>Pokedex</h1>
                 {/* only show search bar if it is not on not found page  */}
                 {!notFound && <SearchBar />}
-                <Filters />
+                <Filters types={allTypes} selectedType={onTypeSelect} />
                 <Routes>
                     <Route
                         path="/"
@@ -200,7 +229,12 @@ function App() {
                     ></Route>
                     <Route
                         path="/search"
-                        element={<SearchResults pokemons={pokemons} />}
+                        element={
+                            <SearchResults
+                                pokemons={pokemons}
+                                typeFilter={type}
+                            />
+                        }
                     ></Route>
                     <Route
                         path="*"

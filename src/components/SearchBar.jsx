@@ -35,7 +35,7 @@ const SearchBar = () => {
             <input
                 onChange={(e) => onSearch(e.target.value)}
                 type="text"
-                placeholder="Search Number or Name..."
+                placeholder="Number, Name, Types"
                 // if query equals to random string placeholder then it means user enter manual url
                 value={
                     query === "tHr2VR7PSMEGTCBwEyWk"

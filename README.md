@@ -25,6 +25,8 @@ https://mekdie-reactpokedex.netlify.app/
     -   Region
     -   Types
 -   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) ✔️
+-   Generate Pokemons Loading (for live search directly from API)
+-   Preloader loading
 -   Sort Pokemons (Number and Letters)
 -   Designs on all pages using CSS Framework (Either bootstrap, Tailwind, or Material UI)
 -   Modal box on pokemon info
@@ -51,7 +53,7 @@ https://mekdie-reactpokedex.netlify.app/
         -   useSearchParams
     -   React Router DOM (Routing and Links)
 -   JavaScript:
-    -   String, Array, and Data Manipulation
+    -   String and Array Manipulation
     -   Logical Operators
     -   Objects
     -   Spread Operator

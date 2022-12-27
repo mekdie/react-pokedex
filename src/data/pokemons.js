@@ -1,24 +1,9 @@
-const pokemonsData = [
+export const pokemonsData = [
     {
         name: "bulbasaur",
         id: 1,
         number: "001",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
         pixelImage:
@@ -28,22 +13,7 @@ const pokemonsData = [
         name: "ivysaur",
         id: 2,
         number: "002",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
         pixelImage:
@@ -53,22 +23,7 @@ const pokemonsData = [
         name: "venusaur",
         id: 3,
         number: "003",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
         pixelImage:
@@ -78,15 +33,7 @@ const pokemonsData = [
         name: "charmander",
         id: 4,
         number: "004",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
         pixelImage:
@@ -96,15 +43,7 @@ const pokemonsData = [
         name: "charmeleon",
         id: 5,
         number: "005",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
         pixelImage:
@@ -114,22 +53,7 @@ const pokemonsData = [
         name: "charizard",
         id: 6,
         number: "006",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fire", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
         pixelImage:
@@ -139,15 +63,7 @@ const pokemonsData = [
         name: "squirtle",
         id: 7,
         number: "007",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
         pixelImage:
@@ -157,15 +73,7 @@ const pokemonsData = [
         name: "wartortle",
         id: 8,
         number: "008",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
         pixelImage:
@@ -175,15 +83,7 @@ const pokemonsData = [
         name: "blastoise",
         id: 9,
         number: "009",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
         pixelImage:
@@ -193,15 +93,7 @@ const pokemonsData = [
         name: "caterpie",
         id: 10,
         number: "010",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png",
         pixelImage:
@@ -211,15 +103,7 @@ const pokemonsData = [
         name: "metapod",
         id: 11,
         number: "011",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png",
         pixelImage:
@@ -229,22 +113,7 @@ const pokemonsData = [
         name: "butterfree",
         id: 12,
         number: "012",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
         pixelImage:
@@ -254,22 +123,7 @@ const pokemonsData = [
         name: "weedle",
         id: 13,
         number: "013",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png",
         pixelImage:
@@ -279,22 +133,7 @@ const pokemonsData = [
         name: "kakuna",
         id: 14,
         number: "014",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png",
         pixelImage:
@@ -304,22 +143,7 @@ const pokemonsData = [
         name: "beedrill",
         id: 15,
         number: "015",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png",
         pixelImage:
@@ -329,22 +153,7 @@ const pokemonsData = [
         name: "pidgey",
         id: 16,
         number: "016",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png",
         pixelImage:
@@ -354,22 +163,7 @@ const pokemonsData = [
         name: "pidgeotto",
         id: 17,
         number: "017",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png",
         pixelImage:
@@ -379,22 +173,7 @@ const pokemonsData = [
         name: "pidgeot",
         id: 18,
         number: "018",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png",
         pixelImage:
@@ -404,15 +183,7 @@ const pokemonsData = [
         name: "rattata",
         id: 19,
         number: "019",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png",
         pixelImage:
@@ -422,15 +193,7 @@ const pokemonsData = [
         name: "raticate",
         id: 20,
         number: "020",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png",
         pixelImage:
@@ -440,22 +203,7 @@ const pokemonsData = [
         name: "spearow",
         id: 21,
         number: "021",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png",
         pixelImage:
@@ -465,22 +213,7 @@ const pokemonsData = [
         name: "fearow",
         id: 22,
         number: "022",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/022.png",
         pixelImage:
@@ -490,15 +223,7 @@ const pokemonsData = [
         name: "ekans",
         id: 23,
         number: "023",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png",
         pixelImage:
@@ -508,15 +233,7 @@ const pokemonsData = [
         name: "arbok",
         id: 24,
         number: "024",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png",
         pixelImage:
@@ -526,15 +243,7 @@ const pokemonsData = [
         name: "pikachu",
         id: 25,
         number: "025",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
         pixelImage:
@@ -544,15 +253,7 @@ const pokemonsData = [
         name: "raichu",
         id: 26,
         number: "026",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png",
         pixelImage:
@@ -562,15 +263,7 @@ const pokemonsData = [
         name: "sandshrew",
         id: 27,
         number: "027",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png",
         pixelImage:
@@ -580,15 +273,7 @@ const pokemonsData = [
         name: "sandslash",
         id: 28,
         number: "028",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png",
         pixelImage:
@@ -598,15 +283,7 @@ const pokemonsData = [
         name: "nidoran-f",
         id: 29,
         number: "029",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png",
         pixelImage:
@@ -616,15 +293,7 @@ const pokemonsData = [
         name: "nidorina",
         id: 30,
         number: "030",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png",
         pixelImage:
@@ -634,22 +303,7 @@ const pokemonsData = [
         name: "nidoqueen",
         id: 31,
         number: "031",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["poison", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
         pixelImage:
@@ -659,15 +313,7 @@ const pokemonsData = [
         name: "nidoran-m",
         id: 32,
         number: "032",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png",
         pixelImage:
@@ -677,15 +323,7 @@ const pokemonsData = [
         name: "nidorino",
         id: 33,
         number: "033",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png",
         pixelImage:
@@ -695,22 +333,7 @@ const pokemonsData = [
         name: "nidoking",
         id: 34,
         number: "034",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["poison", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png",
         pixelImage:
@@ -720,15 +343,7 @@ const pokemonsData = [
         name: "clefairy",
         id: 35,
         number: "035",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png",
         pixelImage:
@@ -738,15 +353,7 @@ const pokemonsData = [
         name: "clefable",
         id: 36,
         number: "036",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png",
         pixelImage:
@@ -756,15 +363,7 @@ const pokemonsData = [
         name: "vulpix",
         id: 37,
         number: "037",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png",
         pixelImage:
@@ -774,15 +373,7 @@ const pokemonsData = [
         name: "ninetales",
         id: 38,
         number: "038",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png",
         pixelImage:
@@ -792,22 +383,7 @@ const pokemonsData = [
         name: "jigglypuff",
         id: 39,
         number: "039",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["normal", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png",
         pixelImage:
@@ -817,22 +393,7 @@ const pokemonsData = [
         name: "wigglytuff",
         id: 40,
         number: "040",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["normal", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/040.png",
         pixelImage:
@@ -842,22 +403,7 @@ const pokemonsData = [
         name: "zubat",
         id: 41,
         number: "041",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["poison", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/041.png",
         pixelImage:
@@ -867,22 +413,7 @@ const pokemonsData = [
         name: "golbat",
         id: 42,
         number: "042",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["poison", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/042.png",
         pixelImage:
@@ -892,22 +423,7 @@ const pokemonsData = [
         name: "oddish",
         id: 43,
         number: "043",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/043.png",
         pixelImage:
@@ -917,22 +433,7 @@ const pokemonsData = [
         name: "gloom",
         id: 44,
         number: "044",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/044.png",
         pixelImage:
@@ -942,22 +443,7 @@ const pokemonsData = [
         name: "vileplume",
         id: 45,
         number: "045",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png",
         pixelImage:
@@ -967,22 +453,7 @@ const pokemonsData = [
         name: "paras",
         id: 46,
         number: "046",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["bug", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/046.png",
         pixelImage:
@@ -992,22 +463,7 @@ const pokemonsData = [
         name: "parasect",
         id: 47,
         number: "047",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["bug", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png",
         pixelImage:
@@ -1017,22 +473,7 @@ const pokemonsData = [
         name: "venonat",
         id: 48,
         number: "048",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/048.png",
         pixelImage:
@@ -1042,22 +483,7 @@ const pokemonsData = [
         name: "venomoth",
         id: 49,
         number: "049",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/049.png",
         pixelImage:
@@ -1067,15 +493,7 @@ const pokemonsData = [
         name: "diglett",
         id: 50,
         number: "050",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/050.png",
         pixelImage:
@@ -1085,15 +503,7 @@ const pokemonsData = [
         name: "dugtrio",
         id: 51,
         number: "051",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/051.png",
         pixelImage:
@@ -1103,15 +513,7 @@ const pokemonsData = [
         name: "meowth",
         id: 52,
         number: "052",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png",
         pixelImage:
@@ -1121,15 +523,7 @@ const pokemonsData = [
         name: "persian",
         id: 53,
         number: "053",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/053.png",
         pixelImage:
@@ -1139,15 +533,7 @@ const pokemonsData = [
         name: "psyduck",
         id: 54,
         number: "054",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png",
         pixelImage:
@@ -1157,15 +543,7 @@ const pokemonsData = [
         name: "golduck",
         id: 55,
         number: "055",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/055.png",
         pixelImage:
@@ -1175,15 +553,7 @@ const pokemonsData = [
         name: "mankey",
         id: 56,
         number: "056",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png",
         pixelImage:
@@ -1193,15 +563,7 @@ const pokemonsData = [
         name: "primeape",
         id: 57,
         number: "057",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/057.png",
         pixelImage:
@@ -1211,15 +573,7 @@ const pokemonsData = [
         name: "growlithe",
         id: 58,
         number: "058",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/058.png",
         pixelImage:
@@ -1229,15 +583,7 @@ const pokemonsData = [
         name: "arcanine",
         id: 59,
         number: "059",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
         pixelImage:
@@ -1247,15 +593,7 @@ const pokemonsData = [
         name: "poliwag",
         id: 60,
         number: "060",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/060.png",
         pixelImage:
@@ -1265,15 +603,7 @@ const pokemonsData = [
         name: "poliwhirl",
         id: 61,
         number: "061",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/061.png",
         pixelImage:
@@ -1283,22 +613,7 @@ const pokemonsData = [
         name: "poliwrath",
         id: 62,
         number: "062",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["water", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/062.png",
         pixelImage:
@@ -1308,15 +623,7 @@ const pokemonsData = [
         name: "abra",
         id: 63,
         number: "063",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png",
         pixelImage:
@@ -1326,15 +633,7 @@ const pokemonsData = [
         name: "kadabra",
         id: 64,
         number: "064",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/064.png",
         pixelImage:
@@ -1344,15 +643,7 @@ const pokemonsData = [
         name: "alakazam",
         id: 65,
         number: "065",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png",
         pixelImage:
@@ -1362,15 +653,7 @@ const pokemonsData = [
         name: "machop",
         id: 66,
         number: "066",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/066.png",
         pixelImage:
@@ -1380,15 +663,7 @@ const pokemonsData = [
         name: "machoke",
         id: 67,
         number: "067",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/067.png",
         pixelImage:
@@ -1398,15 +673,7 @@ const pokemonsData = [
         name: "machamp",
         id: 68,
         number: "068",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/068.png",
         pixelImage:
@@ -1416,22 +683,7 @@ const pokemonsData = [
         name: "bellsprout",
         id: 69,
         number: "069",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/069.png",
         pixelImage:
@@ -1441,22 +693,7 @@ const pokemonsData = [
         name: "weepinbell",
         id: 70,
         number: "070",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/070.png",
         pixelImage:
@@ -1466,22 +703,7 @@ const pokemonsData = [
         name: "victreebel",
         id: 71,
         number: "071",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/071.png",
         pixelImage:
@@ -1491,22 +713,7 @@ const pokemonsData = [
         name: "tentacool",
         id: 72,
         number: "072",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["water", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/072.png",
         pixelImage:
@@ -1516,22 +723,7 @@ const pokemonsData = [
         name: "tentacruel",
         id: 73,
         number: "073",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["water", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/073.png",
         pixelImage:
@@ -1541,22 +733,7 @@ const pokemonsData = [
         name: "geodude",
         id: 74,
         number: "074",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["rock", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/074.png",
         pixelImage:
@@ -1566,22 +743,7 @@ const pokemonsData = [
         name: "graveler",
         id: 75,
         number: "075",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["rock", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/075.png",
         pixelImage:
@@ -1591,22 +753,7 @@ const pokemonsData = [
         name: "golem",
         id: 76,
         number: "076",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["rock", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/076.png",
         pixelImage:
@@ -1616,15 +763,7 @@ const pokemonsData = [
         name: "ponyta",
         id: 77,
         number: "077",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/077.png",
         pixelImage:
@@ -1634,15 +773,7 @@ const pokemonsData = [
         name: "rapidash",
         id: 78,
         number: "078",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png",
         pixelImage:
@@ -1652,22 +783,7 @@ const pokemonsData = [
         name: "slowpoke",
         id: 79,
         number: "079",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["water", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/079.png",
         pixelImage:
@@ -1677,22 +793,7 @@ const pokemonsData = [
         name: "slowbro",
         id: 80,
         number: "080",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["water", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/080.png",
         pixelImage:
@@ -1702,22 +803,7 @@ const pokemonsData = [
         name: "magnemite",
         id: 81,
         number: "081",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["electric", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/081.png",
         pixelImage:
@@ -1727,22 +813,7 @@ const pokemonsData = [
         name: "magneton",
         id: 82,
         number: "082",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["electric", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/082.png",
         pixelImage:
@@ -1752,22 +823,7 @@ const pokemonsData = [
         name: "farfetchd",
         id: 83,
         number: "083",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/083.png",
         pixelImage:
@@ -1777,22 +833,7 @@ const pokemonsData = [
         name: "doduo",
         id: 84,
         number: "084",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/084.png",
         pixelImage:
@@ -1802,22 +843,7 @@ const pokemonsData = [
         name: "dodrio",
         id: 85,
         number: "085",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/085.png",
         pixelImage:
@@ -1827,15 +853,7 @@ const pokemonsData = [
         name: "seel",
         id: 86,
         number: "086",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/086.png",
         pixelImage:
@@ -1845,22 +863,7 @@ const pokemonsData = [
         name: "dewgong",
         id: 87,
         number: "087",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["water", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/087.png",
         pixelImage:
@@ -1870,15 +873,7 @@ const pokemonsData = [
         name: "grimer",
         id: 88,
         number: "088",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/088.png",
         pixelImage:
@@ -1888,15 +883,7 @@ const pokemonsData = [
         name: "muk",
         id: 89,
         number: "089",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/089.png",
         pixelImage:
@@ -1906,15 +893,7 @@ const pokemonsData = [
         name: "shellder",
         id: 90,
         number: "090",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/090.png",
         pixelImage:
@@ -1924,22 +903,7 @@ const pokemonsData = [
         name: "cloyster",
         id: 91,
         number: "091",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["water", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/091.png",
         pixelImage:
@@ -1949,22 +913,7 @@ const pokemonsData = [
         name: "gastly",
         id: 92,
         number: "092",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["ghost", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/092.png",
         pixelImage:
@@ -1974,22 +923,7 @@ const pokemonsData = [
         name: "haunter",
         id: 93,
         number: "093",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["ghost", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/093.png",
         pixelImage:
@@ -1999,22 +933,7 @@ const pokemonsData = [
         name: "gengar",
         id: 94,
         number: "094",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["ghost", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
         pixelImage:
@@ -2024,22 +943,7 @@ const pokemonsData = [
         name: "onix",
         id: 95,
         number: "095",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["rock", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/095.png",
         pixelImage:
@@ -2049,15 +953,7 @@ const pokemonsData = [
         name: "drowzee",
         id: 96,
         number: "096",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/096.png",
         pixelImage:
@@ -2067,15 +963,7 @@ const pokemonsData = [
         name: "hypno",
         id: 97,
         number: "097",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/097.png",
         pixelImage:
@@ -2085,15 +973,7 @@ const pokemonsData = [
         name: "krabby",
         id: 98,
         number: "098",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/098.png",
         pixelImage:
@@ -2103,15 +983,7 @@ const pokemonsData = [
         name: "kingler",
         id: 99,
         number: "099",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/099.png",
         pixelImage:
@@ -2121,15 +993,7 @@ const pokemonsData = [
         name: "voltorb",
         id: 100,
         number: "100",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/100.png",
         pixelImage:
@@ -2139,15 +1003,7 @@ const pokemonsData = [
         name: "electrode",
         id: 101,
         number: "101",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/101.png",
         pixelImage:
@@ -2157,22 +1013,7 @@ const pokemonsData = [
         name: "exeggcute",
         id: 102,
         number: "102",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["grass", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/102.png",
         pixelImage:
@@ -2182,22 +1023,7 @@ const pokemonsData = [
         name: "exeggutor",
         id: 103,
         number: "103",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["grass", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/103.png",
         pixelImage:
@@ -2207,15 +1033,7 @@ const pokemonsData = [
         name: "cubone",
         id: 104,
         number: "104",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/104.png",
         pixelImage:
@@ -2225,15 +1043,7 @@ const pokemonsData = [
         name: "marowak",
         id: 105,
         number: "105",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/105.png",
         pixelImage:
@@ -2243,15 +1053,7 @@ const pokemonsData = [
         name: "hitmonlee",
         id: 106,
         number: "106",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/106.png",
         pixelImage:
@@ -2261,15 +1063,7 @@ const pokemonsData = [
         name: "hitmonchan",
         id: 107,
         number: "107",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/107.png",
         pixelImage:
@@ -2279,15 +1073,7 @@ const pokemonsData = [
         name: "lickitung",
         id: 108,
         number: "108",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png",
         pixelImage:
@@ -2297,15 +1083,7 @@ const pokemonsData = [
         name: "koffing",
         id: 109,
         number: "109",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/109.png",
         pixelImage:
@@ -2315,15 +1093,7 @@ const pokemonsData = [
         name: "weezing",
         id: 110,
         number: "110",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/110.png",
         pixelImage:
@@ -2333,22 +1103,7 @@ const pokemonsData = [
         name: "rhyhorn",
         id: 111,
         number: "111",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["ground", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/111.png",
         pixelImage:
@@ -2358,22 +1113,7 @@ const pokemonsData = [
         name: "rhydon",
         id: 112,
         number: "112",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["ground", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/112.png",
         pixelImage:
@@ -2383,15 +1123,7 @@ const pokemonsData = [
         name: "chansey",
         id: 113,
         number: "113",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/113.png",
         pixelImage:
@@ -2401,15 +1133,7 @@ const pokemonsData = [
         name: "tangela",
         id: 114,
         number: "114",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png",
         pixelImage:
@@ -2419,15 +1143,7 @@ const pokemonsData = [
         name: "kangaskhan",
         id: 115,
         number: "115",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/115.png",
         pixelImage:
@@ -2437,15 +1153,7 @@ const pokemonsData = [
         name: "horsea",
         id: 116,
         number: "116",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png",
         pixelImage:
@@ -2455,15 +1163,7 @@ const pokemonsData = [
         name: "seadra",
         id: 117,
         number: "117",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/117.png",
         pixelImage:
@@ -2473,15 +1173,7 @@ const pokemonsData = [
         name: "goldeen",
         id: 118,
         number: "118",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/118.png",
         pixelImage:
@@ -2491,15 +1183,7 @@ const pokemonsData = [
         name: "seaking",
         id: 119,
         number: "119",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/119.png",
         pixelImage:
@@ -2509,15 +1193,7 @@ const pokemonsData = [
         name: "staryu",
         id: 120,
         number: "120",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/120.png",
         pixelImage:
@@ -2527,22 +1203,7 @@ const pokemonsData = [
         name: "starmie",
         id: 121,
         number: "121",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["water", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/121.png",
         pixelImage:
@@ -2552,22 +1213,7 @@ const pokemonsData = [
         name: "mr-mime",
         id: 122,
         number: "122",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["psychic", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/122.png",
         pixelImage:
@@ -2577,22 +1223,7 @@ const pokemonsData = [
         name: "scyther",
         id: 123,
         number: "123",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/123.png",
         pixelImage:
@@ -2602,22 +1233,7 @@ const pokemonsData = [
         name: "jynx",
         id: 124,
         number: "124",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["ice", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/124.png",
         pixelImage:
@@ -2627,15 +1243,7 @@ const pokemonsData = [
         name: "electabuzz",
         id: 125,
         number: "125",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/125.png",
         pixelImage:
@@ -2645,15 +1253,7 @@ const pokemonsData = [
         name: "magmar",
         id: 126,
         number: "126",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/126.png",
         pixelImage:
@@ -2663,15 +1263,7 @@ const pokemonsData = [
         name: "pinsir",
         id: 127,
         number: "127",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/127.png",
         pixelImage:
@@ -2681,15 +1273,7 @@ const pokemonsData = [
         name: "tauros",
         id: 128,
         number: "128",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/128.png",
         pixelImage:
@@ -2699,15 +1283,7 @@ const pokemonsData = [
         name: "magikarp",
         id: 129,
         number: "129",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png",
         pixelImage:
@@ -2717,22 +1293,7 @@ const pokemonsData = [
         name: "gyarados",
         id: 130,
         number: "130",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["water", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
         pixelImage:
@@ -2742,22 +1303,7 @@ const pokemonsData = [
         name: "lapras",
         id: 131,
         number: "131",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["water", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/131.png",
         pixelImage:
@@ -2767,15 +1313,7 @@ const pokemonsData = [
         name: "ditto",
         id: 132,
         number: "132",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png",
         pixelImage:
@@ -2785,15 +1323,7 @@ const pokemonsData = [
         name: "eevee",
         id: 133,
         number: "133",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
         pixelImage:
@@ -2803,15 +1333,7 @@ const pokemonsData = [
         name: "vaporeon",
         id: 134,
         number: "134",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png",
         pixelImage:
@@ -2821,15 +1343,7 @@ const pokemonsData = [
         name: "jolteon",
         id: 135,
         number: "135",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png",
         pixelImage:
@@ -2839,15 +1353,7 @@ const pokemonsData = [
         name: "flareon",
         id: 136,
         number: "136",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png",
         pixelImage:
@@ -2857,15 +1363,7 @@ const pokemonsData = [
         name: "porygon",
         id: 137,
         number: "137",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png",
         pixelImage:
@@ -2875,22 +1373,7 @@ const pokemonsData = [
         name: "omanyte",
         id: 138,
         number: "138",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["rock", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/138.png",
         pixelImage:
@@ -2900,22 +1383,7 @@ const pokemonsData = [
         name: "omastar",
         id: 139,
         number: "139",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["rock", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/139.png",
         pixelImage:
@@ -2925,22 +1393,7 @@ const pokemonsData = [
         name: "kabuto",
         id: 140,
         number: "140",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["rock", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/140.png",
         pixelImage:
@@ -2950,22 +1403,7 @@ const pokemonsData = [
         name: "kabutops",
         id: 141,
         number: "141",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["rock", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/141.png",
         pixelImage:
@@ -2975,22 +1413,7 @@ const pokemonsData = [
         name: "aerodactyl",
         id: 142,
         number: "142",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["rock", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/142.png",
         pixelImage:
@@ -3000,15 +1423,7 @@ const pokemonsData = [
         name: "snorlax",
         id: 143,
         number: "143",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png",
         pixelImage:
@@ -3018,22 +1433,7 @@ const pokemonsData = [
         name: "articuno",
         id: 144,
         number: "144",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["ice", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/144.png",
         pixelImage:
@@ -3043,22 +1443,7 @@ const pokemonsData = [
         name: "zapdos",
         id: 145,
         number: "145",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["electric", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png",
         pixelImage:
@@ -3068,22 +1453,7 @@ const pokemonsData = [
         name: "moltres",
         id: 146,
         number: "146",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fire", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png",
         pixelImage:
@@ -3093,15 +1463,7 @@ const pokemonsData = [
         name: "dratini",
         id: 147,
         number: "147",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/147.png",
         pixelImage:
@@ -3111,15 +1473,7 @@ const pokemonsData = [
         name: "dragonair",
         id: 148,
         number: "148",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/148.png",
         pixelImage:
@@ -3129,22 +1483,7 @@ const pokemonsData = [
         name: "dragonite",
         id: 149,
         number: "149",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dragon", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
         pixelImage:
@@ -3154,15 +1493,7 @@ const pokemonsData = [
         name: "mewtwo",
         id: 150,
         number: "150",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
         pixelImage:
@@ -3172,15 +1503,7 @@ const pokemonsData = [
         name: "mew",
         id: 151,
         number: "151",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
         pixelImage:
@@ -3190,15 +1513,7 @@ const pokemonsData = [
         name: "chikorita",
         id: 152,
         number: "152",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
         pixelImage:
@@ -3208,15 +1523,7 @@ const pokemonsData = [
         name: "bayleef",
         id: 153,
         number: "153",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/153.png",
         pixelImage:
@@ -3226,15 +1533,7 @@ const pokemonsData = [
         name: "meganium",
         id: 154,
         number: "154",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/154.png",
         pixelImage:
@@ -3244,15 +1543,7 @@ const pokemonsData = [
         name: "cyndaquil",
         id: 155,
         number: "155",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png",
         pixelImage:
@@ -3262,15 +1553,7 @@ const pokemonsData = [
         name: "quilava",
         id: 156,
         number: "156",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/156.png",
         pixelImage:
@@ -3280,15 +1563,7 @@ const pokemonsData = [
         name: "typhlosion",
         id: 157,
         number: "157",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/157.png",
         pixelImage:
@@ -3298,15 +1573,7 @@ const pokemonsData = [
         name: "totodile",
         id: 158,
         number: "158",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png",
         pixelImage:
@@ -3316,15 +1583,7 @@ const pokemonsData = [
         name: "croconaw",
         id: 159,
         number: "159",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/159.png",
         pixelImage:
@@ -3334,15 +1593,7 @@ const pokemonsData = [
         name: "feraligatr",
         id: 160,
         number: "160",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/160.png",
         pixelImage:
@@ -3352,15 +1603,7 @@ const pokemonsData = [
         name: "sentret",
         id: 161,
         number: "161",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/161.png",
         pixelImage:
@@ -3370,15 +1613,7 @@ const pokemonsData = [
         name: "furret",
         id: 162,
         number: "162",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/162.png",
         pixelImage:
@@ -3388,22 +1623,7 @@ const pokemonsData = [
         name: "hoothoot",
         id: 163,
         number: "163",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/163.png",
         pixelImage:
@@ -3413,22 +1633,7 @@ const pokemonsData = [
         name: "noctowl",
         id: 164,
         number: "164",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/164.png",
         pixelImage:
@@ -3438,22 +1643,7 @@ const pokemonsData = [
         name: "ledyba",
         id: 165,
         number: "165",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/165.png",
         pixelImage:
@@ -3463,22 +1653,7 @@ const pokemonsData = [
         name: "ledian",
         id: 166,
         number: "166",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/166.png",
         pixelImage:
@@ -3488,22 +1663,7 @@ const pokemonsData = [
         name: "spinarak",
         id: 167,
         number: "167",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/167.png",
         pixelImage:
@@ -3513,22 +1673,7 @@ const pokemonsData = [
         name: "ariados",
         id: 168,
         number: "168",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/168.png",
         pixelImage:
@@ -3538,22 +1683,7 @@ const pokemonsData = [
         name: "crobat",
         id: 169,
         number: "169",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["poison", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/169.png",
         pixelImage:
@@ -3563,22 +1693,7 @@ const pokemonsData = [
         name: "chinchou",
         id: 170,
         number: "170",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["water", "electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/170.png",
         pixelImage:
@@ -3588,22 +1703,7 @@ const pokemonsData = [
         name: "lanturn",
         id: 171,
         number: "171",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["water", "electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/171.png",
         pixelImage:
@@ -3613,15 +1713,7 @@ const pokemonsData = [
         name: "pichu",
         id: 172,
         number: "172",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/172.png",
         pixelImage:
@@ -3631,15 +1723,7 @@ const pokemonsData = [
         name: "cleffa",
         id: 173,
         number: "173",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/173.png",
         pixelImage:
@@ -3649,22 +1733,7 @@ const pokemonsData = [
         name: "igglybuff",
         id: 174,
         number: "174",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["normal", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/174.png",
         pixelImage:
@@ -3674,15 +1743,7 @@ const pokemonsData = [
         name: "togepi",
         id: 175,
         number: "175",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/175.png",
         pixelImage:
@@ -3692,22 +1753,7 @@ const pokemonsData = [
         name: "togetic",
         id: 176,
         number: "176",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fairy", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/176.png",
         pixelImage:
@@ -3717,22 +1763,7 @@ const pokemonsData = [
         name: "natu",
         id: 177,
         number: "177",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["psychic", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/177.png",
         pixelImage:
@@ -3742,22 +1773,7 @@ const pokemonsData = [
         name: "xatu",
         id: 178,
         number: "178",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["psychic", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/178.png",
         pixelImage:
@@ -3767,15 +1783,7 @@ const pokemonsData = [
         name: "mareep",
         id: 179,
         number: "179",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/179.png",
         pixelImage:
@@ -3785,15 +1793,7 @@ const pokemonsData = [
         name: "flaaffy",
         id: 180,
         number: "180",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/180.png",
         pixelImage:
@@ -3803,15 +1803,7 @@ const pokemonsData = [
         name: "ampharos",
         id: 181,
         number: "181",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/181.png",
         pixelImage:
@@ -3821,15 +1813,7 @@ const pokemonsData = [
         name: "bellossom",
         id: 182,
         number: "182",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/182.png",
         pixelImage:
@@ -3839,22 +1823,7 @@ const pokemonsData = [
         name: "marill",
         id: 183,
         number: "183",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["water", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/183.png",
         pixelImage:
@@ -3864,22 +1833,7 @@ const pokemonsData = [
         name: "azumarill",
         id: 184,
         number: "184",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["water", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/184.png",
         pixelImage:
@@ -3889,15 +1843,7 @@ const pokemonsData = [
         name: "sudowoodo",
         id: 185,
         number: "185",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/185.png",
         pixelImage:
@@ -3907,15 +1853,7 @@ const pokemonsData = [
         name: "politoed",
         id: 186,
         number: "186",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/186.png",
         pixelImage:
@@ -3925,22 +1863,7 @@ const pokemonsData = [
         name: "hoppip",
         id: 187,
         number: "187",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["grass", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/187.png",
         pixelImage:
@@ -3950,22 +1873,7 @@ const pokemonsData = [
         name: "skiploom",
         id: 188,
         number: "188",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["grass", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/188.png",
         pixelImage:
@@ -3975,22 +1883,7 @@ const pokemonsData = [
         name: "jumpluff",
         id: 189,
         number: "189",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["grass", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/189.png",
         pixelImage:
@@ -4000,15 +1893,7 @@ const pokemonsData = [
         name: "aipom",
         id: 190,
         number: "190",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/190.png",
         pixelImage:
@@ -4018,15 +1903,7 @@ const pokemonsData = [
         name: "sunkern",
         id: 191,
         number: "191",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/191.png",
         pixelImage:
@@ -4036,15 +1913,7 @@ const pokemonsData = [
         name: "sunflora",
         id: 192,
         number: "192",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/192.png",
         pixelImage:
@@ -4054,22 +1923,7 @@ const pokemonsData = [
         name: "yanma",
         id: 193,
         number: "193",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/193.png",
         pixelImage:
@@ -4079,22 +1933,7 @@ const pokemonsData = [
         name: "wooper",
         id: 194,
         number: "194",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/194.png",
         pixelImage:
@@ -4104,22 +1943,7 @@ const pokemonsData = [
         name: "quagsire",
         id: 195,
         number: "195",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/195.png",
         pixelImage:
@@ -4129,15 +1953,7 @@ const pokemonsData = [
         name: "espeon",
         id: 196,
         number: "196",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/196.png",
         pixelImage:
@@ -4147,15 +1963,7 @@ const pokemonsData = [
         name: "umbreon",
         id: 197,
         number: "197",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png",
         pixelImage:
@@ -4165,22 +1973,7 @@ const pokemonsData = [
         name: "murkrow",
         id: 198,
         number: "198",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dark", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/198.png",
         pixelImage:
@@ -4190,22 +1983,7 @@ const pokemonsData = [
         name: "slowking",
         id: 199,
         number: "199",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["water", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/199.png",
         pixelImage:
@@ -4215,15 +1993,7 @@ const pokemonsData = [
         name: "misdreavus",
         id: 200,
         number: "200",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/200.png",
         pixelImage:
@@ -4233,15 +2003,7 @@ const pokemonsData = [
         name: "unown",
         id: 201,
         number: "201",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/201.png",
         pixelImage:
@@ -4251,15 +2013,7 @@ const pokemonsData = [
         name: "wobbuffet",
         id: 202,
         number: "202",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/202.png",
         pixelImage:
@@ -4269,22 +2023,7 @@ const pokemonsData = [
         name: "girafarig",
         id: 203,
         number: "203",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["normal", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/203.png",
         pixelImage:
@@ -4294,15 +2033,7 @@ const pokemonsData = [
         name: "pineco",
         id: 204,
         number: "204",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/204.png",
         pixelImage:
@@ -4312,22 +2043,7 @@ const pokemonsData = [
         name: "forretress",
         id: 205,
         number: "205",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["bug", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/205.png",
         pixelImage:
@@ -4337,15 +2053,7 @@ const pokemonsData = [
         name: "dunsparce",
         id: 206,
         number: "206",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/206.png",
         pixelImage:
@@ -4355,22 +2063,7 @@ const pokemonsData = [
         name: "gligar",
         id: 207,
         number: "207",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["ground", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/207.png",
         pixelImage:
@@ -4380,22 +2073,7 @@ const pokemonsData = [
         name: "steelix",
         id: 208,
         number: "208",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["steel", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/208.png",
         pixelImage:
@@ -4405,15 +2083,7 @@ const pokemonsData = [
         name: "snubbull",
         id: 209,
         number: "209",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/209.png",
         pixelImage:
@@ -4423,15 +2093,7 @@ const pokemonsData = [
         name: "granbull",
         id: 210,
         number: "210",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/210.png",
         pixelImage:
@@ -4441,22 +2103,7 @@ const pokemonsData = [
         name: "qwilfish",
         id: 211,
         number: "211",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["water", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/211.png",
         pixelImage:
@@ -4466,22 +2113,7 @@ const pokemonsData = [
         name: "scizor",
         id: 212,
         number: "212",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["bug", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/212.png",
         pixelImage:
@@ -4491,22 +2123,7 @@ const pokemonsData = [
         name: "shuckle",
         id: 213,
         number: "213",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["bug", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/213.png",
         pixelImage:
@@ -4516,22 +2133,7 @@ const pokemonsData = [
         name: "heracross",
         id: 214,
         number: "214",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["bug", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/214.png",
         pixelImage:
@@ -4541,22 +2143,7 @@ const pokemonsData = [
         name: "sneasel",
         id: 215,
         number: "215",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["dark", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/215.png",
         pixelImage:
@@ -4566,15 +2153,7 @@ const pokemonsData = [
         name: "teddiursa",
         id: 216,
         number: "216",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/216.png",
         pixelImage:
@@ -4584,15 +2163,7 @@ const pokemonsData = [
         name: "ursaring",
         id: 217,
         number: "217",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/217.png",
         pixelImage:
@@ -4602,15 +2173,7 @@ const pokemonsData = [
         name: "slugma",
         id: 218,
         number: "218",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/218.png",
         pixelImage:
@@ -4620,22 +2183,7 @@ const pokemonsData = [
         name: "magcargo",
         id: 219,
         number: "219",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["fire", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/219.png",
         pixelImage:
@@ -4645,22 +2193,7 @@ const pokemonsData = [
         name: "swinub",
         id: 220,
         number: "220",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ice", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/220.png",
         pixelImage:
@@ -4670,22 +2203,7 @@ const pokemonsData = [
         name: "piloswine",
         id: 221,
         number: "221",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ice", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/221.png",
         pixelImage:
@@ -4695,22 +2213,7 @@ const pokemonsData = [
         name: "corsola",
         id: 222,
         number: "222",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["water", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/222.png",
         pixelImage:
@@ -4720,15 +2223,7 @@ const pokemonsData = [
         name: "remoraid",
         id: 223,
         number: "223",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/223.png",
         pixelImage:
@@ -4738,15 +2233,7 @@ const pokemonsData = [
         name: "octillery",
         id: 224,
         number: "224",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/224.png",
         pixelImage:
@@ -4756,22 +2243,7 @@ const pokemonsData = [
         name: "delibird",
         id: 225,
         number: "225",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["ice", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/225.png",
         pixelImage:
@@ -4781,22 +2253,7 @@ const pokemonsData = [
         name: "mantine",
         id: 226,
         number: "226",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["water", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/226.png",
         pixelImage:
@@ -4806,22 +2263,7 @@ const pokemonsData = [
         name: "skarmory",
         id: 227,
         number: "227",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["steel", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/227.png",
         pixelImage:
@@ -4831,22 +2273,7 @@ const pokemonsData = [
         name: "houndour",
         id: 228,
         number: "228",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["dark", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/228.png",
         pixelImage:
@@ -4856,22 +2283,7 @@ const pokemonsData = [
         name: "houndoom",
         id: 229,
         number: "229",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["dark", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/229.png",
         pixelImage:
@@ -4881,22 +2293,7 @@ const pokemonsData = [
         name: "kingdra",
         id: 230,
         number: "230",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["water", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/230.png",
         pixelImage:
@@ -4906,15 +2303,7 @@ const pokemonsData = [
         name: "phanpy",
         id: 231,
         number: "231",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/231.png",
         pixelImage:
@@ -4924,15 +2313,7 @@ const pokemonsData = [
         name: "donphan",
         id: 232,
         number: "232",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/232.png",
         pixelImage:
@@ -4942,15 +2323,7 @@ const pokemonsData = [
         name: "porygon2",
         id: 233,
         number: "233",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/233.png",
         pixelImage:
@@ -4960,15 +2333,7 @@ const pokemonsData = [
         name: "stantler",
         id: 234,
         number: "234",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/234.png",
         pixelImage:
@@ -4978,15 +2343,7 @@ const pokemonsData = [
         name: "smeargle",
         id: 235,
         number: "235",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/235.png",
         pixelImage:
@@ -4996,15 +2353,7 @@ const pokemonsData = [
         name: "tyrogue",
         id: 236,
         number: "236",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/236.png",
         pixelImage:
@@ -5014,15 +2363,7 @@ const pokemonsData = [
         name: "hitmontop",
         id: 237,
         number: "237",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/237.png",
         pixelImage:
@@ -5032,22 +2373,7 @@ const pokemonsData = [
         name: "smoochum",
         id: 238,
         number: "238",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["ice", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/238.png",
         pixelImage:
@@ -5057,15 +2383,7 @@ const pokemonsData = [
         name: "elekid",
         id: 239,
         number: "239",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/239.png",
         pixelImage:
@@ -5075,15 +2393,7 @@ const pokemonsData = [
         name: "magby",
         id: 240,
         number: "240",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/240.png",
         pixelImage:
@@ -5093,15 +2403,7 @@ const pokemonsData = [
         name: "miltank",
         id: 241,
         number: "241",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/241.png",
         pixelImage:
@@ -5111,15 +2413,7 @@ const pokemonsData = [
         name: "blissey",
         id: 242,
         number: "242",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/242.png",
         pixelImage:
@@ -5129,15 +2423,7 @@ const pokemonsData = [
         name: "raikou",
         id: 243,
         number: "243",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/243.png",
         pixelImage:
@@ -5147,15 +2433,7 @@ const pokemonsData = [
         name: "entei",
         id: 244,
         number: "244",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/244.png",
         pixelImage:
@@ -5165,15 +2443,7 @@ const pokemonsData = [
         name: "suicune",
         id: 245,
         number: "245",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/245.png",
         pixelImage:
@@ -5183,22 +2453,7 @@ const pokemonsData = [
         name: "larvitar",
         id: 246,
         number: "246",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["rock", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/246.png",
         pixelImage:
@@ -5208,22 +2463,7 @@ const pokemonsData = [
         name: "pupitar",
         id: 247,
         number: "247",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["rock", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/247.png",
         pixelImage:
@@ -5233,22 +2473,7 @@ const pokemonsData = [
         name: "tyranitar",
         id: 248,
         number: "248",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["rock", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/248.png",
         pixelImage:
@@ -5258,22 +2483,7 @@ const pokemonsData = [
         name: "lugia",
         id: 249,
         number: "249",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["psychic", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/249.png",
         pixelImage:
@@ -5283,22 +2493,7 @@ const pokemonsData = [
         name: "ho-oh",
         id: 250,
         number: "250",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fire", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/250.png",
         pixelImage:
@@ -5308,22 +2503,7 @@ const pokemonsData = [
         name: "celebi",
         id: 251,
         number: "251",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["psychic", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/251.png",
         pixelImage:
@@ -5333,15 +2513,7 @@ const pokemonsData = [
         name: "treecko",
         id: 252,
         number: "252",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png",
         pixelImage:
@@ -5351,15 +2523,7 @@ const pokemonsData = [
         name: "grovyle",
         id: 253,
         number: "253",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/253.png",
         pixelImage:
@@ -5369,15 +2533,7 @@ const pokemonsData = [
         name: "sceptile",
         id: 254,
         number: "254",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/254.png",
         pixelImage:
@@ -5387,15 +2543,7 @@ const pokemonsData = [
         name: "torchic",
         id: 255,
         number: "255",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png",
         pixelImage:
@@ -5405,22 +2553,7 @@ const pokemonsData = [
         name: "combusken",
         id: 256,
         number: "256",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fire", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/256.png",
         pixelImage:
@@ -5430,22 +2563,7 @@ const pokemonsData = [
         name: "blaziken",
         id: 257,
         number: "257",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fire", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/257.png",
         pixelImage:
@@ -5455,15 +2573,7 @@ const pokemonsData = [
         name: "mudkip",
         id: 258,
         number: "258",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png",
         pixelImage:
@@ -5473,22 +2583,7 @@ const pokemonsData = [
         name: "marshtomp",
         id: 259,
         number: "259",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/259.png",
         pixelImage:
@@ -5498,22 +2593,7 @@ const pokemonsData = [
         name: "swampert",
         id: 260,
         number: "260",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png",
         pixelImage:
@@ -5523,15 +2603,7 @@ const pokemonsData = [
         name: "poochyena",
         id: 261,
         number: "261",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/261.png",
         pixelImage:
@@ -5541,15 +2613,7 @@ const pokemonsData = [
         name: "mightyena",
         id: 262,
         number: "262",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/262.png",
         pixelImage:
@@ -5559,15 +2623,7 @@ const pokemonsData = [
         name: "zigzagoon",
         id: 263,
         number: "263",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/263.png",
         pixelImage:
@@ -5577,15 +2633,7 @@ const pokemonsData = [
         name: "linoone",
         id: 264,
         number: "264",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/264.png",
         pixelImage:
@@ -5595,15 +2643,7 @@ const pokemonsData = [
         name: "wurmple",
         id: 265,
         number: "265",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/265.png",
         pixelImage:
@@ -5613,15 +2653,7 @@ const pokemonsData = [
         name: "silcoon",
         id: 266,
         number: "266",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/266.png",
         pixelImage:
@@ -5631,22 +2663,7 @@ const pokemonsData = [
         name: "beautifly",
         id: 267,
         number: "267",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/267.png",
         pixelImage:
@@ -5656,15 +2673,7 @@ const pokemonsData = [
         name: "cascoon",
         id: 268,
         number: "268",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/268.png",
         pixelImage:
@@ -5674,22 +2683,7 @@ const pokemonsData = [
         name: "dustox",
         id: 269,
         number: "269",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/269.png",
         pixelImage:
@@ -5699,22 +2693,7 @@ const pokemonsData = [
         name: "lotad",
         id: 270,
         number: "270",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["water", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/270.png",
         pixelImage:
@@ -5724,22 +2703,7 @@ const pokemonsData = [
         name: "lombre",
         id: 271,
         number: "271",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["water", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/271.png",
         pixelImage:
@@ -5749,22 +2713,7 @@ const pokemonsData = [
         name: "ludicolo",
         id: 272,
         number: "272",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["water", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/272.png",
         pixelImage:
@@ -5774,15 +2723,7 @@ const pokemonsData = [
         name: "seedot",
         id: 273,
         number: "273",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/273.png",
         pixelImage:
@@ -5792,22 +2733,7 @@ const pokemonsData = [
         name: "nuzleaf",
         id: 274,
         number: "274",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["grass", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/274.png",
         pixelImage:
@@ -5817,22 +2743,7 @@ const pokemonsData = [
         name: "shiftry",
         id: 275,
         number: "275",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["grass", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/275.png",
         pixelImage:
@@ -5842,22 +2753,7 @@ const pokemonsData = [
         name: "taillow",
         id: 276,
         number: "276",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/276.png",
         pixelImage:
@@ -5867,22 +2763,7 @@ const pokemonsData = [
         name: "swellow",
         id: 277,
         number: "277",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/277.png",
         pixelImage:
@@ -5892,22 +2773,7 @@ const pokemonsData = [
         name: "wingull",
         id: 278,
         number: "278",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["water", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/278.png",
         pixelImage:
@@ -5917,22 +2783,7 @@ const pokemonsData = [
         name: "pelipper",
         id: 279,
         number: "279",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["water", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/279.png",
         pixelImage:
@@ -5942,22 +2793,7 @@ const pokemonsData = [
         name: "ralts",
         id: 280,
         number: "280",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["psychic", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/280.png",
         pixelImage:
@@ -5967,22 +2803,7 @@ const pokemonsData = [
         name: "kirlia",
         id: 281,
         number: "281",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["psychic", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/281.png",
         pixelImage:
@@ -5992,22 +2813,7 @@ const pokemonsData = [
         name: "gardevoir",
         id: 282,
         number: "282",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["psychic", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/282.png",
         pixelImage:
@@ -6017,22 +2823,7 @@ const pokemonsData = [
         name: "surskit",
         id: 283,
         number: "283",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["bug", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/283.png",
         pixelImage:
@@ -6042,22 +2833,7 @@ const pokemonsData = [
         name: "masquerain",
         id: 284,
         number: "284",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/284.png",
         pixelImage:
@@ -6067,15 +2843,7 @@ const pokemonsData = [
         name: "shroomish",
         id: 285,
         number: "285",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/285.png",
         pixelImage:
@@ -6085,22 +2853,7 @@ const pokemonsData = [
         name: "breloom",
         id: 286,
         number: "286",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["grass", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/286.png",
         pixelImage:
@@ -6110,15 +2863,7 @@ const pokemonsData = [
         name: "slakoth",
         id: 287,
         number: "287",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/287.png",
         pixelImage:
@@ -6128,15 +2873,7 @@ const pokemonsData = [
         name: "vigoroth",
         id: 288,
         number: "288",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/288.png",
         pixelImage:
@@ -6146,15 +2883,7 @@ const pokemonsData = [
         name: "slaking",
         id: 289,
         number: "289",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/289.png",
         pixelImage:
@@ -6164,22 +2893,7 @@ const pokemonsData = [
         name: "nincada",
         id: 290,
         number: "290",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["bug", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/290.png",
         pixelImage:
@@ -6189,22 +2903,7 @@ const pokemonsData = [
         name: "ninjask",
         id: 291,
         number: "291",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/291.png",
         pixelImage:
@@ -6214,22 +2913,7 @@ const pokemonsData = [
         name: "shedinja",
         id: 292,
         number: "292",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["bug", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/292.png",
         pixelImage:
@@ -6239,15 +2923,7 @@ const pokemonsData = [
         name: "whismur",
         id: 293,
         number: "293",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/293.png",
         pixelImage:
@@ -6257,15 +2933,7 @@ const pokemonsData = [
         name: "loudred",
         id: 294,
         number: "294",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/294.png",
         pixelImage:
@@ -6275,15 +2943,7 @@ const pokemonsData = [
         name: "exploud",
         id: 295,
         number: "295",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/295.png",
         pixelImage:
@@ -6293,15 +2953,7 @@ const pokemonsData = [
         name: "makuhita",
         id: 296,
         number: "296",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/296.png",
         pixelImage:
@@ -6311,15 +2963,7 @@ const pokemonsData = [
         name: "hariyama",
         id: 297,
         number: "297",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/297.png",
         pixelImage:
@@ -6329,22 +2973,7 @@ const pokemonsData = [
         name: "azurill",
         id: 298,
         number: "298",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["normal", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/298.png",
         pixelImage:
@@ -6354,15 +2983,7 @@ const pokemonsData = [
         name: "nosepass",
         id: 299,
         number: "299",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/299.png",
         pixelImage:
@@ -6372,15 +2993,7 @@ const pokemonsData = [
         name: "skitty",
         id: 300,
         number: "300",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/300.png",
         pixelImage:
@@ -6390,15 +3003,7 @@ const pokemonsData = [
         name: "delcatty",
         id: 301,
         number: "301",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/301.png",
         pixelImage:
@@ -6408,22 +3013,7 @@ const pokemonsData = [
         name: "sableye",
         id: 302,
         number: "302",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["dark", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/302.png",
         pixelImage:
@@ -6433,22 +3023,7 @@ const pokemonsData = [
         name: "mawile",
         id: 303,
         number: "303",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["steel", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/303.png",
         pixelImage:
@@ -6458,22 +3033,7 @@ const pokemonsData = [
         name: "aron",
         id: 304,
         number: "304",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["steel", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/304.png",
         pixelImage:
@@ -6483,22 +3043,7 @@ const pokemonsData = [
         name: "lairon",
         id: 305,
         number: "305",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["steel", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/305.png",
         pixelImage:
@@ -6508,22 +3053,7 @@ const pokemonsData = [
         name: "aggron",
         id: 306,
         number: "306",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["steel", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/306.png",
         pixelImage:
@@ -6533,22 +3063,7 @@ const pokemonsData = [
         name: "meditite",
         id: 307,
         number: "307",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["fighting", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/307.png",
         pixelImage:
@@ -6558,22 +3073,7 @@ const pokemonsData = [
         name: "medicham",
         id: 308,
         number: "308",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["fighting", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/308.png",
         pixelImage:
@@ -6583,15 +3083,7 @@ const pokemonsData = [
         name: "electrike",
         id: 309,
         number: "309",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/309.png",
         pixelImage:
@@ -6601,15 +3093,7 @@ const pokemonsData = [
         name: "manectric",
         id: 310,
         number: "310",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/310.png",
         pixelImage:
@@ -6619,15 +3103,7 @@ const pokemonsData = [
         name: "plusle",
         id: 311,
         number: "311",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/311.png",
         pixelImage:
@@ -6637,15 +3113,7 @@ const pokemonsData = [
         name: "minun",
         id: 312,
         number: "312",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/312.png",
         pixelImage:
@@ -6655,15 +3123,7 @@ const pokemonsData = [
         name: "volbeat",
         id: 313,
         number: "313",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/313.png",
         pixelImage:
@@ -6673,15 +3133,7 @@ const pokemonsData = [
         name: "illumise",
         id: 314,
         number: "314",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/314.png",
         pixelImage:
@@ -6691,22 +3143,7 @@ const pokemonsData = [
         name: "roselia",
         id: 315,
         number: "315",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/315.png",
         pixelImage:
@@ -6716,15 +3153,7 @@ const pokemonsData = [
         name: "gulpin",
         id: 316,
         number: "316",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/316.png",
         pixelImage:
@@ -6734,15 +3163,7 @@ const pokemonsData = [
         name: "swalot",
         id: 317,
         number: "317",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/317.png",
         pixelImage:
@@ -6752,22 +3173,7 @@ const pokemonsData = [
         name: "carvanha",
         id: 318,
         number: "318",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["water", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/318.png",
         pixelImage:
@@ -6777,22 +3183,7 @@ const pokemonsData = [
         name: "sharpedo",
         id: 319,
         number: "319",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["water", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/319.png",
         pixelImage:
@@ -6802,15 +3193,7 @@ const pokemonsData = [
         name: "wailmer",
         id: 320,
         number: "320",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/320.png",
         pixelImage:
@@ -6820,15 +3203,7 @@ const pokemonsData = [
         name: "wailord",
         id: 321,
         number: "321",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/321.png",
         pixelImage:
@@ -6838,22 +3213,7 @@ const pokemonsData = [
         name: "numel",
         id: 322,
         number: "322",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["fire", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/322.png",
         pixelImage:
@@ -6863,22 +3223,7 @@ const pokemonsData = [
         name: "camerupt",
         id: 323,
         number: "323",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["fire", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/323.png",
         pixelImage:
@@ -6888,15 +3233,7 @@ const pokemonsData = [
         name: "torkoal",
         id: 324,
         number: "324",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/324.png",
         pixelImage:
@@ -6906,15 +3243,7 @@ const pokemonsData = [
         name: "spoink",
         id: 325,
         number: "325",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/325.png",
         pixelImage:
@@ -6924,15 +3253,7 @@ const pokemonsData = [
         name: "grumpig",
         id: 326,
         number: "326",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/326.png",
         pixelImage:
@@ -6942,15 +3263,7 @@ const pokemonsData = [
         name: "spinda",
         id: 327,
         number: "327",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/327.png",
         pixelImage:
@@ -6960,15 +3273,7 @@ const pokemonsData = [
         name: "trapinch",
         id: 328,
         number: "328",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/328.png",
         pixelImage:
@@ -6978,22 +3283,7 @@ const pokemonsData = [
         name: "vibrava",
         id: 329,
         number: "329",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["ground", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/329.png",
         pixelImage:
@@ -7003,22 +3293,7 @@ const pokemonsData = [
         name: "flygon",
         id: 330,
         number: "330",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["ground", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/330.png",
         pixelImage:
@@ -7028,15 +3303,7 @@ const pokemonsData = [
         name: "cacnea",
         id: 331,
         number: "331",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/331.png",
         pixelImage:
@@ -7046,22 +3313,7 @@ const pokemonsData = [
         name: "cacturne",
         id: 332,
         number: "332",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["grass", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/332.png",
         pixelImage:
@@ -7071,22 +3323,7 @@ const pokemonsData = [
         name: "swablu",
         id: 333,
         number: "333",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/333.png",
         pixelImage:
@@ -7096,22 +3333,7 @@ const pokemonsData = [
         name: "altaria",
         id: 334,
         number: "334",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dragon", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/334.png",
         pixelImage:
@@ -7121,15 +3343,7 @@ const pokemonsData = [
         name: "zangoose",
         id: 335,
         number: "335",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/335.png",
         pixelImage:
@@ -7139,15 +3353,7 @@ const pokemonsData = [
         name: "seviper",
         id: 336,
         number: "336",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/336.png",
         pixelImage:
@@ -7157,22 +3363,7 @@ const pokemonsData = [
         name: "lunatone",
         id: 337,
         number: "337",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["rock", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/337.png",
         pixelImage:
@@ -7182,22 +3373,7 @@ const pokemonsData = [
         name: "solrock",
         id: 338,
         number: "338",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["rock", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/338.png",
         pixelImage:
@@ -7207,22 +3383,7 @@ const pokemonsData = [
         name: "barboach",
         id: 339,
         number: "339",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/339.png",
         pixelImage:
@@ -7232,22 +3393,7 @@ const pokemonsData = [
         name: "whiscash",
         id: 340,
         number: "340",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/340.png",
         pixelImage:
@@ -7257,15 +3403,7 @@ const pokemonsData = [
         name: "corphish",
         id: 341,
         number: "341",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/341.png",
         pixelImage:
@@ -7275,22 +3413,7 @@ const pokemonsData = [
         name: "crawdaunt",
         id: 342,
         number: "342",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["water", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/342.png",
         pixelImage:
@@ -7300,22 +3423,7 @@ const pokemonsData = [
         name: "baltoy",
         id: 343,
         number: "343",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["ground", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/343.png",
         pixelImage:
@@ -7325,22 +3433,7 @@ const pokemonsData = [
         name: "claydol",
         id: 344,
         number: "344",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["ground", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/344.png",
         pixelImage:
@@ -7350,22 +3443,7 @@ const pokemonsData = [
         name: "lileep",
         id: 345,
         number: "345",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["rock", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/345.png",
         pixelImage:
@@ -7375,22 +3453,7 @@ const pokemonsData = [
         name: "cradily",
         id: 346,
         number: "346",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["rock", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/346.png",
         pixelImage:
@@ -7400,22 +3463,7 @@ const pokemonsData = [
         name: "anorith",
         id: 347,
         number: "347",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["rock", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/347.png",
         pixelImage:
@@ -7425,22 +3473,7 @@ const pokemonsData = [
         name: "armaldo",
         id: 348,
         number: "348",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["rock", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/348.png",
         pixelImage:
@@ -7450,15 +3483,7 @@ const pokemonsData = [
         name: "feebas",
         id: 349,
         number: "349",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/349.png",
         pixelImage:
@@ -7468,15 +3493,7 @@ const pokemonsData = [
         name: "milotic",
         id: 350,
         number: "350",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/350.png",
         pixelImage:
@@ -7486,15 +3503,7 @@ const pokemonsData = [
         name: "castform",
         id: 351,
         number: "351",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/351.png",
         pixelImage:
@@ -7504,15 +3513,7 @@ const pokemonsData = [
         name: "kecleon",
         id: 352,
         number: "352",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/352.png",
         pixelImage:
@@ -7522,15 +3523,7 @@ const pokemonsData = [
         name: "shuppet",
         id: 353,
         number: "353",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/353.png",
         pixelImage:
@@ -7540,15 +3533,7 @@ const pokemonsData = [
         name: "banette",
         id: 354,
         number: "354",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/354.png",
         pixelImage:
@@ -7558,15 +3543,7 @@ const pokemonsData = [
         name: "duskull",
         id: 355,
         number: "355",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/355.png",
         pixelImage:
@@ -7576,15 +3553,7 @@ const pokemonsData = [
         name: "dusclops",
         id: 356,
         number: "356",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/356.png",
         pixelImage:
@@ -7594,22 +3563,7 @@ const pokemonsData = [
         name: "tropius",
         id: 357,
         number: "357",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["grass", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/357.png",
         pixelImage:
@@ -7619,15 +3573,7 @@ const pokemonsData = [
         name: "chimecho",
         id: 358,
         number: "358",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/358.png",
         pixelImage:
@@ -7637,15 +3583,7 @@ const pokemonsData = [
         name: "absol",
         id: 359,
         number: "359",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/359.png",
         pixelImage:
@@ -7655,15 +3593,7 @@ const pokemonsData = [
         name: "wynaut",
         id: 360,
         number: "360",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/360.png",
         pixelImage:
@@ -7673,15 +3603,7 @@ const pokemonsData = [
         name: "snorunt",
         id: 361,
         number: "361",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/361.png",
         pixelImage:
@@ -7691,15 +3613,7 @@ const pokemonsData = [
         name: "glalie",
         id: 362,
         number: "362",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/362.png",
         pixelImage:
@@ -7709,22 +3623,7 @@ const pokemonsData = [
         name: "spheal",
         id: 363,
         number: "363",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["ice", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/363.png",
         pixelImage:
@@ -7734,22 +3633,7 @@ const pokemonsData = [
         name: "sealeo",
         id: 364,
         number: "364",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["ice", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/364.png",
         pixelImage:
@@ -7759,22 +3643,7 @@ const pokemonsData = [
         name: "walrein",
         id: 365,
         number: "365",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["ice", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/365.png",
         pixelImage:
@@ -7784,15 +3653,7 @@ const pokemonsData = [
         name: "clamperl",
         id: 366,
         number: "366",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/366.png",
         pixelImage:
@@ -7802,15 +3663,7 @@ const pokemonsData = [
         name: "huntail",
         id: 367,
         number: "367",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/367.png",
         pixelImage:
@@ -7820,15 +3673,7 @@ const pokemonsData = [
         name: "gorebyss",
         id: 368,
         number: "368",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/368.png",
         pixelImage:
@@ -7838,22 +3683,7 @@ const pokemonsData = [
         name: "relicanth",
         id: 369,
         number: "369",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["water", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/369.png",
         pixelImage:
@@ -7863,15 +3693,7 @@ const pokemonsData = [
         name: "luvdisc",
         id: 370,
         number: "370",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/370.png",
         pixelImage:
@@ -7881,15 +3703,7 @@ const pokemonsData = [
         name: "bagon",
         id: 371,
         number: "371",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/371.png",
         pixelImage:
@@ -7899,15 +3713,7 @@ const pokemonsData = [
         name: "shelgon",
         id: 372,
         number: "372",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/372.png",
         pixelImage:
@@ -7917,22 +3723,7 @@ const pokemonsData = [
         name: "salamence",
         id: 373,
         number: "373",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dragon", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/373.png",
         pixelImage:
@@ -7942,22 +3733,7 @@ const pokemonsData = [
         name: "beldum",
         id: 374,
         number: "374",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["steel", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/374.png",
         pixelImage:
@@ -7967,22 +3743,7 @@ const pokemonsData = [
         name: "metang",
         id: 375,
         number: "375",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["steel", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/375.png",
         pixelImage:
@@ -7992,22 +3753,7 @@ const pokemonsData = [
         name: "metagross",
         id: 376,
         number: "376",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["steel", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/376.png",
         pixelImage:
@@ -8017,15 +3763,7 @@ const pokemonsData = [
         name: "regirock",
         id: 377,
         number: "377",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/377.png",
         pixelImage:
@@ -8035,15 +3773,7 @@ const pokemonsData = [
         name: "regice",
         id: 378,
         number: "378",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/378.png",
         pixelImage:
@@ -8053,15 +3783,7 @@ const pokemonsData = [
         name: "registeel",
         id: 379,
         number: "379",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/379.png",
         pixelImage:
@@ -8071,22 +3793,7 @@ const pokemonsData = [
         name: "latias",
         id: 380,
         number: "380",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["dragon", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/380.png",
         pixelImage:
@@ -8096,22 +3803,7 @@ const pokemonsData = [
         name: "latios",
         id: 381,
         number: "381",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["dragon", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/381.png",
         pixelImage:
@@ -8121,15 +3813,7 @@ const pokemonsData = [
         name: "kyogre",
         id: 382,
         number: "382",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/382.png",
         pixelImage:
@@ -8139,15 +3823,7 @@ const pokemonsData = [
         name: "groudon",
         id: 383,
         number: "383",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/383.png",
         pixelImage:
@@ -8157,22 +3833,7 @@ const pokemonsData = [
         name: "rayquaza",
         id: 384,
         number: "384",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dragon", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/384.png",
         pixelImage:
@@ -8182,22 +3843,7 @@ const pokemonsData = [
         name: "jirachi",
         id: 385,
         number: "385",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["steel", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/385.png",
         pixelImage:
@@ -8207,15 +3853,7 @@ const pokemonsData = [
         name: "deoxys-normal",
         id: 386,
         number: "386",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/386.png",
         pixelImage:
@@ -8225,15 +3863,7 @@ const pokemonsData = [
         name: "turtwig",
         id: 387,
         number: "387",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/387.png",
         pixelImage:
@@ -8243,15 +3873,7 @@ const pokemonsData = [
         name: "grotle",
         id: 388,
         number: "388",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/388.png",
         pixelImage:
@@ -8261,22 +3883,7 @@ const pokemonsData = [
         name: "torterra",
         id: 389,
         number: "389",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["grass", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/389.png",
         pixelImage:
@@ -8286,15 +3893,7 @@ const pokemonsData = [
         name: "chimchar",
         id: 390,
         number: "390",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/390.png",
         pixelImage:
@@ -8304,22 +3903,7 @@ const pokemonsData = [
         name: "monferno",
         id: 391,
         number: "391",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fire", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/391.png",
         pixelImage:
@@ -8329,22 +3913,7 @@ const pokemonsData = [
         name: "infernape",
         id: 392,
         number: "392",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fire", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/392.png",
         pixelImage:
@@ -8354,15 +3923,7 @@ const pokemonsData = [
         name: "piplup",
         id: 393,
         number: "393",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/393.png",
         pixelImage:
@@ -8372,15 +3933,7 @@ const pokemonsData = [
         name: "prinplup",
         id: 394,
         number: "394",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/394.png",
         pixelImage:
@@ -8390,22 +3943,7 @@ const pokemonsData = [
         name: "empoleon",
         id: 395,
         number: "395",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["water", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/395.png",
         pixelImage:
@@ -8415,22 +3953,7 @@ const pokemonsData = [
         name: "starly",
         id: 396,
         number: "396",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/396.png",
         pixelImage:
@@ -8440,22 +3963,7 @@ const pokemonsData = [
         name: "staravia",
         id: 397,
         number: "397",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/397.png",
         pixelImage:
@@ -8465,22 +3973,7 @@ const pokemonsData = [
         name: "staraptor",
         id: 398,
         number: "398",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/398.png",
         pixelImage:
@@ -8490,15 +3983,7 @@ const pokemonsData = [
         name: "bidoof",
         id: 399,
         number: "399",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/399.png",
         pixelImage:
@@ -8508,22 +3993,7 @@ const pokemonsData = [
         name: "bibarel",
         id: 400,
         number: "400",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["normal", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/400.png",
         pixelImage:
@@ -8533,15 +4003,7 @@ const pokemonsData = [
         name: "kricketot",
         id: 401,
         number: "401",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/401.png",
         pixelImage:
@@ -8551,15 +4013,7 @@ const pokemonsData = [
         name: "kricketune",
         id: 402,
         number: "402",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/402.png",
         pixelImage:
@@ -8569,15 +4023,7 @@ const pokemonsData = [
         name: "shinx",
         id: 403,
         number: "403",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/403.png",
         pixelImage:
@@ -8587,15 +4033,7 @@ const pokemonsData = [
         name: "luxio",
         id: 404,
         number: "404",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/404.png",
         pixelImage:
@@ -8605,15 +4043,7 @@ const pokemonsData = [
         name: "luxray",
         id: 405,
         number: "405",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/405.png",
         pixelImage:
@@ -8623,22 +4053,7 @@ const pokemonsData = [
         name: "budew",
         id: 406,
         number: "406",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/406.png",
         pixelImage:
@@ -8648,22 +4063,7 @@ const pokemonsData = [
         name: "roserade",
         id: 407,
         number: "407",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/407.png",
         pixelImage:
@@ -8673,15 +4073,7 @@ const pokemonsData = [
         name: "cranidos",
         id: 408,
         number: "408",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/408.png",
         pixelImage:
@@ -8691,15 +4083,7 @@ const pokemonsData = [
         name: "rampardos",
         id: 409,
         number: "409",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/409.png",
         pixelImage:
@@ -8709,22 +4093,7 @@ const pokemonsData = [
         name: "shieldon",
         id: 410,
         number: "410",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["rock", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/410.png",
         pixelImage:
@@ -8734,22 +4103,7 @@ const pokemonsData = [
         name: "bastiodon",
         id: 411,
         number: "411",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["rock", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/411.png",
         pixelImage:
@@ -8759,15 +4113,7 @@ const pokemonsData = [
         name: "burmy",
         id: 412,
         number: "412",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/412.png",
         pixelImage:
@@ -8777,22 +4123,7 @@ const pokemonsData = [
         name: "wormadam-plant",
         id: 413,
         number: "413",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["bug", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/413.png",
         pixelImage:
@@ -8802,22 +4133,7 @@ const pokemonsData = [
         name: "mothim",
         id: 414,
         number: "414",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/414.png",
         pixelImage:
@@ -8827,22 +4143,7 @@ const pokemonsData = [
         name: "combee",
         id: 415,
         number: "415",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/415.png",
         pixelImage:
@@ -8852,22 +4153,7 @@ const pokemonsData = [
         name: "vespiquen",
         id: 416,
         number: "416",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/416.png",
         pixelImage:
@@ -8877,15 +4163,7 @@ const pokemonsData = [
         name: "pachirisu",
         id: 417,
         number: "417",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/417.png",
         pixelImage:
@@ -8895,15 +4173,7 @@ const pokemonsData = [
         name: "buizel",
         id: 418,
         number: "418",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/418.png",
         pixelImage:
@@ -8913,15 +4183,7 @@ const pokemonsData = [
         name: "floatzel",
         id: 419,
         number: "419",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/419.png",
         pixelImage:
@@ -8931,15 +4193,7 @@ const pokemonsData = [
         name: "cherubi",
         id: 420,
         number: "420",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/420.png",
         pixelImage:
@@ -8949,15 +4203,7 @@ const pokemonsData = [
         name: "cherrim",
         id: 421,
         number: "421",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/421.png",
         pixelImage:
@@ -8967,15 +4213,7 @@ const pokemonsData = [
         name: "shellos",
         id: 422,
         number: "422",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/422.png",
         pixelImage:
@@ -8985,22 +4223,7 @@ const pokemonsData = [
         name: "gastrodon",
         id: 423,
         number: "423",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/423.png",
         pixelImage:
@@ -9010,15 +4233,7 @@ const pokemonsData = [
         name: "ambipom",
         id: 424,
         number: "424",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/424.png",
         pixelImage:
@@ -9028,22 +4243,7 @@ const pokemonsData = [
         name: "drifloon",
         id: 425,
         number: "425",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["ghost", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/425.png",
         pixelImage:
@@ -9053,22 +4253,7 @@ const pokemonsData = [
         name: "drifblim",
         id: 426,
         number: "426",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["ghost", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/426.png",
         pixelImage:
@@ -9078,15 +4263,7 @@ const pokemonsData = [
         name: "buneary",
         id: 427,
         number: "427",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/427.png",
         pixelImage:
@@ -9096,15 +4273,7 @@ const pokemonsData = [
         name: "lopunny",
         id: 428,
         number: "428",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/428.png",
         pixelImage:
@@ -9114,15 +4283,7 @@ const pokemonsData = [
         name: "mismagius",
         id: 429,
         number: "429",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/429.png",
         pixelImage:
@@ -9132,22 +4293,7 @@ const pokemonsData = [
         name: "honchkrow",
         id: 430,
         number: "430",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dark", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/430.png",
         pixelImage:
@@ -9157,15 +4303,7 @@ const pokemonsData = [
         name: "glameow",
         id: 431,
         number: "431",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/431.png",
         pixelImage:
@@ -9175,15 +4313,7 @@ const pokemonsData = [
         name: "purugly",
         id: 432,
         number: "432",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/432.png",
         pixelImage:
@@ -9193,15 +4323,7 @@ const pokemonsData = [
         name: "chingling",
         id: 433,
         number: "433",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/433.png",
         pixelImage:
@@ -9211,22 +4333,7 @@ const pokemonsData = [
         name: "stunky",
         id: 434,
         number: "434",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["poison", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/434.png",
         pixelImage:
@@ -9236,22 +4343,7 @@ const pokemonsData = [
         name: "skuntank",
         id: 435,
         number: "435",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["poison", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/435.png",
         pixelImage:
@@ -9261,22 +4353,7 @@ const pokemonsData = [
         name: "bronzor",
         id: 436,
         number: "436",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["steel", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/436.png",
         pixelImage:
@@ -9286,22 +4363,7 @@ const pokemonsData = [
         name: "bronzong",
         id: 437,
         number: "437",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["steel", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/437.png",
         pixelImage:
@@ -9311,15 +4373,7 @@ const pokemonsData = [
         name: "bonsly",
         id: 438,
         number: "438",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/438.png",
         pixelImage:
@@ -9329,22 +4383,7 @@ const pokemonsData = [
         name: "mime-jr",
         id: 439,
         number: "439",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["psychic", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/439.png",
         pixelImage:
@@ -9354,15 +4393,7 @@ const pokemonsData = [
         name: "happiny",
         id: 440,
         number: "440",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/440.png",
         pixelImage:
@@ -9372,22 +4403,7 @@ const pokemonsData = [
         name: "chatot",
         id: 441,
         number: "441",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/441.png",
         pixelImage:
@@ -9397,22 +4413,7 @@ const pokemonsData = [
         name: "spiritomb",
         id: 442,
         number: "442",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["ghost", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/442.png",
         pixelImage:
@@ -9422,22 +4423,7 @@ const pokemonsData = [
         name: "gible",
         id: 443,
         number: "443",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["dragon", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/443.png",
         pixelImage:
@@ -9447,22 +4433,7 @@ const pokemonsData = [
         name: "gabite",
         id: 444,
         number: "444",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["dragon", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/444.png",
         pixelImage:
@@ -9472,22 +4443,7 @@ const pokemonsData = [
         name: "garchomp",
         id: 445,
         number: "445",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["dragon", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/445.png",
         pixelImage:
@@ -9497,15 +4453,7 @@ const pokemonsData = [
         name: "munchlax",
         id: 446,
         number: "446",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/446.png",
         pixelImage:
@@ -9515,15 +4463,7 @@ const pokemonsData = [
         name: "riolu",
         id: 447,
         number: "447",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/447.png",
         pixelImage:
@@ -9533,22 +4473,7 @@ const pokemonsData = [
         name: "lucario",
         id: 448,
         number: "448",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["fighting", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/448.png",
         pixelImage:
@@ -9558,15 +4483,7 @@ const pokemonsData = [
         name: "hippopotas",
         id: 449,
         number: "449",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/449.png",
         pixelImage:
@@ -9576,15 +4493,7 @@ const pokemonsData = [
         name: "hippowdon",
         id: 450,
         number: "450",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/450.png",
         pixelImage:
@@ -9594,22 +4503,7 @@ const pokemonsData = [
         name: "skorupi",
         id: 451,
         number: "451",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["poison", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/451.png",
         pixelImage:
@@ -9619,22 +4513,7 @@ const pokemonsData = [
         name: "drapion",
         id: 452,
         number: "452",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["poison", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/452.png",
         pixelImage:
@@ -9644,22 +4523,7 @@ const pokemonsData = [
         name: "croagunk",
         id: 453,
         number: "453",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["poison", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/453.png",
         pixelImage:
@@ -9669,22 +4533,7 @@ const pokemonsData = [
         name: "toxicroak",
         id: 454,
         number: "454",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["poison", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/454.png",
         pixelImage:
@@ -9694,15 +4543,7 @@ const pokemonsData = [
         name: "carnivine",
         id: 455,
         number: "455",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/455.png",
         pixelImage:
@@ -9712,15 +4553,7 @@ const pokemonsData = [
         name: "finneon",
         id: 456,
         number: "456",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/456.png",
         pixelImage:
@@ -9730,15 +4563,7 @@ const pokemonsData = [
         name: "lumineon",
         id: 457,
         number: "457",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/457.png",
         pixelImage:
@@ -9748,22 +4573,7 @@ const pokemonsData = [
         name: "mantyke",
         id: 458,
         number: "458",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["water", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/458.png",
         pixelImage:
@@ -9773,22 +4583,7 @@ const pokemonsData = [
         name: "snover",
         id: 459,
         number: "459",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["grass", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/459.png",
         pixelImage:
@@ -9798,22 +4593,7 @@ const pokemonsData = [
         name: "abomasnow",
         id: 460,
         number: "460",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["grass", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/460.png",
         pixelImage:
@@ -9823,22 +4603,7 @@ const pokemonsData = [
         name: "weavile",
         id: 461,
         number: "461",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["dark", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/461.png",
         pixelImage:
@@ -9848,22 +4613,7 @@ const pokemonsData = [
         name: "magnezone",
         id: 462,
         number: "462",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["electric", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/462.png",
         pixelImage:
@@ -9873,15 +4623,7 @@ const pokemonsData = [
         name: "lickilicky",
         id: 463,
         number: "463",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/463.png",
         pixelImage:
@@ -9891,22 +4633,7 @@ const pokemonsData = [
         name: "rhyperior",
         id: 464,
         number: "464",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["ground", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/464.png",
         pixelImage:
@@ -9916,15 +4643,7 @@ const pokemonsData = [
         name: "tangrowth",
         id: 465,
         number: "465",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/465.png",
         pixelImage:
@@ -9934,15 +4653,7 @@ const pokemonsData = [
         name: "electivire",
         id: 466,
         number: "466",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/466.png",
         pixelImage:
@@ -9952,15 +4663,7 @@ const pokemonsData = [
         name: "magmortar",
         id: 467,
         number: "467",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/467.png",
         pixelImage:
@@ -9970,22 +4673,7 @@ const pokemonsData = [
         name: "togekiss",
         id: 468,
         number: "468",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fairy", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/468.png",
         pixelImage:
@@ -9995,22 +4683,7 @@ const pokemonsData = [
         name: "yanmega",
         id: 469,
         number: "469",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/469.png",
         pixelImage:
@@ -10020,15 +4693,7 @@ const pokemonsData = [
         name: "leafeon",
         id: 470,
         number: "470",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/470.png",
         pixelImage:
@@ -10038,15 +4703,7 @@ const pokemonsData = [
         name: "glaceon",
         id: 471,
         number: "471",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/471.png",
         pixelImage:
@@ -10056,22 +4713,7 @@ const pokemonsData = [
         name: "gliscor",
         id: 472,
         number: "472",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["ground", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/472.png",
         pixelImage:
@@ -10081,22 +4723,7 @@ const pokemonsData = [
         name: "mamoswine",
         id: 473,
         number: "473",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ice", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/473.png",
         pixelImage:
@@ -10106,15 +4733,7 @@ const pokemonsData = [
         name: "porygon-z",
         id: 474,
         number: "474",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/474.png",
         pixelImage:
@@ -10124,22 +4743,7 @@ const pokemonsData = [
         name: "gallade",
         id: 475,
         number: "475",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["psychic", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/475.png",
         pixelImage:
@@ -10149,22 +4753,7 @@ const pokemonsData = [
         name: "probopass",
         id: 476,
         number: "476",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["rock", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/476.png",
         pixelImage:
@@ -10174,15 +4763,7 @@ const pokemonsData = [
         name: "dusknoir",
         id: 477,
         number: "477",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/477.png",
         pixelImage:
@@ -10192,22 +4773,7 @@ const pokemonsData = [
         name: "froslass",
         id: 478,
         number: "478",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ice", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/478.png",
         pixelImage:
@@ -10217,22 +4783,7 @@ const pokemonsData = [
         name: "rotom",
         id: 479,
         number: "479",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["electric", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/479.png",
         pixelImage:
@@ -10242,15 +4793,7 @@ const pokemonsData = [
         name: "uxie",
         id: 480,
         number: "480",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/480.png",
         pixelImage:
@@ -10260,15 +4803,7 @@ const pokemonsData = [
         name: "mesprit",
         id: 481,
         number: "481",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/481.png",
         pixelImage:
@@ -10278,15 +4813,7 @@ const pokemonsData = [
         name: "azelf",
         id: 482,
         number: "482",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/482.png",
         pixelImage:
@@ -10296,22 +4823,7 @@ const pokemonsData = [
         name: "dialga",
         id: 483,
         number: "483",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["steel", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/483.png",
         pixelImage:
@@ -10321,22 +4833,7 @@ const pokemonsData = [
         name: "palkia",
         id: 484,
         number: "484",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["water", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/484.png",
         pixelImage:
@@ -10346,22 +4843,7 @@ const pokemonsData = [
         name: "heatran",
         id: 485,
         number: "485",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["fire", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/485.png",
         pixelImage:
@@ -10371,15 +4853,7 @@ const pokemonsData = [
         name: "regigigas",
         id: 486,
         number: "486",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/486.png",
         pixelImage:
@@ -10389,22 +4863,7 @@ const pokemonsData = [
         name: "giratina-altered",
         id: 487,
         number: "487",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["ghost", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/487.png",
         pixelImage:
@@ -10414,15 +4873,7 @@ const pokemonsData = [
         name: "cresselia",
         id: 488,
         number: "488",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/488.png",
         pixelImage:
@@ -10432,15 +4883,7 @@ const pokemonsData = [
         name: "phione",
         id: 489,
         number: "489",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/489.png",
         pixelImage:
@@ -10450,15 +4893,7 @@ const pokemonsData = [
         name: "manaphy",
         id: 490,
         number: "490",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/490.png",
         pixelImage:
@@ -10468,15 +4903,7 @@ const pokemonsData = [
         name: "darkrai",
         id: 491,
         number: "491",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/491.png",
         pixelImage:
@@ -10486,15 +4913,7 @@ const pokemonsData = [
         name: "shaymin-land",
         id: 492,
         number: "492",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/492.png",
         pixelImage:
@@ -10504,15 +4923,7 @@ const pokemonsData = [
         name: "arceus",
         id: 493,
         number: "493",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/493.png",
         pixelImage:
@@ -10522,22 +4933,7 @@ const pokemonsData = [
         name: "victini",
         id: 494,
         number: "494",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["psychic", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/494.png",
         pixelImage:
@@ -10547,15 +4943,7 @@ const pokemonsData = [
         name: "snivy",
         id: 495,
         number: "495",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png",
         pixelImage:
@@ -10565,15 +4953,7 @@ const pokemonsData = [
         name: "servine",
         id: 496,
         number: "496",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/496.png",
         pixelImage:
@@ -10583,15 +4963,7 @@ const pokemonsData = [
         name: "serperior",
         id: 497,
         number: "497",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/497.png",
         pixelImage:
@@ -10601,15 +4973,7 @@ const pokemonsData = [
         name: "tepig",
         id: 498,
         number: "498",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/498.png",
         pixelImage:
@@ -10619,22 +4983,7 @@ const pokemonsData = [
         name: "pignite",
         id: 499,
         number: "499",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fire", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/499.png",
         pixelImage:
@@ -10644,22 +4993,7 @@ const pokemonsData = [
         name: "emboar",
         id: 500,
         number: "500",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fire", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/500.png",
         pixelImage:
@@ -10669,15 +5003,7 @@ const pokemonsData = [
         name: "oshawott",
         id: 501,
         number: "501",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/501.png",
         pixelImage:
@@ -10687,15 +5013,7 @@ const pokemonsData = [
         name: "dewott",
         id: 502,
         number: "502",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/502.png",
         pixelImage:
@@ -10705,15 +5023,7 @@ const pokemonsData = [
         name: "samurott",
         id: 503,
         number: "503",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/503.png",
         pixelImage:
@@ -10723,15 +5033,7 @@ const pokemonsData = [
         name: "patrat",
         id: 504,
         number: "504",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/504.png",
         pixelImage:
@@ -10741,15 +5043,7 @@ const pokemonsData = [
         name: "watchog",
         id: 505,
         number: "505",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/505.png",
         pixelImage:
@@ -10759,15 +5053,7 @@ const pokemonsData = [
         name: "lillipup",
         id: 506,
         number: "506",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/506.png",
         pixelImage:
@@ -10777,15 +5063,7 @@ const pokemonsData = [
         name: "herdier",
         id: 507,
         number: "507",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/507.png",
         pixelImage:
@@ -10795,15 +5073,7 @@ const pokemonsData = [
         name: "stoutland",
         id: 508,
         number: "508",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/508.png",
         pixelImage:
@@ -10813,15 +5083,7 @@ const pokemonsData = [
         name: "purrloin",
         id: 509,
         number: "509",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/509.png",
         pixelImage:
@@ -10831,15 +5093,7 @@ const pokemonsData = [
         name: "liepard",
         id: 510,
         number: "510",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/510.png",
         pixelImage:
@@ -10849,15 +5103,7 @@ const pokemonsData = [
         name: "pansage",
         id: 511,
         number: "511",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/511.png",
         pixelImage:
@@ -10867,15 +5113,7 @@ const pokemonsData = [
         name: "simisage",
         id: 512,
         number: "512",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/512.png",
         pixelImage:
@@ -10885,15 +5123,7 @@ const pokemonsData = [
         name: "pansear",
         id: 513,
         number: "513",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/513.png",
         pixelImage:
@@ -10903,15 +5133,7 @@ const pokemonsData = [
         name: "simisear",
         id: 514,
         number: "514",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/514.png",
         pixelImage:
@@ -10921,15 +5143,7 @@ const pokemonsData = [
         name: "panpour",
         id: 515,
         number: "515",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/515.png",
         pixelImage:
@@ -10939,15 +5153,7 @@ const pokemonsData = [
         name: "simipour",
         id: 516,
         number: "516",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/516.png",
         pixelImage:
@@ -10957,15 +5163,7 @@ const pokemonsData = [
         name: "munna",
         id: 517,
         number: "517",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/517.png",
         pixelImage:
@@ -10975,15 +5173,7 @@ const pokemonsData = [
         name: "musharna",
         id: 518,
         number: "518",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/518.png",
         pixelImage:
@@ -10993,22 +5183,7 @@ const pokemonsData = [
         name: "pidove",
         id: 519,
         number: "519",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/519.png",
         pixelImage:
@@ -11018,22 +5193,7 @@ const pokemonsData = [
         name: "tranquill",
         id: 520,
         number: "520",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/520.png",
         pixelImage:
@@ -11043,22 +5203,7 @@ const pokemonsData = [
         name: "unfezant",
         id: 521,
         number: "521",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/521.png",
         pixelImage:
@@ -11068,15 +5213,7 @@ const pokemonsData = [
         name: "blitzle",
         id: 522,
         number: "522",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/522.png",
         pixelImage:
@@ -11086,15 +5223,7 @@ const pokemonsData = [
         name: "zebstrika",
         id: 523,
         number: "523",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/523.png",
         pixelImage:
@@ -11104,15 +5233,7 @@ const pokemonsData = [
         name: "roggenrola",
         id: 524,
         number: "524",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/524.png",
         pixelImage:
@@ -11122,15 +5243,7 @@ const pokemonsData = [
         name: "boldore",
         id: 525,
         number: "525",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/525.png",
         pixelImage:
@@ -11140,15 +5253,7 @@ const pokemonsData = [
         name: "gigalith",
         id: 526,
         number: "526",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/526.png",
         pixelImage:
@@ -11158,22 +5263,7 @@ const pokemonsData = [
         name: "woobat",
         id: 527,
         number: "527",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["psychic", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/527.png",
         pixelImage:
@@ -11183,22 +5273,7 @@ const pokemonsData = [
         name: "swoobat",
         id: 528,
         number: "528",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["psychic", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/528.png",
         pixelImage:
@@ -11208,15 +5283,7 @@ const pokemonsData = [
         name: "drilbur",
         id: 529,
         number: "529",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/529.png",
         pixelImage:
@@ -11226,22 +5293,7 @@ const pokemonsData = [
         name: "excadrill",
         id: 530,
         number: "530",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["ground", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/530.png",
         pixelImage:
@@ -11251,15 +5303,7 @@ const pokemonsData = [
         name: "audino",
         id: 531,
         number: "531",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/531.png",
         pixelImage:
@@ -11269,15 +5313,7 @@ const pokemonsData = [
         name: "timburr",
         id: 532,
         number: "532",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/532.png",
         pixelImage:
@@ -11287,15 +5323,7 @@ const pokemonsData = [
         name: "gurdurr",
         id: 533,
         number: "533",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/533.png",
         pixelImage:
@@ -11305,15 +5333,7 @@ const pokemonsData = [
         name: "conkeldurr",
         id: 534,
         number: "534",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/534.png",
         pixelImage:
@@ -11323,15 +5343,7 @@ const pokemonsData = [
         name: "tympole",
         id: 535,
         number: "535",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/535.png",
         pixelImage:
@@ -11341,22 +5353,7 @@ const pokemonsData = [
         name: "palpitoad",
         id: 536,
         number: "536",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/536.png",
         pixelImage:
@@ -11366,22 +5363,7 @@ const pokemonsData = [
         name: "seismitoad",
         id: 537,
         number: "537",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["water", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/537.png",
         pixelImage:
@@ -11391,15 +5373,7 @@ const pokemonsData = [
         name: "throh",
         id: 538,
         number: "538",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/538.png",
         pixelImage:
@@ -11409,15 +5383,7 @@ const pokemonsData = [
         name: "sawk",
         id: 539,
         number: "539",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/539.png",
         pixelImage:
@@ -11427,22 +5393,7 @@ const pokemonsData = [
         name: "sewaddle",
         id: 540,
         number: "540",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["bug", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/540.png",
         pixelImage:
@@ -11452,22 +5403,7 @@ const pokemonsData = [
         name: "swadloon",
         id: 541,
         number: "541",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["bug", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/541.png",
         pixelImage:
@@ -11477,22 +5413,7 @@ const pokemonsData = [
         name: "leavanny",
         id: 542,
         number: "542",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["bug", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/542.png",
         pixelImage:
@@ -11502,22 +5423,7 @@ const pokemonsData = [
         name: "venipede",
         id: 543,
         number: "543",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/543.png",
         pixelImage:
@@ -11527,22 +5433,7 @@ const pokemonsData = [
         name: "whirlipede",
         id: 544,
         number: "544",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/544.png",
         pixelImage:
@@ -11552,22 +5443,7 @@ const pokemonsData = [
         name: "scolipede",
         id: 545,
         number: "545",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["bug", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/545.png",
         pixelImage:
@@ -11577,22 +5453,7 @@ const pokemonsData = [
         name: "cottonee",
         id: 546,
         number: "546",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["grass", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/546.png",
         pixelImage:
@@ -11602,22 +5463,7 @@ const pokemonsData = [
         name: "whimsicott",
         id: 547,
         number: "547",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["grass", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/547.png",
         pixelImage:
@@ -11627,15 +5473,7 @@ const pokemonsData = [
         name: "petilil",
         id: 548,
         number: "548",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/548.png",
         pixelImage:
@@ -11645,15 +5483,7 @@ const pokemonsData = [
         name: "lilligant",
         id: 549,
         number: "549",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/549.png",
         pixelImage:
@@ -11663,15 +5493,7 @@ const pokemonsData = [
         name: "basculin-red-striped",
         id: 550,
         number: "550",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/550.png",
         pixelImage:
@@ -11681,22 +5503,7 @@ const pokemonsData = [
         name: "sandile",
         id: 551,
         number: "551",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["ground", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/551.png",
         pixelImage:
@@ -11706,22 +5513,7 @@ const pokemonsData = [
         name: "krokorok",
         id: 552,
         number: "552",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["ground", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/552.png",
         pixelImage:
@@ -11731,22 +5523,7 @@ const pokemonsData = [
         name: "krookodile",
         id: 553,
         number: "553",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["ground", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/553.png",
         pixelImage:
@@ -11756,15 +5533,7 @@ const pokemonsData = [
         name: "darumaka",
         id: 554,
         number: "554",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/554.png",
         pixelImage:
@@ -11774,15 +5543,7 @@ const pokemonsData = [
         name: "darmanitan-standard",
         id: 555,
         number: "555",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/555.png",
         pixelImage:
@@ -11792,15 +5553,7 @@ const pokemonsData = [
         name: "maractus",
         id: 556,
         number: "556",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/556.png",
         pixelImage:
@@ -11810,22 +5563,7 @@ const pokemonsData = [
         name: "dwebble",
         id: 557,
         number: "557",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["bug", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/557.png",
         pixelImage:
@@ -11835,22 +5573,7 @@ const pokemonsData = [
         name: "crustle",
         id: 558,
         number: "558",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["bug", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/558.png",
         pixelImage:
@@ -11860,22 +5583,7 @@ const pokemonsData = [
         name: "scraggy",
         id: 559,
         number: "559",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["dark", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/559.png",
         pixelImage:
@@ -11885,22 +5593,7 @@ const pokemonsData = [
         name: "scrafty",
         id: 560,
         number: "560",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["dark", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/560.png",
         pixelImage:
@@ -11910,22 +5603,7 @@ const pokemonsData = [
         name: "sigilyph",
         id: 561,
         number: "561",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["psychic", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/561.png",
         pixelImage:
@@ -11935,15 +5613,7 @@ const pokemonsData = [
         name: "yamask",
         id: 562,
         number: "562",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/562.png",
         pixelImage:
@@ -11953,15 +5623,7 @@ const pokemonsData = [
         name: "cofagrigus",
         id: 563,
         number: "563",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/563.png",
         pixelImage:
@@ -11971,22 +5633,7 @@ const pokemonsData = [
         name: "tirtouga",
         id: 564,
         number: "564",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["water", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/564.png",
         pixelImage:
@@ -11996,22 +5643,7 @@ const pokemonsData = [
         name: "carracosta",
         id: 565,
         number: "565",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["water", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/565.png",
         pixelImage:
@@ -12021,22 +5653,7 @@ const pokemonsData = [
         name: "archen",
         id: 566,
         number: "566",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["rock", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/566.png",
         pixelImage:
@@ -12046,22 +5663,7 @@ const pokemonsData = [
         name: "archeops",
         id: 567,
         number: "567",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["rock", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/567.png",
         pixelImage:
@@ -12071,15 +5673,7 @@ const pokemonsData = [
         name: "trubbish",
         id: 568,
         number: "568",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/568.png",
         pixelImage:
@@ -12089,15 +5683,7 @@ const pokemonsData = [
         name: "garbodor",
         id: 569,
         number: "569",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/569.png",
         pixelImage:
@@ -12107,15 +5693,7 @@ const pokemonsData = [
         name: "zorua",
         id: 570,
         number: "570",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/570.png",
         pixelImage:
@@ -12125,15 +5703,7 @@ const pokemonsData = [
         name: "zoroark",
         id: 571,
         number: "571",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/571.png",
         pixelImage:
@@ -12143,15 +5713,7 @@ const pokemonsData = [
         name: "minccino",
         id: 572,
         number: "572",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/572.png",
         pixelImage:
@@ -12161,15 +5723,7 @@ const pokemonsData = [
         name: "cinccino",
         id: 573,
         number: "573",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/573.png",
         pixelImage:
@@ -12179,15 +5733,7 @@ const pokemonsData = [
         name: "gothita",
         id: 574,
         number: "574",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/574.png",
         pixelImage:
@@ -12197,15 +5743,7 @@ const pokemonsData = [
         name: "gothorita",
         id: 575,
         number: "575",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/575.png",
         pixelImage:
@@ -12215,15 +5753,7 @@ const pokemonsData = [
         name: "gothitelle",
         id: 576,
         number: "576",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/576.png",
         pixelImage:
@@ -12233,15 +5763,7 @@ const pokemonsData = [
         name: "solosis",
         id: 577,
         number: "577",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/577.png",
         pixelImage:
@@ -12251,15 +5773,7 @@ const pokemonsData = [
         name: "duosion",
         id: 578,
         number: "578",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/578.png",
         pixelImage:
@@ -12269,15 +5783,7 @@ const pokemonsData = [
         name: "reuniclus",
         id: 579,
         number: "579",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/579.png",
         pixelImage:
@@ -12287,22 +5793,7 @@ const pokemonsData = [
         name: "ducklett",
         id: 580,
         number: "580",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["water", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/580.png",
         pixelImage:
@@ -12312,22 +5803,7 @@ const pokemonsData = [
         name: "swanna",
         id: 581,
         number: "581",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["water", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/581.png",
         pixelImage:
@@ -12337,15 +5813,7 @@ const pokemonsData = [
         name: "vanillite",
         id: 582,
         number: "582",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/582.png",
         pixelImage:
@@ -12355,15 +5823,7 @@ const pokemonsData = [
         name: "vanillish",
         id: 583,
         number: "583",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/583.png",
         pixelImage:
@@ -12373,15 +5833,7 @@ const pokemonsData = [
         name: "vanilluxe",
         id: 584,
         number: "584",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/584.png",
         pixelImage:
@@ -12391,22 +5843,7 @@ const pokemonsData = [
         name: "deerling",
         id: 585,
         number: "585",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["normal", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/585.png",
         pixelImage:
@@ -12416,22 +5853,7 @@ const pokemonsData = [
         name: "sawsbuck",
         id: 586,
         number: "586",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["normal", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/586.png",
         pixelImage:
@@ -12441,22 +5863,7 @@ const pokemonsData = [
         name: "emolga",
         id: 587,
         number: "587",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["electric", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/587.png",
         pixelImage:
@@ -12466,15 +5873,7 @@ const pokemonsData = [
         name: "karrablast",
         id: 588,
         number: "588",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/588.png",
         pixelImage:
@@ -12484,22 +5883,7 @@ const pokemonsData = [
         name: "escavalier",
         id: 589,
         number: "589",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["bug", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/589.png",
         pixelImage:
@@ -12509,22 +5893,7 @@ const pokemonsData = [
         name: "foongus",
         id: 590,
         number: "590",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/590.png",
         pixelImage:
@@ -12534,22 +5903,7 @@ const pokemonsData = [
         name: "amoonguss",
         id: 591,
         number: "591",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["grass", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/591.png",
         pixelImage:
@@ -12559,22 +5913,7 @@ const pokemonsData = [
         name: "frillish",
         id: 592,
         number: "592",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["water", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/592.png",
         pixelImage:
@@ -12584,22 +5923,7 @@ const pokemonsData = [
         name: "jellicent",
         id: 593,
         number: "593",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["water", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/593.png",
         pixelImage:
@@ -12609,15 +5933,7 @@ const pokemonsData = [
         name: "alomomola",
         id: 594,
         number: "594",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/594.png",
         pixelImage:
@@ -12627,22 +5943,7 @@ const pokemonsData = [
         name: "joltik",
         id: 595,
         number: "595",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["bug", "electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/595.png",
         pixelImage:
@@ -12652,22 +5953,7 @@ const pokemonsData = [
         name: "galvantula",
         id: 596,
         number: "596",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["bug", "electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/596.png",
         pixelImage:
@@ -12677,22 +5963,7 @@ const pokemonsData = [
         name: "ferroseed",
         id: 597,
         number: "597",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["grass", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/597.png",
         pixelImage:
@@ -12702,22 +5973,7 @@ const pokemonsData = [
         name: "ferrothorn",
         id: 598,
         number: "598",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["grass", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/598.png",
         pixelImage:
@@ -12727,15 +5983,7 @@ const pokemonsData = [
         name: "klink",
         id: 599,
         number: "599",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/599.png",
         pixelImage:
@@ -12745,15 +5993,7 @@ const pokemonsData = [
         name: "klang",
         id: 600,
         number: "600",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/600.png",
         pixelImage:
@@ -12763,15 +6003,7 @@ const pokemonsData = [
         name: "klinklang",
         id: 601,
         number: "601",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/601.png",
         pixelImage:
@@ -12781,15 +6013,7 @@ const pokemonsData = [
         name: "tynamo",
         id: 602,
         number: "602",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/602.png",
         pixelImage:
@@ -12799,15 +6023,7 @@ const pokemonsData = [
         name: "eelektrik",
         id: 603,
         number: "603",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/603.png",
         pixelImage:
@@ -12817,15 +6033,7 @@ const pokemonsData = [
         name: "eelektross",
         id: 604,
         number: "604",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/604.png",
         pixelImage:
@@ -12835,15 +6043,7 @@ const pokemonsData = [
         name: "elgyem",
         id: 605,
         number: "605",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/605.png",
         pixelImage:
@@ -12853,15 +6053,7 @@ const pokemonsData = [
         name: "beheeyem",
         id: 606,
         number: "606",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/606.png",
         pixelImage:
@@ -12871,22 +6063,7 @@ const pokemonsData = [
         name: "litwick",
         id: 607,
         number: "607",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["ghost", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/607.png",
         pixelImage:
@@ -12896,22 +6073,7 @@ const pokemonsData = [
         name: "lampent",
         id: 608,
         number: "608",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["ghost", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/608.png",
         pixelImage:
@@ -12921,22 +6083,7 @@ const pokemonsData = [
         name: "chandelure",
         id: 609,
         number: "609",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["ghost", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/609.png",
         pixelImage:
@@ -12946,15 +6093,7 @@ const pokemonsData = [
         name: "axew",
         id: 610,
         number: "610",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/610.png",
         pixelImage:
@@ -12964,15 +6103,7 @@ const pokemonsData = [
         name: "fraxure",
         id: 611,
         number: "611",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/611.png",
         pixelImage:
@@ -12982,15 +6113,7 @@ const pokemonsData = [
         name: "haxorus",
         id: 612,
         number: "612",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/612.png",
         pixelImage:
@@ -13000,15 +6123,7 @@ const pokemonsData = [
         name: "cubchoo",
         id: 613,
         number: "613",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/613.png",
         pixelImage:
@@ -13018,15 +6133,7 @@ const pokemonsData = [
         name: "beartic",
         id: 614,
         number: "614",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/614.png",
         pixelImage:
@@ -13036,15 +6143,7 @@ const pokemonsData = [
         name: "cryogonal",
         id: 615,
         number: "615",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/615.png",
         pixelImage:
@@ -13054,15 +6153,7 @@ const pokemonsData = [
         name: "shelmet",
         id: 616,
         number: "616",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/616.png",
         pixelImage:
@@ -13072,15 +6163,7 @@ const pokemonsData = [
         name: "accelgor",
         id: 617,
         number: "617",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/617.png",
         pixelImage:
@@ -13090,22 +6173,7 @@ const pokemonsData = [
         name: "stunfisk",
         id: 618,
         number: "618",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["ground", "electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/618.png",
         pixelImage:
@@ -13115,15 +6183,7 @@ const pokemonsData = [
         name: "mienfoo",
         id: 619,
         number: "619",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/619.png",
         pixelImage:
@@ -13133,15 +6193,7 @@ const pokemonsData = [
         name: "mienshao",
         id: 620,
         number: "620",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/620.png",
         pixelImage:
@@ -13151,15 +6203,7 @@ const pokemonsData = [
         name: "druddigon",
         id: 621,
         number: "621",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/621.png",
         pixelImage:
@@ -13169,22 +6213,7 @@ const pokemonsData = [
         name: "golett",
         id: 622,
         number: "622",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ground", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/622.png",
         pixelImage:
@@ -13194,22 +6223,7 @@ const pokemonsData = [
         name: "golurk",
         id: 623,
         number: "623",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ground", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/623.png",
         pixelImage:
@@ -13219,22 +6233,7 @@ const pokemonsData = [
         name: "pawniard",
         id: 624,
         number: "624",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["dark", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/624.png",
         pixelImage:
@@ -13244,22 +6243,7 @@ const pokemonsData = [
         name: "bisharp",
         id: 625,
         number: "625",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["dark", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/625.png",
         pixelImage:
@@ -13269,15 +6253,7 @@ const pokemonsData = [
         name: "bouffalant",
         id: 626,
         number: "626",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/626.png",
         pixelImage:
@@ -13287,22 +6263,7 @@ const pokemonsData = [
         name: "rufflet",
         id: 627,
         number: "627",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/627.png",
         pixelImage:
@@ -13312,22 +6273,7 @@ const pokemonsData = [
         name: "braviary",
         id: 628,
         number: "628",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/628.png",
         pixelImage:
@@ -13337,22 +6283,7 @@ const pokemonsData = [
         name: "vullaby",
         id: 629,
         number: "629",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dark", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/629.png",
         pixelImage:
@@ -13362,22 +6293,7 @@ const pokemonsData = [
         name: "mandibuzz",
         id: 630,
         number: "630",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dark", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/630.png",
         pixelImage:
@@ -13387,15 +6303,7 @@ const pokemonsData = [
         name: "heatmor",
         id: 631,
         number: "631",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/631.png",
         pixelImage:
@@ -13405,22 +6313,7 @@ const pokemonsData = [
         name: "durant",
         id: 632,
         number: "632",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["bug", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/632.png",
         pixelImage:
@@ -13430,22 +6323,7 @@ const pokemonsData = [
         name: "deino",
         id: 633,
         number: "633",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dark", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/633.png",
         pixelImage:
@@ -13455,22 +6333,7 @@ const pokemonsData = [
         name: "zweilous",
         id: 634,
         number: "634",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dark", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/634.png",
         pixelImage:
@@ -13480,22 +6343,7 @@ const pokemonsData = [
         name: "hydreigon",
         id: 635,
         number: "635",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dark", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/635.png",
         pixelImage:
@@ -13505,22 +6353,7 @@ const pokemonsData = [
         name: "larvesta",
         id: 636,
         number: "636",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["bug", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/636.png",
         pixelImage:
@@ -13530,22 +6363,7 @@ const pokemonsData = [
         name: "volcarona",
         id: 637,
         number: "637",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["bug", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/637.png",
         pixelImage:
@@ -13555,22 +6373,7 @@ const pokemonsData = [
         name: "cobalion",
         id: 638,
         number: "638",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["steel", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/638.png",
         pixelImage:
@@ -13580,22 +6383,7 @@ const pokemonsData = [
         name: "terrakion",
         id: 639,
         number: "639",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["rock", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/639.png",
         pixelImage:
@@ -13605,22 +6393,7 @@ const pokemonsData = [
         name: "virizion",
         id: 640,
         number: "640",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["grass", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/640.png",
         pixelImage:
@@ -13630,15 +6403,7 @@ const pokemonsData = [
         name: "tornadus-incarnate",
         id: 641,
         number: "641",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/641.png",
         pixelImage:
@@ -13648,22 +6413,7 @@ const pokemonsData = [
         name: "thundurus-incarnate",
         id: 642,
         number: "642",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["electric", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/642.png",
         pixelImage:
@@ -13673,22 +6423,7 @@ const pokemonsData = [
         name: "reshiram",
         id: 643,
         number: "643",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["dragon", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/643.png",
         pixelImage:
@@ -13698,22 +6433,7 @@ const pokemonsData = [
         name: "zekrom",
         id: 644,
         number: "644",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["dragon", "electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/644.png",
         pixelImage:
@@ -13723,22 +6443,7 @@ const pokemonsData = [
         name: "landorus-incarnate",
         id: 645,
         number: "645",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["ground", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/645.png",
         pixelImage:
@@ -13748,22 +6453,7 @@ const pokemonsData = [
         name: "kyurem",
         id: 646,
         number: "646",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["dragon", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/646.png",
         pixelImage:
@@ -13773,22 +6463,7 @@ const pokemonsData = [
         name: "keldeo-ordinary",
         id: 647,
         number: "647",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["water", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/647.png",
         pixelImage:
@@ -13798,22 +6473,7 @@ const pokemonsData = [
         name: "meloetta-aria",
         id: 648,
         number: "648",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["normal", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/648.png",
         pixelImage:
@@ -13823,22 +6483,7 @@ const pokemonsData = [
         name: "genesect",
         id: 649,
         number: "649",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["bug", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/649.png",
         pixelImage:
@@ -13848,15 +6493,7 @@ const pokemonsData = [
         name: "chespin",
         id: 650,
         number: "650",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/650.png",
         pixelImage:
@@ -13866,15 +6503,7 @@ const pokemonsData = [
         name: "quilladin",
         id: 651,
         number: "651",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/651.png",
         pixelImage:
@@ -13884,22 +6513,7 @@ const pokemonsData = [
         name: "chesnaught",
         id: 652,
         number: "652",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["grass", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/652.png",
         pixelImage:
@@ -13909,15 +6523,7 @@ const pokemonsData = [
         name: "fennekin",
         id: 653,
         number: "653",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/653.png",
         pixelImage:
@@ -13927,15 +6533,7 @@ const pokemonsData = [
         name: "braixen",
         id: 654,
         number: "654",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/654.png",
         pixelImage:
@@ -13945,22 +6543,7 @@ const pokemonsData = [
         name: "delphox",
         id: 655,
         number: "655",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["fire", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/655.png",
         pixelImage:
@@ -13970,15 +6553,7 @@ const pokemonsData = [
         name: "froakie",
         id: 656,
         number: "656",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/656.png",
         pixelImage:
@@ -13988,15 +6563,7 @@ const pokemonsData = [
         name: "frogadier",
         id: 657,
         number: "657",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/657.png",
         pixelImage:
@@ -14006,22 +6573,7 @@ const pokemonsData = [
         name: "greninja",
         id: 658,
         number: "658",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["water", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/658.png",
         pixelImage:
@@ -14031,15 +6583,7 @@ const pokemonsData = [
         name: "bunnelby",
         id: 659,
         number: "659",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/659.png",
         pixelImage:
@@ -14049,22 +6593,7 @@ const pokemonsData = [
         name: "diggersby",
         id: 660,
         number: "660",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["normal", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/660.png",
         pixelImage:
@@ -14074,22 +6603,7 @@ const pokemonsData = [
         name: "fletchling",
         id: 661,
         number: "661",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/661.png",
         pixelImage:
@@ -14099,22 +6613,7 @@ const pokemonsData = [
         name: "fletchinder",
         id: 662,
         number: "662",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fire", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/662.png",
         pixelImage:
@@ -14124,22 +6623,7 @@ const pokemonsData = [
         name: "talonflame",
         id: 663,
         number: "663",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fire", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/663.png",
         pixelImage:
@@ -14149,15 +6633,7 @@ const pokemonsData = [
         name: "scatterbug",
         id: 664,
         number: "664",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/664.png",
         pixelImage:
@@ -14167,15 +6643,7 @@ const pokemonsData = [
         name: "spewpa",
         id: 665,
         number: "665",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/665.png",
         pixelImage:
@@ -14185,22 +6653,7 @@ const pokemonsData = [
         name: "vivillon",
         id: 666,
         number: "666",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["bug", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/666.png",
         pixelImage:
@@ -14210,22 +6663,7 @@ const pokemonsData = [
         name: "litleo",
         id: 667,
         number: "667",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["fire", "normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/667.png",
         pixelImage:
@@ -14235,22 +6673,7 @@ const pokemonsData = [
         name: "pyroar",
         id: 668,
         number: "668",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["fire", "normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/668.png",
         pixelImage:
@@ -14260,15 +6683,7 @@ const pokemonsData = [
         name: "flabebe",
         id: 669,
         number: "669",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/669.png",
         pixelImage:
@@ -14278,15 +6693,7 @@ const pokemonsData = [
         name: "floette",
         id: 670,
         number: "670",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/670.png",
         pixelImage:
@@ -14296,15 +6703,7 @@ const pokemonsData = [
         name: "florges",
         id: 671,
         number: "671",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/671.png",
         pixelImage:
@@ -14314,15 +6713,7 @@ const pokemonsData = [
         name: "skiddo",
         id: 672,
         number: "672",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/672.png",
         pixelImage:
@@ -14332,15 +6723,7 @@ const pokemonsData = [
         name: "gogoat",
         id: 673,
         number: "673",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/673.png",
         pixelImage:
@@ -14350,15 +6733,7 @@ const pokemonsData = [
         name: "pancham",
         id: 674,
         number: "674",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/674.png",
         pixelImage:
@@ -14368,22 +6743,7 @@ const pokemonsData = [
         name: "pangoro",
         id: 675,
         number: "675",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["fighting", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/675.png",
         pixelImage:
@@ -14393,15 +6753,7 @@ const pokemonsData = [
         name: "furfrou",
         id: 676,
         number: "676",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/676.png",
         pixelImage:
@@ -14411,15 +6763,7 @@ const pokemonsData = [
         name: "espurr",
         id: 677,
         number: "677",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/677.png",
         pixelImage:
@@ -14429,15 +6773,7 @@ const pokemonsData = [
         name: "meowstic-male",
         id: 678,
         number: "678",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/678.png",
         pixelImage:
@@ -14447,22 +6783,7 @@ const pokemonsData = [
         name: "honedge",
         id: 679,
         number: "679",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["steel", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/679.png",
         pixelImage:
@@ -14472,22 +6793,7 @@ const pokemonsData = [
         name: "doublade",
         id: 680,
         number: "680",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["steel", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/680.png",
         pixelImage:
@@ -14497,22 +6803,7 @@ const pokemonsData = [
         name: "aegislash-shield",
         id: 681,
         number: "681",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["steel", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/681.png",
         pixelImage:
@@ -14522,15 +6813,7 @@ const pokemonsData = [
         name: "spritzee",
         id: 682,
         number: "682",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/682.png",
         pixelImage:
@@ -14540,15 +6823,7 @@ const pokemonsData = [
         name: "aromatisse",
         id: 683,
         number: "683",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/683.png",
         pixelImage:
@@ -14558,15 +6833,7 @@ const pokemonsData = [
         name: "swirlix",
         id: 684,
         number: "684",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/684.png",
         pixelImage:
@@ -14576,15 +6843,7 @@ const pokemonsData = [
         name: "slurpuff",
         id: 685,
         number: "685",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/685.png",
         pixelImage:
@@ -14594,22 +6853,7 @@ const pokemonsData = [
         name: "inkay",
         id: 686,
         number: "686",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["dark", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/686.png",
         pixelImage:
@@ -14619,22 +6863,7 @@ const pokemonsData = [
         name: "malamar",
         id: 687,
         number: "687",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["dark", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/687.png",
         pixelImage:
@@ -14644,22 +6873,7 @@ const pokemonsData = [
         name: "binacle",
         id: 688,
         number: "688",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["rock", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/688.png",
         pixelImage:
@@ -14669,22 +6883,7 @@ const pokemonsData = [
         name: "barbaracle",
         id: 689,
         number: "689",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["rock", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/689.png",
         pixelImage:
@@ -14694,22 +6893,7 @@ const pokemonsData = [
         name: "skrelp",
         id: 690,
         number: "690",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["poison", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/690.png",
         pixelImage:
@@ -14719,22 +6903,7 @@ const pokemonsData = [
         name: "dragalge",
         id: 691,
         number: "691",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["poison", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/691.png",
         pixelImage:
@@ -14744,15 +6913,7 @@ const pokemonsData = [
         name: "clauncher",
         id: 692,
         number: "692",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/692.png",
         pixelImage:
@@ -14762,15 +6923,7 @@ const pokemonsData = [
         name: "clawitzer",
         id: 693,
         number: "693",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/693.png",
         pixelImage:
@@ -14780,22 +6933,7 @@ const pokemonsData = [
         name: "helioptile",
         id: 694,
         number: "694",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["electric", "normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/694.png",
         pixelImage:
@@ -14805,22 +6943,7 @@ const pokemonsData = [
         name: "heliolisk",
         id: 695,
         number: "695",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["electric", "normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/695.png",
         pixelImage:
@@ -14830,22 +6953,7 @@ const pokemonsData = [
         name: "tyrunt",
         id: 696,
         number: "696",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["rock", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/696.png",
         pixelImage:
@@ -14855,22 +6963,7 @@ const pokemonsData = [
         name: "tyrantrum",
         id: 697,
         number: "697",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["rock", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/697.png",
         pixelImage:
@@ -14880,22 +6973,7 @@ const pokemonsData = [
         name: "amaura",
         id: 698,
         number: "698",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["rock", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/698.png",
         pixelImage:
@@ -14905,22 +6983,7 @@ const pokemonsData = [
         name: "aurorus",
         id: 699,
         number: "699",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["rock", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/699.png",
         pixelImage:
@@ -14930,15 +6993,7 @@ const pokemonsData = [
         name: "sylveon",
         id: 700,
         number: "700",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/700.png",
         pixelImage:
@@ -14948,22 +7003,7 @@ const pokemonsData = [
         name: "hawlucha",
         id: 701,
         number: "701",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fighting", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/701.png",
         pixelImage:
@@ -14973,22 +7013,7 @@ const pokemonsData = [
         name: "dedenne",
         id: 702,
         number: "702",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["electric", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/702.png",
         pixelImage:
@@ -14998,22 +7023,7 @@ const pokemonsData = [
         name: "carbink",
         id: 703,
         number: "703",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["rock", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/703.png",
         pixelImage:
@@ -15023,15 +7033,7 @@ const pokemonsData = [
         name: "goomy",
         id: 704,
         number: "704",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/704.png",
         pixelImage:
@@ -15041,15 +7043,7 @@ const pokemonsData = [
         name: "sliggoo",
         id: 705,
         number: "705",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/705.png",
         pixelImage:
@@ -15059,15 +7053,7 @@ const pokemonsData = [
         name: "goodra",
         id: 706,
         number: "706",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/706.png",
         pixelImage:
@@ -15077,22 +7063,7 @@ const pokemonsData = [
         name: "klefki",
         id: 707,
         number: "707",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["steel", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/707.png",
         pixelImage:
@@ -15102,22 +7073,7 @@ const pokemonsData = [
         name: "phantump",
         id: 708,
         number: "708",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["ghost", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/708.png",
         pixelImage:
@@ -15127,22 +7083,7 @@ const pokemonsData = [
         name: "trevenant",
         id: 709,
         number: "709",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["ghost", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/709.png",
         pixelImage:
@@ -15152,22 +7093,7 @@ const pokemonsData = [
         name: "pumpkaboo-average",
         id: 710,
         number: "710",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["ghost", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/710.png",
         pixelImage:
@@ -15177,22 +7103,7 @@ const pokemonsData = [
         name: "gourgeist-average",
         id: 711,
         number: "711",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["ghost", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/711.png",
         pixelImage:
@@ -15202,15 +7113,7 @@ const pokemonsData = [
         name: "bergmite",
         id: 712,
         number: "712",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/712.png",
         pixelImage:
@@ -15220,15 +7123,7 @@ const pokemonsData = [
         name: "avalugg",
         id: 713,
         number: "713",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/713.png",
         pixelImage:
@@ -15238,22 +7133,7 @@ const pokemonsData = [
         name: "noibat",
         id: 714,
         number: "714",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["flying", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/714.png",
         pixelImage:
@@ -15263,22 +7143,7 @@ const pokemonsData = [
         name: "noivern",
         id: 715,
         number: "715",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["flying", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/715.png",
         pixelImage:
@@ -15288,15 +7153,7 @@ const pokemonsData = [
         name: "xerneas",
         id: 716,
         number: "716",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/716.png",
         pixelImage:
@@ -15306,22 +7163,7 @@ const pokemonsData = [
         name: "yveltal",
         id: 717,
         number: "717",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["dark", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/717.png",
         pixelImage:
@@ -15331,22 +7173,7 @@ const pokemonsData = [
         name: "zygarde-50",
         id: 718,
         number: "718",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["dragon", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/718.png",
         pixelImage:
@@ -15356,22 +7183,7 @@ const pokemonsData = [
         name: "diancie",
         id: 719,
         number: "719",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["rock", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/719.png",
         pixelImage:
@@ -15381,22 +7193,7 @@ const pokemonsData = [
         name: "hoopa",
         id: 720,
         number: "720",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["psychic", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/720.png",
         pixelImage:
@@ -15406,22 +7203,7 @@ const pokemonsData = [
         name: "volcanion",
         id: 721,
         number: "721",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["fire", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/721.png",
         pixelImage:
@@ -15431,22 +7213,7 @@ const pokemonsData = [
         name: "rowlet",
         id: 722,
         number: "722",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["grass", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/722.png",
         pixelImage:
@@ -15456,22 +7223,7 @@ const pokemonsData = [
         name: "dartrix",
         id: 723,
         number: "723",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["grass", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/723.png",
         pixelImage:
@@ -15481,22 +7233,7 @@ const pokemonsData = [
         name: "decidueye",
         id: 724,
         number: "724",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["grass", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/724.png",
         pixelImage:
@@ -15506,15 +7243,7 @@ const pokemonsData = [
         name: "litten",
         id: 725,
         number: "725",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/725.png",
         pixelImage:
@@ -15524,15 +7253,7 @@ const pokemonsData = [
         name: "torracat",
         id: 726,
         number: "726",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/726.png",
         pixelImage:
@@ -15542,22 +7263,7 @@ const pokemonsData = [
         name: "incineroar",
         id: 727,
         number: "727",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["fire", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/727.png",
         pixelImage:
@@ -15567,15 +7273,7 @@ const pokemonsData = [
         name: "popplio",
         id: 728,
         number: "728",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/728.png",
         pixelImage:
@@ -15585,15 +7283,7 @@ const pokemonsData = [
         name: "brionne",
         id: 729,
         number: "729",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/729.png",
         pixelImage:
@@ -15603,22 +7293,7 @@ const pokemonsData = [
         name: "primarina",
         id: 730,
         number: "730",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["water", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/730.png",
         pixelImage:
@@ -15628,22 +7303,7 @@ const pokemonsData = [
         name: "pikipek",
         id: 731,
         number: "731",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/731.png",
         pixelImage:
@@ -15653,22 +7313,7 @@ const pokemonsData = [
         name: "trumbeak",
         id: 732,
         number: "732",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/732.png",
         pixelImage:
@@ -15678,22 +7323,7 @@ const pokemonsData = [
         name: "toucannon",
         id: 733,
         number: "733",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["normal", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/733.png",
         pixelImage:
@@ -15703,15 +7333,7 @@ const pokemonsData = [
         name: "yungoos",
         id: 734,
         number: "734",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/734.png",
         pixelImage:
@@ -15721,15 +7343,7 @@ const pokemonsData = [
         name: "gumshoos",
         id: 735,
         number: "735",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/735.png",
         pixelImage:
@@ -15739,15 +7353,7 @@ const pokemonsData = [
         name: "grubbin",
         id: 736,
         number: "736",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/736.png",
         pixelImage:
@@ -15757,22 +7363,7 @@ const pokemonsData = [
         name: "charjabug",
         id: 737,
         number: "737",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["bug", "electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/737.png",
         pixelImage:
@@ -15782,22 +7373,7 @@ const pokemonsData = [
         name: "vikavolt",
         id: 738,
         number: "738",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["bug", "electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/738.png",
         pixelImage:
@@ -15807,15 +7383,7 @@ const pokemonsData = [
         name: "crabrawler",
         id: 739,
         number: "739",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/739.png",
         pixelImage:
@@ -15825,22 +7393,7 @@ const pokemonsData = [
         name: "crabominable",
         id: 740,
         number: "740",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["fighting", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/740.png",
         pixelImage:
@@ -15850,22 +7403,7 @@ const pokemonsData = [
         name: "oricorio-baile",
         id: 741,
         number: "741",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fire", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/741.png",
         pixelImage:
@@ -15875,22 +7413,7 @@ const pokemonsData = [
         name: "cutiefly",
         id: 742,
         number: "742",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["bug", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/742.png",
         pixelImage:
@@ -15900,22 +7423,7 @@ const pokemonsData = [
         name: "ribombee",
         id: 743,
         number: "743",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["bug", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/743.png",
         pixelImage:
@@ -15925,15 +7433,7 @@ const pokemonsData = [
         name: "rockruff",
         id: 744,
         number: "744",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/744.png",
         pixelImage:
@@ -15943,15 +7443,7 @@ const pokemonsData = [
         name: "lycanroc-midday",
         id: 745,
         number: "745",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/745.png",
         pixelImage:
@@ -15961,15 +7453,7 @@ const pokemonsData = [
         name: "wishiwashi-solo",
         id: 746,
         number: "746",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/746.png",
         pixelImage:
@@ -15979,22 +7463,7 @@ const pokemonsData = [
         name: "mareanie",
         id: 747,
         number: "747",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["poison", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/747.png",
         pixelImage:
@@ -16004,22 +7473,7 @@ const pokemonsData = [
         name: "toxapex",
         id: 748,
         number: "748",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["poison", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/748.png",
         pixelImage:
@@ -16029,15 +7483,7 @@ const pokemonsData = [
         name: "mudbray",
         id: 749,
         number: "749",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/749.png",
         pixelImage:
@@ -16047,15 +7493,7 @@ const pokemonsData = [
         name: "mudsdale",
         id: 750,
         number: "750",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/750.png",
         pixelImage:
@@ -16065,22 +7503,7 @@ const pokemonsData = [
         name: "dewpider",
         id: 751,
         number: "751",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["water", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/751.png",
         pixelImage:
@@ -16090,22 +7513,7 @@ const pokemonsData = [
         name: "araquanid",
         id: 752,
         number: "752",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["water", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/752.png",
         pixelImage:
@@ -16115,15 +7523,7 @@ const pokemonsData = [
         name: "fomantis",
         id: 753,
         number: "753",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/753.png",
         pixelImage:
@@ -16133,15 +7533,7 @@ const pokemonsData = [
         name: "lurantis",
         id: 754,
         number: "754",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/754.png",
         pixelImage:
@@ -16151,22 +7543,7 @@ const pokemonsData = [
         name: "morelull",
         id: 755,
         number: "755",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["grass", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/755.png",
         pixelImage:
@@ -16176,22 +7553,7 @@ const pokemonsData = [
         name: "shiinotic",
         id: 756,
         number: "756",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["grass", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/756.png",
         pixelImage:
@@ -16201,22 +7563,7 @@ const pokemonsData = [
         name: "salandit",
         id: 757,
         number: "757",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["poison", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/757.png",
         pixelImage:
@@ -16226,22 +7573,7 @@ const pokemonsData = [
         name: "salazzle",
         id: 758,
         number: "758",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["poison", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/758.png",
         pixelImage:
@@ -16251,22 +7583,7 @@ const pokemonsData = [
         name: "stufful",
         id: 759,
         number: "759",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["normal", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/759.png",
         pixelImage:
@@ -16276,22 +7593,7 @@ const pokemonsData = [
         name: "bewear",
         id: 760,
         number: "760",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["normal", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/760.png",
         pixelImage:
@@ -16301,15 +7603,7 @@ const pokemonsData = [
         name: "bounsweet",
         id: 761,
         number: "761",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/761.png",
         pixelImage:
@@ -16319,15 +7613,7 @@ const pokemonsData = [
         name: "steenee",
         id: 762,
         number: "762",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/762.png",
         pixelImage:
@@ -16337,15 +7623,7 @@ const pokemonsData = [
         name: "tsareena",
         id: 763,
         number: "763",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/763.png",
         pixelImage:
@@ -16355,15 +7633,7 @@ const pokemonsData = [
         name: "comfey",
         id: 764,
         number: "764",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/764.png",
         pixelImage:
@@ -16373,22 +7643,7 @@ const pokemonsData = [
         name: "oranguru",
         id: 765,
         number: "765",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["normal", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/765.png",
         pixelImage:
@@ -16398,15 +7653,7 @@ const pokemonsData = [
         name: "passimian",
         id: 766,
         number: "766",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/766.png",
         pixelImage:
@@ -16416,22 +7663,7 @@ const pokemonsData = [
         name: "wimpod",
         id: 767,
         number: "767",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["bug", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/767.png",
         pixelImage:
@@ -16441,22 +7673,7 @@ const pokemonsData = [
         name: "golisopod",
         id: 768,
         number: "768",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["bug", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/768.png",
         pixelImage:
@@ -16466,22 +7683,7 @@ const pokemonsData = [
         name: "sandygast",
         id: 769,
         number: "769",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ghost", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/769.png",
         pixelImage:
@@ -16491,22 +7693,7 @@ const pokemonsData = [
         name: "palossand",
         id: 770,
         number: "770",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ghost", "ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/770.png",
         pixelImage:
@@ -16516,15 +7703,7 @@ const pokemonsData = [
         name: "pyukumuku",
         id: 771,
         number: "771",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/771.png",
         pixelImage:
@@ -16534,15 +7713,7 @@ const pokemonsData = [
         name: "type-null",
         id: 772,
         number: "772",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/772.png",
         pixelImage:
@@ -16552,15 +7723,7 @@ const pokemonsData = [
         name: "silvally",
         id: 773,
         number: "773",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/773.png",
         pixelImage:
@@ -16570,22 +7733,7 @@ const pokemonsData = [
         name: "minior-red-meteor",
         id: 774,
         number: "774",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["rock", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/774.png",
         pixelImage:
@@ -16595,15 +7743,7 @@ const pokemonsData = [
         name: "komala",
         id: 775,
         number: "775",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/775.png",
         pixelImage:
@@ -16613,22 +7753,7 @@ const pokemonsData = [
         name: "turtonator",
         id: 776,
         number: "776",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["fire", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/776.png",
         pixelImage:
@@ -16638,22 +7763,7 @@ const pokemonsData = [
         name: "togedemaru",
         id: 777,
         number: "777",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["electric", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/777.png",
         pixelImage:
@@ -16663,22 +7773,7 @@ const pokemonsData = [
         name: "mimikyu-disguised",
         id: 778,
         number: "778",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["ghost", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/778.png",
         pixelImage:
@@ -16688,22 +7783,7 @@ const pokemonsData = [
         name: "bruxish",
         id: 779,
         number: "779",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["water", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/779.png",
         pixelImage:
@@ -16713,22 +7793,7 @@ const pokemonsData = [
         name: "drampa",
         id: 780,
         number: "780",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["normal", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/780.png",
         pixelImage:
@@ -16738,22 +7803,7 @@ const pokemonsData = [
         name: "dhelmise",
         id: 781,
         number: "781",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["ghost", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/781.png",
         pixelImage:
@@ -16763,15 +7813,7 @@ const pokemonsData = [
         name: "jangmo-o",
         id: 782,
         number: "782",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/782.png",
         pixelImage:
@@ -16781,22 +7823,7 @@ const pokemonsData = [
         name: "hakamo-o",
         id: 783,
         number: "783",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["dragon", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/783.png",
         pixelImage:
@@ -16806,22 +7833,7 @@ const pokemonsData = [
         name: "kommo-o",
         id: 784,
         number: "784",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["dragon", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/784.png",
         pixelImage:
@@ -16831,22 +7843,7 @@ const pokemonsData = [
         name: "tapu-koko",
         id: 785,
         number: "785",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["electric", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/785.png",
         pixelImage:
@@ -16856,22 +7853,7 @@ const pokemonsData = [
         name: "tapu-lele",
         id: 786,
         number: "786",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["psychic", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/786.png",
         pixelImage:
@@ -16881,22 +7863,7 @@ const pokemonsData = [
         name: "tapu-bulu",
         id: 787,
         number: "787",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["grass", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/787.png",
         pixelImage:
@@ -16906,22 +7873,7 @@ const pokemonsData = [
         name: "tapu-fini",
         id: 788,
         number: "788",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["water", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/788.png",
         pixelImage:
@@ -16931,15 +7883,7 @@ const pokemonsData = [
         name: "cosmog",
         id: 789,
         number: "789",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/789.png",
         pixelImage:
@@ -16949,15 +7893,7 @@ const pokemonsData = [
         name: "cosmoem",
         id: 790,
         number: "790",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/790.png",
         pixelImage:
@@ -16967,22 +7903,7 @@ const pokemonsData = [
         name: "solgaleo",
         id: 791,
         number: "791",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["psychic", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/791.png",
         pixelImage:
@@ -16992,22 +7913,7 @@ const pokemonsData = [
         name: "lunala",
         id: 792,
         number: "792",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["psychic", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/792.png",
         pixelImage:
@@ -17017,22 +7923,7 @@ const pokemonsData = [
         name: "nihilego",
         id: 793,
         number: "793",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["rock", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/793.png",
         pixelImage:
@@ -17042,22 +7933,7 @@ const pokemonsData = [
         name: "buzzwole",
         id: 794,
         number: "794",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["bug", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/794.png",
         pixelImage:
@@ -17067,22 +7943,7 @@ const pokemonsData = [
         name: "pheromosa",
         id: 795,
         number: "795",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["bug", "fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/795.png",
         pixelImage:
@@ -17092,15 +7953,7 @@ const pokemonsData = [
         name: "xurkitree",
         id: 796,
         number: "796",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/796.png",
         pixelImage:
@@ -17110,22 +7963,7 @@ const pokemonsData = [
         name: "celesteela",
         id: 797,
         number: "797",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["steel", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/797.png",
         pixelImage:
@@ -17135,22 +7973,7 @@ const pokemonsData = [
         name: "kartana",
         id: 798,
         number: "798",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["grass", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/798.png",
         pixelImage:
@@ -17160,22 +7983,7 @@ const pokemonsData = [
         name: "guzzlord",
         id: 799,
         number: "799",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dark", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/799.png",
         pixelImage:
@@ -17185,15 +7993,7 @@ const pokemonsData = [
         name: "necrozma",
         id: 800,
         number: "800",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/800.png",
         pixelImage:
@@ -17203,22 +8003,7 @@ const pokemonsData = [
         name: "magearna",
         id: 801,
         number: "801",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["steel", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/801.png",
         pixelImage:
@@ -17228,22 +8013,7 @@ const pokemonsData = [
         name: "marshadow",
         id: 802,
         number: "802",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["fighting", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/802.png",
         pixelImage:
@@ -17253,15 +8023,7 @@ const pokemonsData = [
         name: "poipole",
         id: 803,
         number: "803",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/803.png",
         pixelImage:
@@ -17271,22 +8033,7 @@ const pokemonsData = [
         name: "naganadel",
         id: 804,
         number: "804",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["poison", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/804.png",
         pixelImage:
@@ -17296,22 +8043,7 @@ const pokemonsData = [
         name: "stakataka",
         id: 805,
         number: "805",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["rock", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/805.png",
         pixelImage:
@@ -17321,22 +8053,7 @@ const pokemonsData = [
         name: "blacephalon",
         id: 806,
         number: "806",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["fire", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/806.png",
         pixelImage:
@@ -17346,15 +8063,7 @@ const pokemonsData = [
         name: "zeraora",
         id: 807,
         number: "807",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/807.png",
         pixelImage:
@@ -17364,15 +8073,7 @@ const pokemonsData = [
         name: "meltan",
         id: 808,
         number: "808",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/808.png",
         pixelImage:
@@ -17382,15 +8083,7 @@ const pokemonsData = [
         name: "melmetal",
         id: 809,
         number: "809",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/809.png",
         pixelImage:
@@ -17400,15 +8093,7 @@ const pokemonsData = [
         name: "grookey",
         id: 810,
         number: "810",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/810.png",
         pixelImage:
@@ -17418,15 +8103,7 @@ const pokemonsData = [
         name: "thwackey",
         id: 811,
         number: "811",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/811.png",
         pixelImage:
@@ -17436,15 +8113,7 @@ const pokemonsData = [
         name: "rillaboom",
         id: 812,
         number: "812",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/812.png",
         pixelImage:
@@ -17454,15 +8123,7 @@ const pokemonsData = [
         name: "scorbunny",
         id: 813,
         number: "813",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/813.png",
         pixelImage:
@@ -17472,15 +8133,7 @@ const pokemonsData = [
         name: "raboot",
         id: 814,
         number: "814",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/814.png",
         pixelImage:
@@ -17490,15 +8143,7 @@ const pokemonsData = [
         name: "cinderace",
         id: 815,
         number: "815",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/815.png",
         pixelImage:
@@ -17508,15 +8153,7 @@ const pokemonsData = [
         name: "sobble",
         id: 816,
         number: "816",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/816.png",
         pixelImage:
@@ -17526,15 +8163,7 @@ const pokemonsData = [
         name: "drizzile",
         id: 817,
         number: "817",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/817.png",
         pixelImage:
@@ -17544,15 +8173,7 @@ const pokemonsData = [
         name: "inteleon",
         id: 818,
         number: "818",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/818.png",
         pixelImage:
@@ -17562,15 +8183,7 @@ const pokemonsData = [
         name: "skwovet",
         id: 819,
         number: "819",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/819.png",
         pixelImage:
@@ -17580,15 +8193,7 @@ const pokemonsData = [
         name: "greedent",
         id: 820,
         number: "820",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/820.png",
         pixelImage:
@@ -17598,15 +8203,7 @@ const pokemonsData = [
         name: "rookidee",
         id: 821,
         number: "821",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/821.png",
         pixelImage:
@@ -17616,15 +8213,7 @@ const pokemonsData = [
         name: "corvisquire",
         id: 822,
         number: "822",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/822.png",
         pixelImage:
@@ -17634,22 +8223,7 @@ const pokemonsData = [
         name: "corviknight",
         id: 823,
         number: "823",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["flying", "steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/823.png",
         pixelImage:
@@ -17659,15 +8233,7 @@ const pokemonsData = [
         name: "blipbug",
         id: 824,
         number: "824",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/824.png",
         pixelImage:
@@ -17677,22 +8243,7 @@ const pokemonsData = [
         name: "dottler",
         id: 825,
         number: "825",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["bug", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/825.png",
         pixelImage:
@@ -17702,22 +8253,7 @@ const pokemonsData = [
         name: "orbeetle",
         id: 826,
         number: "826",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["bug", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/826.png",
         pixelImage:
@@ -17727,15 +8263,7 @@ const pokemonsData = [
         name: "nickit",
         id: 827,
         number: "827",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/827.png",
         pixelImage:
@@ -17745,15 +8273,7 @@ const pokemonsData = [
         name: "thievul",
         id: 828,
         number: "828",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/828.png",
         pixelImage:
@@ -17763,15 +8283,7 @@ const pokemonsData = [
         name: "gossifleur",
         id: 829,
         number: "829",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/829.png",
         pixelImage:
@@ -17781,15 +8293,7 @@ const pokemonsData = [
         name: "eldegoss",
         id: 830,
         number: "830",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/830.png",
         pixelImage:
@@ -17799,15 +8303,7 @@ const pokemonsData = [
         name: "wooloo",
         id: 831,
         number: "831",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/831.png",
         pixelImage:
@@ -17817,15 +8313,7 @@ const pokemonsData = [
         name: "dubwool",
         id: 832,
         number: "832",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/832.png",
         pixelImage:
@@ -17835,15 +8323,7 @@ const pokemonsData = [
         name: "chewtle",
         id: 833,
         number: "833",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/833.png",
         pixelImage:
@@ -17853,22 +8333,7 @@ const pokemonsData = [
         name: "drednaw",
         id: 834,
         number: "834",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["water", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/834.png",
         pixelImage:
@@ -17878,15 +8343,7 @@ const pokemonsData = [
         name: "yamper",
         id: 835,
         number: "835",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/835.png",
         pixelImage:
@@ -17896,15 +8353,7 @@ const pokemonsData = [
         name: "boltund",
         id: 836,
         number: "836",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/836.png",
         pixelImage:
@@ -17914,15 +8363,7 @@ const pokemonsData = [
         name: "rolycoly",
         id: 837,
         number: "837",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/837.png",
         pixelImage:
@@ -17932,22 +8373,7 @@ const pokemonsData = [
         name: "carkol",
         id: 838,
         number: "838",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["rock", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/838.png",
         pixelImage:
@@ -17957,22 +8383,7 @@ const pokemonsData = [
         name: "coalossal",
         id: 839,
         number: "839",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-        ],
+        types: ["rock", "fire"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/839.png",
         pixelImage:
@@ -17982,22 +8393,7 @@ const pokemonsData = [
         name: "applin",
         id: 840,
         number: "840",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["grass", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/840.png",
         pixelImage:
@@ -18007,22 +8403,7 @@ const pokemonsData = [
         name: "flapple",
         id: 841,
         number: "841",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["grass", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/841.png",
         pixelImage:
@@ -18032,22 +8413,7 @@ const pokemonsData = [
         name: "appletun",
         id: 842,
         number: "842",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["grass", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/842.png",
         pixelImage:
@@ -18057,15 +8423,7 @@ const pokemonsData = [
         name: "silicobra",
         id: 843,
         number: "843",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/843.png",
         pixelImage:
@@ -18075,15 +8433,7 @@ const pokemonsData = [
         name: "sandaconda",
         id: 844,
         number: "844",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-        ],
+        types: ["ground"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/844.png",
         pixelImage:
@@ -18093,22 +8443,7 @@ const pokemonsData = [
         name: "cramorant",
         id: 845,
         number: "845",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["flying", "water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/845.png",
         pixelImage:
@@ -18118,15 +8453,7 @@ const pokemonsData = [
         name: "arrokuda",
         id: 846,
         number: "846",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/846.png",
         pixelImage:
@@ -18136,15 +8463,7 @@ const pokemonsData = [
         name: "barraskewda",
         id: 847,
         number: "847",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-        ],
+        types: ["water"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/847.png",
         pixelImage:
@@ -18154,22 +8473,7 @@ const pokemonsData = [
         name: "toxel",
         id: 848,
         number: "848",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["electric", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/848.png",
         pixelImage:
@@ -18179,22 +8483,7 @@ const pokemonsData = [
         name: "toxtricity-amped",
         id: 849,
         number: "849",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["electric", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/849.png",
         pixelImage:
@@ -18204,22 +8493,7 @@ const pokemonsData = [
         name: "sizzlipede",
         id: 850,
         number: "850",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["fire", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/850.png",
         pixelImage:
@@ -18229,22 +8503,7 @@ const pokemonsData = [
         name: "centiskorch",
         id: 851,
         number: "851",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fire",
-                    url: "https://pokeapi.co/api/v2/type/10/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["fire", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/851.png",
         pixelImage:
@@ -18254,15 +8513,7 @@ const pokemonsData = [
         name: "clobbopus",
         id: 852,
         number: "852",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/852.png",
         pixelImage:
@@ -18272,15 +8523,7 @@ const pokemonsData = [
         name: "grapploct",
         id: 853,
         number: "853",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/853.png",
         pixelImage:
@@ -18290,15 +8533,7 @@ const pokemonsData = [
         name: "sinistea",
         id: 854,
         number: "854",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/854.png",
         pixelImage:
@@ -18308,15 +8543,7 @@ const pokemonsData = [
         name: "polteageist",
         id: 855,
         number: "855",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/855.png",
         pixelImage:
@@ -18326,15 +8553,7 @@ const pokemonsData = [
         name: "hatenna",
         id: 856,
         number: "856",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/856.png",
         pixelImage:
@@ -18344,15 +8563,7 @@ const pokemonsData = [
         name: "hattrem",
         id: 857,
         number: "857",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/857.png",
         pixelImage:
@@ -18362,22 +8573,7 @@ const pokemonsData = [
         name: "hatterene",
         id: 858,
         number: "858",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["psychic", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/858.png",
         pixelImage:
@@ -18387,22 +8583,7 @@ const pokemonsData = [
         name: "impidimp",
         id: 859,
         number: "859",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["dark", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/859.png",
         pixelImage:
@@ -18412,22 +8593,7 @@ const pokemonsData = [
         name: "morgrem",
         id: 860,
         number: "860",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["dark", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/860.png",
         pixelImage:
@@ -18437,22 +8603,7 @@ const pokemonsData = [
         name: "grimmsnarl",
         id: 861,
         number: "861",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["dark", "fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/861.png",
         pixelImage:
@@ -18462,22 +8613,7 @@ const pokemonsData = [
         name: "obstagoon",
         id: 862,
         number: "862",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["dark", "normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/862.png",
         pixelImage:
@@ -18487,15 +8623,7 @@ const pokemonsData = [
         name: "perrserker",
         id: 863,
         number: "863",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/863.png",
         pixelImage:
@@ -18505,15 +8633,7 @@ const pokemonsData = [
         name: "cursola",
         id: 864,
         number: "864",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/864.png",
         pixelImage:
@@ -18523,15 +8643,7 @@ const pokemonsData = [
         name: "sirfetchd",
         id: 865,
         number: "865",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/865.png",
         pixelImage:
@@ -18541,22 +8653,7 @@ const pokemonsData = [
         name: "mr-rime",
         id: 866,
         number: "866",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["ice", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/866.png",
         pixelImage:
@@ -18566,22 +8663,7 @@ const pokemonsData = [
         name: "runerigus",
         id: 867,
         number: "867",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ground", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/867.png",
         pixelImage:
@@ -18591,15 +8673,7 @@ const pokemonsData = [
         name: "milcery",
         id: 868,
         number: "868",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/868.png",
         pixelImage:
@@ -18609,15 +8683,7 @@ const pokemonsData = [
         name: "alcremie",
         id: 869,
         number: "869",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/869.png",
         pixelImage:
@@ -18627,15 +8693,7 @@ const pokemonsData = [
         name: "falinks",
         id: 870,
         number: "870",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/870.png",
         pixelImage:
@@ -18645,15 +8703,7 @@ const pokemonsData = [
         name: "pincurchin",
         id: 871,
         number: "871",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/871.png",
         pixelImage:
@@ -18663,22 +8713,7 @@ const pokemonsData = [
         name: "snom",
         id: 872,
         number: "872",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["ice", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/872.png",
         pixelImage:
@@ -18688,22 +8723,7 @@ const pokemonsData = [
         name: "frosmoth",
         id: 873,
         number: "873",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-        ],
+        types: ["ice", "bug"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/873.png",
         pixelImage:
@@ -18713,15 +8733,7 @@ const pokemonsData = [
         name: "stonjourner",
         id: 874,
         number: "874",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/874.png",
         pixelImage:
@@ -18731,15 +8743,7 @@ const pokemonsData = [
         name: "eiscue-ice",
         id: 875,
         number: "875",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/875.png",
         pixelImage:
@@ -18749,22 +8753,7 @@ const pokemonsData = [
         name: "indeedee-male",
         id: 876,
         number: "876",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["psychic", "normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/876.png",
         pixelImage:
@@ -18774,22 +8763,7 @@ const pokemonsData = [
         name: "morpeko-full-belly",
         id: 877,
         number: "877",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["electric", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/877.png",
         pixelImage:
@@ -18799,15 +8773,7 @@ const pokemonsData = [
         name: "cufant",
         id: 878,
         number: "878",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/878.png",
         pixelImage:
@@ -18817,15 +8783,7 @@ const pokemonsData = [
         name: "copperajah",
         id: 879,
         number: "879",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-        ],
+        types: ["steel"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/879.png",
         pixelImage:
@@ -18835,22 +8793,7 @@ const pokemonsData = [
         name: "dracozolt",
         id: 880,
         number: "880",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["electric", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/880.png",
         pixelImage:
@@ -18860,22 +8803,7 @@ const pokemonsData = [
         name: "arctozolt",
         id: 881,
         number: "881",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["electric", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/881.png",
         pixelImage:
@@ -18885,22 +8813,7 @@ const pokemonsData = [
         name: "dracovish",
         id: 882,
         number: "882",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["water", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/882.png",
         pixelImage:
@@ -18910,22 +8823,7 @@ const pokemonsData = [
         name: "arctovish",
         id: 883,
         number: "883",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["water", "ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/883.png",
         pixelImage:
@@ -18935,22 +8833,7 @@ const pokemonsData = [
         name: "duraludon",
         id: 884,
         number: "884",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "steel",
-                    url: "https://pokeapi.co/api/v2/type/9/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["steel", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/884.png",
         pixelImage:
@@ -18960,22 +8843,7 @@ const pokemonsData = [
         name: "dreepy",
         id: 885,
         number: "885",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["dragon", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/885.png",
         pixelImage:
@@ -18985,22 +8853,7 @@ const pokemonsData = [
         name: "drakloak",
         id: 886,
         number: "886",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["dragon", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/886.png",
         pixelImage:
@@ -19010,22 +8863,7 @@ const pokemonsData = [
         name: "dragapult",
         id: 887,
         number: "887",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["dragon", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/887.png",
         pixelImage:
@@ -19035,15 +8873,7 @@ const pokemonsData = [
         name: "zacian",
         id: 888,
         number: "888",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-        ],
+        types: ["fairy"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/888.png",
         pixelImage:
@@ -19053,15 +8883,7 @@ const pokemonsData = [
         name: "zamazenta",
         id: 889,
         number: "889",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/889.png",
         pixelImage:
@@ -19071,22 +8893,7 @@ const pokemonsData = [
         name: "eternatus",
         id: 890,
         number: "890",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["poison", "dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/890.png",
         pixelImage:
@@ -19096,15 +8903,7 @@ const pokemonsData = [
         name: "kubfu",
         id: 891,
         number: "891",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-        ],
+        types: ["fighting"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/891.png",
         pixelImage:
@@ -19114,22 +8913,7 @@ const pokemonsData = [
         name: "urshifu-single-strike",
         id: 892,
         number: "892",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-        ],
+        types: ["fighting", "dark"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/892.png",
         pixelImage:
@@ -19139,22 +8923,7 @@ const pokemonsData = [
         name: "zarude",
         id: 893,
         number: "893",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["dark", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/893.png",
         pixelImage:
@@ -19164,15 +8933,7 @@ const pokemonsData = [
         name: "regieleki",
         id: 894,
         number: "894",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "electric",
-                    url: "https://pokeapi.co/api/v2/type/13/",
-                },
-            },
-        ],
+        types: ["electric"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/894.png",
         pixelImage:
@@ -19182,15 +8943,7 @@ const pokemonsData = [
         name: "regidrago",
         id: 895,
         number: "895",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dragon",
-                    url: "https://pokeapi.co/api/v2/type/16/",
-                },
-            },
-        ],
+        types: ["dragon"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/895.png",
         pixelImage:
@@ -19200,15 +8953,7 @@ const pokemonsData = [
         name: "glastrier",
         id: 896,
         number: "896",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ice",
-                    url: "https://pokeapi.co/api/v2/type/15/",
-                },
-            },
-        ],
+        types: ["ice"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/896.png",
         pixelImage:
@@ -19218,15 +8963,7 @@ const pokemonsData = [
         name: "spectrier",
         id: 897,
         number: "897",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/897.png",
         pixelImage:
@@ -19236,22 +8973,7 @@ const pokemonsData = [
         name: "calyrex",
         id: 898,
         number: "898",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "grass",
-                    url: "https://pokeapi.co/api/v2/type/12/",
-                },
-            },
-        ],
+        types: ["psychic", "grass"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/898.png",
         pixelImage:
@@ -19261,22 +8983,7 @@ const pokemonsData = [
         name: "wyrdeer",
         id: 899,
         number: "899",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "psychic",
-                    url: "https://pokeapi.co/api/v2/type/14/",
-                },
-            },
-        ],
+        types: ["normal", "psychic"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/899.png",
         pixelImage:
@@ -19286,22 +8993,7 @@ const pokemonsData = [
         name: "kleavor",
         id: 900,
         number: "900",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "bug",
-                    url: "https://pokeapi.co/api/v2/type/7/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "rock",
-                    url: "https://pokeapi.co/api/v2/type/6/",
-                },
-            },
-        ],
+        types: ["bug", "rock"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/900.png",
         pixelImage:
@@ -19311,22 +9003,7 @@ const pokemonsData = [
         name: "ursaluna",
         id: 901,
         number: "901",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "ground",
-                    url: "https://pokeapi.co/api/v2/type/5/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "normal",
-                    url: "https://pokeapi.co/api/v2/type/1/",
-                },
-            },
-        ],
+        types: ["ground", "normal"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/901.png",
         pixelImage:
@@ -19336,22 +9013,7 @@ const pokemonsData = [
         name: "basculegion-male",
         id: 902,
         number: "902",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "water",
-                    url: "https://pokeapi.co/api/v2/type/11/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "ghost",
-                    url: "https://pokeapi.co/api/v2/type/8/",
-                },
-            },
-        ],
+        types: ["water", "ghost"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/902.png",
         pixelImage:
@@ -19361,22 +9023,7 @@ const pokemonsData = [
         name: "sneasler",
         id: 903,
         number: "903",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fighting",
-                    url: "https://pokeapi.co/api/v2/type/2/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["fighting", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/903.png",
         pixelImage:
@@ -19386,22 +9033,7 @@ const pokemonsData = [
         name: "overqwil",
         id: 904,
         number: "904",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "dark",
-                    url: "https://pokeapi.co/api/v2/type/17/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "poison",
-                    url: "https://pokeapi.co/api/v2/type/4/",
-                },
-            },
-        ],
+        types: ["dark", "poison"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/904.png",
         pixelImage:
@@ -19411,26 +9043,10 @@ const pokemonsData = [
         name: "enamorus-incarnate",
         id: 905,
         number: "905",
-        types: [
-            {
-                slot: 1,
-                type: {
-                    name: "fairy",
-                    url: "https://pokeapi.co/api/v2/type/18/",
-                },
-            },
-            {
-                slot: 2,
-                type: {
-                    name: "flying",
-                    url: "https://pokeapi.co/api/v2/type/3/",
-                },
-            },
-        ],
+        types: ["fairy", "flying"],
         imageUrl:
             "https://assets.pokemon.com/assets/cms2/img/pokedex/full/905.png",
         pixelImage:
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png",
     },
 ];
-export default pokemonsData;
