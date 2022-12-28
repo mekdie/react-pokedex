@@ -13,7 +13,7 @@ https://mekdie-reactpokedex.netlify.app/
 -   ReactJS
 -   React Router DOM
 -   JavaScript
--   Bootstrap / Tailwind (Not yet implemented)
+-   Bootstrap / Tailwind / React-Bootstrap (Not yet implemented and selected)
 -   PokeAPI
 -   Fetch API / Axios
 
@@ -23,17 +23,17 @@ https://mekdie-reactpokedex.netlify.app/
 -   Filters:
     -   Quantity ✔️
     -   Region
-    -   Types
+    -   Types ✔️
+-   Preloader loading ✔️
 -   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) ✔️
--   Generate Pokemons Loading (for live search directly from API)
--   Preloader loading
+-   Scroll to top (need to be enhanced further) ✔️
 -   Sort Pokemons (Number and Letters)
+-   Generate Pokemons Loading (for live search directly from API)
 -   Designs on all pages using CSS Framework (Either bootstrap, Tailwind, or Material UI)
 -   Modal box on pokemon info
 -   Separate / Router page for pokemon info
 -   Responsive Design
--   Dark Mode toggle
--   Scroll to top
+-   Dark Mode toggle (can be achieved with bootstrap / tailwind - daisyUI)
 
 ## Pages
 
@@ -51,6 +51,7 @@ https://mekdie-reactpokedex.netlify.app/
         -   useEffect
         -   useNavigation
         -   useSearchParams
+    -   Custom hooks
     -   React Router DOM (Routing and Links)
 -   JavaScript:
     -   String and Array Manipulation
@@ -59,6 +60,7 @@ https://mekdie-reactpokedex.netlify.app/
     -   Spread Operator
     -   Destructing
     -   Ternary Operator
+    -   DOM Manipulation
 
 ## Copyright and Licenses
 
