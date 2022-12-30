@@ -52,7 +52,10 @@ function App() {
         "steel",
         "fairy",
     ];
+
+    //filter states
     const [selectedType, setSelectedType] = useState("all");
+    const [selectedSort, setSelectedSort] = useState("default");
 
     //set notFound conditional
     const [notFound, setNotFound] = useState(false);
@@ -196,10 +199,45 @@ function App() {
             lastRecordIdx
         );
 
+        //sort the pagination
+        pokemonsPaginate.sort((a, b) => {
+            if (selectedSort !== "letterAsc" && selectedSort !== "letterDsc") {
+                console.log("get here");
+                //default, numDesc filter number
+                if (selectedSort === "default") {
+                    return a.number - b.number;
+                } else {
+                    return b.number - a.number;
+                }
+            } else {
+                const nameA = a.name.toUpperCase(); //ignore upper and lowercase
+                const nameB = b.name.toUpperCase();
+                //letterAsc, letterDsc filter name
+                if (nameA < nameB) {
+                    //the default is ascending or normal behaviour
+                    if (selectedSort === "letterAsc") {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
+                }
+                if (nameA > nameB) {
+                    //the default is ascending or normal behaviour
+                    if (selectedSort === "letterAsc") {
+                        return 1;
+                    } else {
+                        return -1;
+                    }
+                }
+                //name must be equal
+                return 0;
+            }
+        });
+
         // console.log(firstRecordIdx, lastRecordIdx);
         // console.log(pokemonsPaginate.length);
         setPokemonsPaginate(pokemonsPaginate);
-    }, [currentPage, limit, selectedType]);
+    }, [currentPage, limit, selectedType, selectedSort]);
 
     //run only when the limit changes
     // useEffect(() => {
@@ -300,6 +338,9 @@ function App() {
 
         setTotalPokemons(filterLength);
     }
+    function onSortSelect(selected) {
+        setSelectedSort(selected);
+    }
 
     //home props
     // https://stackoverflow.com/questions/51148064/reacts-props-with-the-same-name-as-their-value
@@ -327,7 +368,11 @@ function App() {
                     <h1>Pokedex</h1>
                     {!notFound && <SearchBar />}
                     {!notFound && (
-                        <Filters types={allTypes} selectedType={onTypeSelect} />
+                        <Filters
+                            types={allTypes}
+                            selectedType={onTypeSelect}
+                            selectedSort={onSortSelect}
+                        />
                     )}
                     <Routes>
                         <Route

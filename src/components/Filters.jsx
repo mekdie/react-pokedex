@@ -1,6 +1,6 @@
 import React from "react";
 
-const Filters = ({ types, selectedType }) => {
+const Filters = ({ types, selectedType, selectedSort }) => {
     return (
         <>
             <div>
@@ -33,10 +33,9 @@ const Filters = ({ types, selectedType }) => {
             <div>
                 (in progress) Sort By &nbsp;
                 <select
-                    // onChange={(e) => selectedType(e.target.value)}
+                    onChange={(e) => selectedSort(e.target.value)}
                     name="sort"
                     id="sort"
-                    disabled
                 >
                     <option value="default">Lowest Number (first)</option>
                     <option value="numDesc">Highest Number (first)</option>
