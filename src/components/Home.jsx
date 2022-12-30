@@ -12,6 +12,7 @@ const Home = ({
     updateLimit,
     totalPokemons,
     type,
+    region,
 }) => {
     return (
         <>
@@ -26,7 +27,7 @@ const Home = ({
             />
             <h3>
                 Showing {totalPokemons} Pokémons of {type} type
-                {type === "all" ? "s" : null}
+                {type === "all" ? "s" : null} in {region}
             </h3>
             <PokemonList pokemons={pokemonsPaginate} loading={loading} />
         </>

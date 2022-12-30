@@ -1,6 +1,6 @@
 import React from "react";
 
-const Filters = ({ types, selectedType, selectedSort }) => {
+const Filters = ({ types, selectedType, selectedSort, selectedRegion }) => {
     return (
         <>
             <div>
@@ -19,17 +19,21 @@ const Filters = ({ types, selectedType, selectedSort }) => {
                 </select>
             </div>
             <div>
-                (in progress) Generations / Region &nbsp;
+                Regions (Gen) &nbsp;
                 <select
-                    // onChange={(e) => selectedType(e.target.value)}
-                    name="generations"
-                    id="generations"
-                    disabled
+                    onChange={(e) => selectedRegion(e.target)}
+                    name="region"
+                    id="region"
                 >
-                    <option value="all">All Gen</option>
-                    {/* {types.map((type) => (
-                        <option value={type}>{type}</option>
-                    ))} */}
+                    <option value="0">All Regions</option>
+                    <option value="1">Kanto (Gen I)</option>
+                    <option value="2">Johto (Gen II)</option>
+                    <option value="3">Hoenn (Gen III)</option>
+                    <option value="4">Sinnoh (Gen IV)</option>
+                    <option value="5">Unova (Gen V)</option>
+                    <option value="6">Kalos (Gen VI)</option>
+                    <option value="7">Alola (Gen VII)</option>
+                    <option value="8">Galar (Gen VIII)</option>
                 </select>
             </div>
             <div>

@@ -57,6 +57,10 @@ function App() {
     //filter states
     const [selectedType, setSelectedType] = useState("all");
     const [selectedSort, setSelectedSort] = useState("default");
+    const [selectedRegion, setSelectedRegion] = useState({
+        value: 0,
+        text: "All Regions",
+    });
 
     //set notFound conditional
     const [notFound, setNotFound] = useState(false);
@@ -148,6 +152,29 @@ function App() {
         }
     };
 
+    const selectedRegionFn = (pokemon, selectedRegion) => {
+        switch (selectedRegion) {
+            case 1:
+                return `${pokemon.id} >= 1 && ${pokemon.id} <= 151`;
+            case 2:
+                return `${pokemon.id} >= 152 && ${pokemon.id} <= 251`;
+            case 3:
+                return `${pokemon.id} >= 252 && ${pokemon.id} <= 386`;
+            case 4:
+                return `${pokemon.id} >= 387 && ${pokemon.id} <= 493`;
+            case 5:
+                return `${pokemon.id} >= 494 && ${pokemon.id} <= 649`;
+            case 6:
+                return `${pokemon.id} >= 650 && ${pokemon.id} <= 721`;
+            case 7:
+                return `${pokemon.id} >= 722 && ${pokemon.id} <= 809`;
+            case 8:
+                return `${pokemon.id} >= 810 && ${pokemon.id} <= 905`;
+            default:
+                return `${pokemon.id}`;
+        }
+    };
+
     //get 1000++ of pokemons data
     function getAllPokemons() {
         //uncomment to generate the API and objects
@@ -215,10 +242,13 @@ function App() {
         }
 
         //filter bug at the end, need to find the current filter pokemons
-        const typeFilter = pokemons.filter((pokemon) =>
-            pokemon.types.some(
-                (type) => type === selectedType || selectedType === "all"
-            )
+
+        //add second condition which is the region
+        const typeFilter = pokemons.filter(
+            (pokemon) =>
+                pokemon.types.some(
+                    (type) => type === selectedType || selectedType === "all"
+                ) && eval(selectedRegionFn(pokemon, selectedRegion.value))
         );
 
         //condition if reached end of page (no more pokemons found)
@@ -229,18 +259,19 @@ function App() {
             lastRecordIdx = typeFilter.length;
         }
 
-        const pokemonsPaginate = typeFilter.slice(
-            firstRecordIdx,
-            lastRecordIdx
-        );
+        var pokemonsPaginate = typeFilter.slice(firstRecordIdx, lastRecordIdx);
 
         //sort the pagination
         pokemonsPaginate.sort((a, b) => sortFilterFn(selectedSort, a, b));
 
-        // console.log(firstRecordIdx, lastRecordIdx);
-        // console.log(pokemonsPaginate.length);
+        //filter the region / gen
+        // const regionFilter = pokemons.filter((pokemon) => {
+        //     return eval(selectedRegionFn(pokemon, selectedRegion.value));
+        // });
+
+        // console.log(regionFilter);
         setPokemonsPaginate(pokemonsPaginate);
-    }, [currentPage, limit, selectedType, selectedSort]);
+    }, [currentPage, limit, selectedType, selectedSort, selectedRegion]);
 
     //run only when the limit changes
     // useEffect(() => {
@@ -272,7 +303,7 @@ function App() {
         //initial paginate 20 records
         setPokemonsPaginate(pokemonsData.slice(0, 20));
 
-        //set the number of pokemons
+        //set the number of initially
         setTotalPokemons(pokemonsData.length);
     }, []);
 
@@ -345,6 +376,24 @@ function App() {
         setSelectedSort(selected);
     }
 
+    function onRegionSelect(selected) {
+        const selectedText = selected.options[selected.selectedIndex].text;
+        setSelectedRegion({
+            value: +selected.value,
+            text: selectedText,
+        });
+        // it is possible to use function here inside filter, but in this case we are trying to return an expression
+
+        // we can use eval() to convert string into expression, but it terms of security it is very dangerous (prone to user input)
+
+        //set the number of selected filter here instead for instant update
+        const filterLength = pokemons.filter((pokemon) => {
+            return eval(selectedRegionFn(pokemon, +selected.value));
+        }).length;
+
+        setTotalPokemons(filterLength);
+    }
+
     //home props
     // https://stackoverflow.com/questions/51148064/reacts-props-with-the-same-name-as-their-value
     const homeProps = {
@@ -357,6 +406,7 @@ function App() {
         updateLimit,
         totalPokemons,
         type: selectedType, //type={selectedType}
+        region: selectedRegion.text,
         // nextFilterBtn = {}
     };
 
@@ -375,6 +425,7 @@ function App() {
                             types={allTypes}
                             selectedType={onTypeSelect}
                             selectedSort={onSortSelect}
+                            selectedRegion={onRegionSelect}
                         />
                     )}
                     <Routes>
