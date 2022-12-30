@@ -11,6 +11,7 @@ import Preloader from "./components/Preloader";
 import SearchBar from "./components/SearchBar";
 import Filters from "./components/Filters";
 import Home from "./components/Home";
+
 function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
 
@@ -113,6 +114,40 @@ function App() {
         );
     }
 
+    //sort filter function on global
+    const sortFilterFn = (localSort, a, b) => {
+        if (localSort !== "letterAsc" && localSort !== "letterDsc") {
+            //default, numDesc filter number
+            if (localSort === "default") {
+                return a.number - b.number;
+            } else {
+                return b.number - a.number;
+            }
+        } else {
+            const nameA = a.name.toUpperCase(); //ignore upper and lowercase
+            const nameB = b.name.toUpperCase();
+            //letterAsc, letterDsc filter name
+            if (nameA < nameB) {
+                //the default is ascending or normal behaviour
+                if (localSort === "letterAsc") {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            }
+            if (nameA > nameB) {
+                //the default is ascending or normal behaviour
+                if (selectedSort === "letterAsc") {
+                    return 1;
+                } else {
+                    return -1;
+                }
+            }
+            //name must be equal
+            return 0;
+        }
+    };
+
     //get 1000++ of pokemons data
     function getAllPokemons() {
         //uncomment to generate the API and objects
@@ -200,39 +235,7 @@ function App() {
         );
 
         //sort the pagination
-        pokemonsPaginate.sort((a, b) => {
-            if (selectedSort !== "letterAsc" && selectedSort !== "letterDsc") {
-                console.log("get here");
-                //default, numDesc filter number
-                if (selectedSort === "default") {
-                    return a.number - b.number;
-                } else {
-                    return b.number - a.number;
-                }
-            } else {
-                const nameA = a.name.toUpperCase(); //ignore upper and lowercase
-                const nameB = b.name.toUpperCase();
-                //letterAsc, letterDsc filter name
-                if (nameA < nameB) {
-                    //the default is ascending or normal behaviour
-                    if (selectedSort === "letterAsc") {
-                        return -1;
-                    } else {
-                        return 1;
-                    }
-                }
-                if (nameA > nameB) {
-                    //the default is ascending or normal behaviour
-                    if (selectedSort === "letterAsc") {
-                        return 1;
-                    } else {
-                        return -1;
-                    }
-                }
-                //name must be equal
-                return 0;
-            }
-        });
+        pokemonsPaginate.sort((a, b) => sortFilterFn(selectedSort, a, b));
 
         // console.log(firstRecordIdx, lastRecordIdx);
         // console.log(pokemonsPaginate.length);
@@ -385,6 +388,7 @@ function App() {
                                 <SearchResults
                                     pokemons={pokemons}
                                     typeFilter={selectedType}
+                                    sortFilter={selectedSort}
                                 />
                             }
                         ></Route>
