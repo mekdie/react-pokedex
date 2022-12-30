@@ -12,7 +12,9 @@ const Filters = ({ types, selectedType, selectedSort }) => {
                 >
                     <option value="all">all types</option>
                     {types.map((type) => (
-                        <option value={type}>{type}</option>
+                        <option key={type} value={type}>
+                            {type}
+                        </option>
                     ))}
                 </select>
             </div>

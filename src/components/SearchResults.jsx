@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 
-const SearchResults = ({ pokemons, typeFilter }) => {
+const SearchResults = ({ pokemons, typeFilter, sortFilter, sortFilterFn }) => {
     // Get the q param from the URL
     const [searchParams] = useSearchParams();
     const searchQuery = searchParams.get("q");
@@ -52,6 +52,9 @@ const SearchResults = ({ pokemons, typeFilter }) => {
             pokemon.types.some((type) => type.includes(searchQuery))
     );
 
+    //sorting the results
+    result.sort((a, b) => sortFilterFn(sortFilter, a, b));
+
     // console.log(result);
     // console.log(typeFilter);
 
@@ -69,7 +72,11 @@ const SearchResults = ({ pokemons, typeFilter }) => {
     return (
         <>
             <div>
-                {searchQuery && <p>Search results for "{searchQuery}..."</p>}
+                {searchQuery && (
+                    <p>
+                        Search {result.length} results for "{searchQuery}..."
+                    </p>
+                )}
             </div>
             <div>
                 {result.map((pokemon) => {

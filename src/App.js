@@ -389,6 +389,7 @@ function App() {
                                     pokemons={pokemons}
                                     typeFilter={selectedType}
                                     sortFilter={selectedSort}
+                                    sortFilterFn={sortFilterFn}
                                 />
                             }
                         ></Route>
