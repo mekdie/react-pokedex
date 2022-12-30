@@ -1,7 +1,14 @@
 import React, { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 
-const SearchResults = ({ pokemons, typeFilter, sortFilter, sortFilterFn }) => {
+const SearchResults = ({
+    pokemons,
+    typeFilter,
+    sortFilter,
+    sortFilterFn,
+    regionFilter,
+    regionFilterFn,
+}) => {
     // Get the q param from the URL
     const [searchParams] = useSearchParams();
     const searchQuery = searchParams.get("q");
@@ -40,11 +47,15 @@ const SearchResults = ({ pokemons, typeFilter, sortFilter, sortFilterFn }) => {
 
     // The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
 
+    // adding all the filters here with && for each filter
+
+    // current filters: region && type && searchQuery
     const result = allPokemons.filter(
         (pokemon) =>
-            (pokemon.types.some(
-                (type) => type === typeFilter || typeFilter === "all"
-            ) &&
+            (eval(regionFilterFn(pokemon, regionFilter)) &&
+                pokemon.types.some(
+                    (type) => type === typeFilter || typeFilter === "all"
+                ) &&
                 pokemon.name.includes(searchQuery.toLowerCase())) ||
             pokemon.number.includes(searchQuery) ||
             //search result based on flying
@@ -74,7 +85,8 @@ const SearchResults = ({ pokemons, typeFilter, sortFilter, sortFilterFn }) => {
             <div>
                 {searchQuery && (
                     <p>
-                        Search {result.length} results for "{searchQuery}..."
+                        <strong>{result.length}</strong> results found for "
+                        {searchQuery}..." with applied filters
                     </p>
                 )}
             </div>

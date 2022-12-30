@@ -3,6 +3,7 @@ import React from "react";
 const Filters = ({ types, selectedType, selectedSort, selectedRegion }) => {
     return (
         <>
+            <h3>Filters:</h3>
             <div>
                 Types &nbsp;
                 <select
@@ -37,7 +38,7 @@ const Filters = ({ types, selectedType, selectedSort, selectedRegion }) => {
                 </select>
             </div>
             <div>
-                (in progress) Sort By &nbsp;
+                Sort By &nbsp;
                 <select
                     onChange={(e) => selectedSort(e.target.value)}
                     name="sort"

@@ -152,7 +152,7 @@ function App() {
         }
     };
 
-    const selectedRegionFn = (pokemon, selectedRegion) => {
+    const regionFilterFn = (pokemon, selectedRegion) => {
         switch (selectedRegion) {
             case 1:
                 return `${pokemon.id} >= 1 && ${pokemon.id} <= 151`;
@@ -248,7 +248,7 @@ function App() {
             (pokemon) =>
                 pokemon.types.some(
                     (type) => type === selectedType || selectedType === "all"
-                ) && eval(selectedRegionFn(pokemon, selectedRegion.value))
+                ) && eval(regionFilterFn(pokemon, selectedRegion.value))
         );
 
         //condition if reached end of page (no more pokemons found)
@@ -264,12 +264,6 @@ function App() {
         //sort the pagination
         pokemonsPaginate.sort((a, b) => sortFilterFn(selectedSort, a, b));
 
-        //filter the region / gen
-        // const regionFilter = pokemons.filter((pokemon) => {
-        //     return eval(selectedRegionFn(pokemon, selectedRegion.value));
-        // });
-
-        // console.log(regionFilter);
         setPokemonsPaginate(pokemonsPaginate);
     }, [currentPage, limit, selectedType, selectedSort, selectedRegion]);
 
@@ -388,7 +382,7 @@ function App() {
 
         //set the number of selected filter here instead for instant update
         const filterLength = pokemons.filter((pokemon) => {
-            return eval(selectedRegionFn(pokemon, +selected.value));
+            return eval(regionFilterFn(pokemon, +selected.value));
         }).length;
 
         setTotalPokemons(filterLength);
@@ -441,6 +435,8 @@ function App() {
                                     typeFilter={selectedType}
                                     sortFilter={selectedSort}
                                     sortFilterFn={sortFilterFn}
+                                    regionFilter={selectedRegion.value}
+                                    regionFilterFn={regionFilterFn}
                                 />
                             }
                         ></Route>

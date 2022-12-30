@@ -1,8 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Mulish:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Mulish:wght@400;600&display=swap");
+
+/* dark mode placeholder for future use */
+/* :root {
+    --light-bg-color: #fafafa;
+    --light-text: black;
+    --dark-bg-color: #1b1b1b;
+    --dark-text: rgba(255, 255, 255, 1);
+} */
 
 body {
+    /* background-color: var(--dark-bg-color);
+    color: var(--dark-text); */
     font-family: "Montserrat", sans-serif;
     font-family: "Mulish", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 * {
