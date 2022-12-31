@@ -12,13 +12,13 @@ const PokemonList = ({ pokemons, loading }) => {
                     <i>Loading ... </i>
                 </h3>
             ) : (
-                <ul>
+                <div className="container">
                     {pokemons.map((p) => {
                         // console.log(p.name);
                         return (
                             // <p key={p.id}>{p.name}</p>
-                            <div key={p.id}>
-                                <li> {capitalizeFirstLetter(p.name)} </li>
+                            <div className="box" key={p.id}>
+                                <h4> {capitalizeFirstLetter(p.name)} </h4>
                                 <ul>
                                     <li>Number: #{p.number}</li>
                                     <li>
@@ -27,8 +27,8 @@ const PokemonList = ({ pokemons, loading }) => {
                                             {p.types.toString()}
                                         </span>
                                     </li>
-                                    <li>
-                                        {/* <img
+
+                                    {/* <img
                                             src={p.imageUrl}
                                             alt={`${p.name} model`}
                                             width={150}
@@ -38,19 +38,18 @@ const PokemonList = ({ pokemons, loading }) => {
                                             alt={`${p.name} model`}
                                             width={150}
                                         /> */}
-                                        <LazyLoadImage
-                                            src={p.imageUrl}
-                                            placeholderSrc={p.pixelImage}
-                                            width={150}
-                                            height={150}
-                                            alt={`${p.name} model`}
-                                        />
-                                    </li>
+                                    <LazyLoadImage
+                                        src={p.imageUrl}
+                                        placeholderSrc={p.pixelImage}
+                                        width={150}
+                                        height={150}
+                                        alt={`${p.name} model`}
+                                    />
                                 </ul>
                             </div>
                         );
                     })}
-                </ul>
+                </div>
             )}
         </>
     );

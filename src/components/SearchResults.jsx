@@ -84,17 +84,17 @@ const SearchResults = ({
         <>
             <div>
                 {searchQuery && (
-                    <p>
+                    <h3>
                         <strong>{result.length}</strong> results found for "
                         {searchQuery}..." with applied filters
-                    </p>
+                    </h3>
                 )}
             </div>
-            <div>
+            <div className="container">
                 {result.map((pokemon) => {
                     return (
-                        <div key={pokemon.id}>
-                            <p>{capitalizeFirstLetter(pokemon.name)}</p>
+                        <div className="box" key={pokemon.id}>
+                            <h4>{capitalizeFirstLetter(pokemon.name)}</h4>
                             <ul>
                                 <li>Number: #{pokemon.number}</li>
                                 <li>
