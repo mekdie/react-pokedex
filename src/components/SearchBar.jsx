@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 
-const SearchBar = () => {
+const SearchBar = ({ onFilterReset }) => {
     //random string placeholder to avoid several condition
 
     // SEARCH CONDITION
@@ -24,6 +24,12 @@ const SearchBar = () => {
             navigate(`/search?q=${query}`);
         } else if (!query && window.location.pathname === "/search") {
             navigate("/");
+        }
+
+        //resetting the filter here
+        onFilterReset(true);
+        if (!query) {
+            onFilterReset(false);
         }
     }, [query]);
 

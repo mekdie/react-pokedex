@@ -75,6 +75,7 @@ function App() {
         value: 0,
         text: "All Regions",
     });
+    const [filterReset, setFilterReset] = useState(false);
 
     //set notFound conditional
     const [notFound, setNotFound] = useState(false);
@@ -173,6 +174,7 @@ function App() {
             case 2:
                 return `${pokemon.id} >= 152 && ${pokemon.id} <= 251`;
             case 3:
+                console.log("gets condition 3");
                 return `${pokemon.id} >= 252 && ${pokemon.id} <= 386`;
             case 4:
                 return `${pokemon.id} >= 387 && ${pokemon.id} <= 493`;
@@ -243,6 +245,7 @@ function App() {
     // }, [currentUrl, limit]);
 
     useEffect(() => {
+        console.log(totalPokemons);
         var lastRecordIdx = currentPage * limit;
         var firstRecordIdx = lastRecordIdx - limit;
         // const nPages = Math.ceil(905 / limit);
@@ -279,7 +282,14 @@ function App() {
         pokemonsPaginate.sort((a, b) => sortFilterFn(selectedSort, a, b));
 
         setPokemonsPaginate(pokemonsPaginate);
-    }, [currentPage, limit, selectedType, selectedSort, selectedRegion]);
+    }, [
+        currentPage,
+        limit,
+        selectedType,
+        selectedSort,
+        selectedRegion,
+        totalPokemons,
+    ]);
 
     //run only when the limit changes
     // useEffect(() => {
@@ -421,6 +431,11 @@ function App() {
     // state not updating immediatelly
     // https://stackoverflow.com/questions/54069253/the-usestate-set-method-is-not-reflecting-a-change-immediately
 
+    //function to reset the filter
+    function resetFilter(flag) {
+        setFilterReset(flag);
+    }
+
     return (
         <>
             {loading && <Preloader loadingProgress={loadingProgress} />}
@@ -437,13 +452,15 @@ function App() {
                             )}
                         </div>
                     </div>
-                    {!notFound && <SearchBar />}
+                    {!notFound && <SearchBar onFilterReset={resetFilter} />}
                     {!notFound && (
                         <Filters
                             types={allTypes}
-                            selectedType={onTypeSelect}
-                            selectedSort={onSortSelect}
-                            selectedRegion={onRegionSelect}
+                            onTypeSelect={onTypeSelect}
+                            onSortSelect={onSortSelect}
+                            onRegionSelect={onRegionSelect}
+                            filterReset={filterReset}
+                            selectedRegion={selectedRegion}
                         />
                     )}
                     <Routes>
@@ -461,6 +478,7 @@ function App() {
                                     sortFilterFn={sortFilterFn}
                                     regionFilter={selectedRegion.value}
                                     regionFilterFn={regionFilterFn}
+                                    filterReset={filterReset}
                                 />
                             }
                         ></Route>

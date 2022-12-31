@@ -50,18 +50,37 @@ const SearchResults = ({
     // adding all the filters here with && for each filter
 
     // current filters: region && type && searchQuery
-    const result = allPokemons.filter(
-        (pokemon) =>
+
+    //the bug is caused by overlapping conditions inside search bar
+
+    var result = allPokemons.filter((pokemon) => {
+        return (
             (eval(regionFilterFn(pokemon, regionFilter)) &&
                 pokemon.types.some(
                     (type) => type === typeFilter || typeFilter === "all"
                 ) &&
                 pokemon.name.includes(searchQuery.toLowerCase())) ||
             pokemon.number.includes(searchQuery) ||
-            //search result based on flying
-            // eslint-disable-next-line no-mixed-operators
             pokemon.types.some((type) => type.includes(searchQuery))
-    );
+        );
+    });
+
+    //filter priority
+
+    // 1. search bar can search for anything if the filter is not selected (all default)
+    // 2. if any filter is selected then ignore the search bar result (or specifically the type search result)
+
+    if (typeFilter !== "all" || regionFilter !== 0) {
+        result = allPokemons.filter(
+            (pokemon) =>
+                (eval(regionFilterFn(pokemon, regionFilter)) &&
+                    pokemon.types.some(
+                        (type) => type === typeFilter || typeFilter === "all"
+                    ) &&
+                    pokemon.name.includes(searchQuery.toLowerCase())) ||
+                pokemon.number.includes(searchQuery)
+        );
+    }
 
     //sorting the results
     result.sort((a, b) => sortFilterFn(sortFilter, a, b));

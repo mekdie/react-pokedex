@@ -37,6 +37,8 @@ https://mekdie-reactpokedex.netlify.app/
 -   Separate / Router page for pokemon info
 -   Responsive Design
 -   Dark Mode toggle (can be achieved with bootstrap / tailwind - daisyUI)
+-   Change the select options with react-select
+-   multiple type filters
 
 ## Pages
 

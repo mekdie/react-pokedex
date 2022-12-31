@@ -1,17 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
+const Filters = ({
+    types,
+    onTypeSelect,
+    onSortSelect,
+    onRegionSelect,
+    filterReset,
+    selectedRegion,
+}) => {
+    const [selectDefault, setSelectDefault] = useState("");
 
-const Filters = ({ types, selectedType, selectedSort, selectedRegion }) => {
+    useEffect(() => {
+        if (filterReset) {
+            //if true (delete all search bar) the reset with default selected otherwise not
+            setSelectDefault(true);
+            onTypeSelect("all");
+
+            // FIX BUG-001 HERE to reselect the previous region when we clear the search bar
+
+            // current bug: the number shows 905 because we dont get through the onRegionSelect function in app.js
+
+            // onRegionSelect(selectedRegion);
+        } else {
+            setSelectDefault(false);
+        }
+    }, [filterReset]);
     return (
         <>
             <h3>Filters:</h3>
             <div>
                 Types &nbsp;
                 <select
-                    onChange={(e) => selectedType(e.target.value)}
+                    onChange={(e) => onTypeSelect(e.target.value)}
                     name="typeFilters"
                     id="typeFilters"
                 >
-                    <option value="all">all types</option>
+                    <option value="all" selected={selectDefault}>
+                        all types
+                    </option>
                     {types.map((type) => (
                         <option key={type} value={type}>
                             {type}
@@ -22,11 +48,13 @@ const Filters = ({ types, selectedType, selectedSort, selectedRegion }) => {
             <div>
                 Regions (Gen) &nbsp;
                 <select
-                    onChange={(e) => selectedRegion(e.target)}
+                    onChange={(e) => onRegionSelect(e.target)}
                     name="region"
                     id="region"
                 >
-                    <option value="0">All Regions</option>
+                    <option value="0" selected="selected">
+                        All Regions
+                    </option>
                     <option value="1">Kanto (Gen I)</option>
                     <option value="2">Johto (Gen II)</option>
                     <option value="3">Hoenn (Gen III)</option>
@@ -40,7 +68,7 @@ const Filters = ({ types, selectedType, selectedSort, selectedRegion }) => {
             <div>
                 Sort By &nbsp;
                 <select
-                    onChange={(e) => selectedSort(e.target.value)}
+                    onChange={(e) => onSortSelect(e.target.value)}
                     name="sort"
                     id="sort"
                 >
