@@ -15,6 +15,20 @@ import Home from "./components/Home";
 function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
 
+    //dark mode toggle
+    const [theme, setTheme] = useState("light");
+    const toggleTheme = () => {
+        if (theme === "light") {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
+    };
+
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
+
     // const [pokemonPaginate, setPokemonPaginate] = useState([]);
     // const [currentUrl, setCurrentUrl] = useState(`${pokeAPI}/pokemon`);
     // const [nextUrl, setNextUrl] = useState("");
@@ -412,7 +426,17 @@ function App() {
             {loading && <Preloader loadingProgress={loadingProgress} />}
             {!loading && (
                 <BrowserRouter>
-                    <h1>Pokedex</h1>
+                    <div className="heading">
+                        <h1>Pokedex</h1>
+                        <div className="themeToggle">
+                            {!loading && (
+                                <button onClick={toggleTheme}>
+                                    {" "}
+                                    Toggle Theme{" "}
+                                </button>
+                            )}
+                        </div>
+                    </div>
                     {!notFound && <SearchBar />}
                     {!notFound && (
                         <Filters

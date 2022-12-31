@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const SearchResults = ({
     pokemons,
     typeFilter,
@@ -104,19 +104,12 @@ const SearchResults = ({
                                     </span>
                                 </li>
                                 <li>
-                                    <img
+                                    <LazyLoadImage
                                         src={pokemon.imageUrl}
-                                        alt={`${pokemon.name} model`}
+                                        placeholderSrc={pokemon.pixelImage}
                                         width={150}
-                                        onError={(e) => {
-                                            e.target.onerror = null;
-                                            e.target.src = `${pokemon.pixelImage}`;
-                                        }}
-                                    />
-                                    <img
-                                        src={pokemon.pixelImage}
+                                        height={150}
                                         alt={`${pokemon.name} model`}
-                                        width={150}
                                     />
                                 </li>
                             </ul>

@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Mulish:wght@400;600&display=swap");
 
 /* dark mode placeholder for future use */
-/* :root {
+:root {
     --light-bg-color: #fafafa;
     --light-text: black;
-    --dark-bg-color: #1b1b1b;
+    --dark-bg-color: #333;
     --dark-text: rgba(255, 255, 255, 1);
-} */
+}
 
 body {
     /* background-color: var(--dark-bg-color);
@@ -25,8 +25,20 @@ body {
     box-sizing: border-box;
 }
 
-body {
-    /* background-color: #192935; */
+.dark {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text);
+}
+
+.light {
+    background-color: var(--light-bg-color);
+    color: var(--light-text);
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .wrapper {

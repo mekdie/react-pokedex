@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // import axios from "axios";
 const PokemonList = ({ pokemons, loading }) => {
     function capitalizeFirstLetter(string) {
@@ -27,7 +28,7 @@ const PokemonList = ({ pokemons, loading }) => {
                                         </span>
                                     </li>
                                     <li>
-                                        <img
+                                        {/* <img
                                             src={p.imageUrl}
                                             alt={`${p.name} model`}
                                             width={150}
@@ -36,6 +37,13 @@ const PokemonList = ({ pokemons, loading }) => {
                                             src={p.pixelImage}
                                             alt={`${p.name} model`}
                                             width={150}
+                                        /> */}
+                                        <LazyLoadImage
+                                            src={p.imageUrl}
+                                            placeholderSrc={p.pixelImage}
+                                            width={150}
+                                            height={150}
+                                            alt={`${p.name} model`}
                                         />
                                     </li>
                                 </ul>
