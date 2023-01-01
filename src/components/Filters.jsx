@@ -8,12 +8,14 @@ const Filters = ({
     filterReset,
     selectedRegion,
 }) => {
-    const [selectDefault, setSelectDefault] = useState("");
+    const [resetAll, setResetAll] = useState(false);
 
+    function onResetFilters() {
+        setResetAll(true);
+    }
     useEffect(() => {
         if (filterReset) {
             //if true (delete all search bar) the reset with default selected otherwise not
-            setSelectDefault(true);
             onTypeSelect("all");
 
             // FIX BUG-001 HERE to reselect the previous region when we clear the search bar
@@ -21,10 +23,15 @@ const Filters = ({
             // current bug: the number shows 905 because we dont get through the onRegionSelect function in app.js
             // console.log(selectedRegion);
             onRegionSelect(selectedRegion);
-        } else {
-            setSelectDefault(false);
         }
-    }, [filterReset]);
+
+        if (resetAll) {
+            onTypeSelect("all");
+            onSortSelect("default");
+            onRegionSelect({ value: 0, text: "All Regions" });
+        }
+    }, [filterReset, resetAll]);
+
     return (
         <>
             <h3>Filters:</h3>
@@ -35,7 +42,7 @@ const Filters = ({
                     name="typeFilters"
                     id="typeFilters"
                 >
-                    <option value="all" selected={selectDefault}>
+                    <option value="all" selected={filterReset}>
                         all types
                     </option>
                     {types.map((type) => (
@@ -52,7 +59,7 @@ const Filters = ({
                     name="region"
                     id="region"
                 >
-                    <option value="0" selected="selected">
+                    <option value="0" selected={resetAll}>
                         All Regions
                     </option>
                     <option value="1">Kanto (Gen I)</option>
@@ -72,7 +79,9 @@ const Filters = ({
                     name="sort"
                     id="sort"
                 >
-                    <option value="default">Lowest Number (first)</option>
+                    <option value="default" selected={resetAll}>
+                        Lowest Number (first)
+                    </option>
                     <option value="numDesc">Highest Number (first)</option>
                     <option value="letterAsc">A-Z</option>
                     <option value="letterDsc">Z-A</option>
@@ -82,6 +91,7 @@ const Filters = ({
                     ))} */}
                 </select>
             </div>
+            <button onClick={onResetFilters}> Reset Filters</button>
         </>
     );
 };

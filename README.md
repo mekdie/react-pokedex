@@ -23,6 +23,7 @@ https://mekdie-reactpokedex.netlify.app/
 -   Filters:
     -   Types ✔️
     -   Region ✔️
+    -   Reset Filter
 -   Generate options:
     -   Quantity ✔️
     -   Sort ✔️

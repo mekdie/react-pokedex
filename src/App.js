@@ -259,7 +259,7 @@ function App() {
         //filter bug at the end, need to find the current filter pokemons
 
         //add second condition which is the region
-        const typeFilter = pokemons.filter(
+        const filter = pokemons.filter(
             (pokemon) =>
                 pokemon.types.some(
                     (type) => type === selectedType || selectedType === "all"
@@ -267,19 +267,22 @@ function App() {
         );
 
         //condition if reached end of page (no more pokemons found)
-        if (typeFilter.length < firstRecordIdx) {
+        if (filter.length < firstRecordIdx) {
             //disable next button BUG2
             setCurrentPage(1);
             firstRecordIdx = 0;
-            lastRecordIdx = typeFilter.length;
+            lastRecordIdx = filter.length;
         }
 
-        var pokemonsPaginate = typeFilter.slice(firstRecordIdx, lastRecordIdx);
+        var pokemonsPaginate = filter.slice(firstRecordIdx, lastRecordIdx);
 
         //sort the pagination
         pokemonsPaginate.sort((a, b) => sortFilterFn(selectedSort, a, b));
 
         setPokemonsPaginate(pokemonsPaginate);
+
+        //set final total pokemons here based on the final filter
+        setTotalPokemons(filter.length);
     }, [currentPage, limit, selectedType, selectedSort, selectedRegion]);
 
     //run only when the limit changes
@@ -371,15 +374,6 @@ function App() {
     }
     function onTypeSelect(selected) {
         setSelectedType(selected);
-
-        //set the number of selected filter here instead for instant update
-        const filterLength = pokemons.filter((pokemon) =>
-            pokemon.types.some(
-                (type) => type === selected || selected === "all"
-            )
-        ).length;
-
-        setTotalPokemons(filterLength);
     }
     function onSortSelect(selected) {
         setSelectedSort(selected);
@@ -412,7 +406,7 @@ function App() {
             return eval(regionFilterFn(pokemon, selectedValue));
         }).length;
 
-        setTotalPokemons(filterLength);
+        // setTotalPokemons(filterLength);
     }
 
     //home props
