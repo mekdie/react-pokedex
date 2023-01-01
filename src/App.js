@@ -76,6 +76,7 @@ function App() {
         text: "All Regions",
     });
     const [filterReset, setFilterReset] = useState(false);
+    const [resetAll, setResetAll] = useState(false);
 
     //set notFound conditional
     const [notFound, setNotFound] = useState(false);
@@ -374,9 +375,11 @@ function App() {
     }
     function onTypeSelect(selected) {
         setSelectedType(selected);
+        setResetAll(false);
     }
     function onSortSelect(selected) {
         setSelectedSort(selected);
+        setResetAll(false);
     }
 
     function onRegionSelect(selected) {
@@ -397,16 +400,8 @@ function App() {
             value: selectedValue,
             text: selectedText,
         });
-        // it is possible to use function here inside filter, but in this case we are trying to return an expression
 
-        // we can use eval() to convert string into expression, but it terms of security it is very dangerous (prone to user input)
-
-        //set the number of selected filter here instead for instant update
-        const filterLength = pokemons.filter((pokemon) => {
-            return eval(regionFilterFn(pokemon, selectedValue));
-        }).length;
-
-        // setTotalPokemons(filterLength);
+        setResetAll(false);
     }
 
     //home props
@@ -458,6 +453,8 @@ function App() {
                             onRegionSelect={onRegionSelect}
                             filterReset={filterReset}
                             selectedRegion={selectedRegion}
+                            resetAll={resetAll}
+                            setResetAll={setResetAll}
                         />
                     )}
                     <Routes>

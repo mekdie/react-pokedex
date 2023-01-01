@@ -7,12 +7,9 @@ const Filters = ({
     onRegionSelect,
     filterReset,
     selectedRegion,
+    resetAll,
+    setResetAll,
 }) => {
-    const [resetAll, setResetAll] = useState(false);
-
-    function onResetFilters() {
-        setResetAll(true);
-    }
     useEffect(() => {
         if (filterReset) {
             //if true (delete all search bar) the reset with default selected otherwise not
@@ -29,6 +26,11 @@ const Filters = ({
             onTypeSelect("all");
             onSortSelect("default");
             onRegionSelect({ value: 0, text: "All Regions" });
+
+            //special force select the type
+
+            //you can use react's hook useRef() to access the dom in future learn / use
+            document.getElementById("typeFilters").value = "all";
         }
     }, [filterReset, resetAll]);
 
@@ -42,7 +44,7 @@ const Filters = ({
                     name="typeFilters"
                     id="typeFilters"
                 >
-                    <option value="all" selected={filterReset}>
+                    <option value="all" selected={filterReset || resetAll}>
                         all types
                     </option>
                     {types.map((type) => (
@@ -91,7 +93,7 @@ const Filters = ({
                     ))} */}
                 </select>
             </div>
-            <button onClick={onResetFilters}> Reset Filters</button>
+            <button onClick={() => setResetAll(true)}> Reset Filters</button>
         </>
     );
 };
