@@ -19,8 +19,8 @@ const Filters = ({
             // FIX BUG-001 HERE to reselect the previous region when we clear the search bar
 
             // current bug: the number shows 905 because we dont get through the onRegionSelect function in app.js
-
-            // onRegionSelect(selectedRegion);
+            // console.log(selectedRegion);
+            onRegionSelect(selectedRegion);
         } else {
             setSelectDefault(false);
         }

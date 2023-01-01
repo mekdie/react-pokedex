@@ -174,7 +174,6 @@ function App() {
             case 2:
                 return `${pokemon.id} >= 152 && ${pokemon.id} <= 251`;
             case 3:
-                console.log("gets condition 3");
                 return `${pokemon.id} >= 252 && ${pokemon.id} <= 386`;
             case 4:
                 return `${pokemon.id} >= 387 && ${pokemon.id} <= 493`;
@@ -245,7 +244,6 @@ function App() {
     // }, [currentUrl, limit]);
 
     useEffect(() => {
-        console.log(totalPokemons);
         var lastRecordIdx = currentPage * limit;
         var firstRecordIdx = lastRecordIdx - limit;
         // const nPages = Math.ceil(905 / limit);
@@ -282,14 +280,7 @@ function App() {
         pokemonsPaginate.sort((a, b) => sortFilterFn(selectedSort, a, b));
 
         setPokemonsPaginate(pokemonsPaginate);
-    }, [
-        currentPage,
-        limit,
-        selectedType,
-        selectedSort,
-        selectedRegion,
-        totalPokemons,
-    ]);
+    }, [currentPage, limit, selectedType, selectedSort, selectedRegion]);
 
     //run only when the limit changes
     // useEffect(() => {
@@ -395,9 +386,21 @@ function App() {
     }
 
     function onRegionSelect(selected) {
-        const selectedText = selected.options[selected.selectedIndex].text;
+        var selectedText;
+        var selectedValue;
+
+        //check if selected.options defined or undefined
+        // otherwise then it must be an object directly
+
+        if (selected.options) {
+            selectedValue = +selected.value;
+            selectedText = selected.options[selected.selectedIndex].text;
+        } else {
+            selectedValue = selected.value;
+            selectedText = selected.text;
+        }
         setSelectedRegion({
-            value: +selected.value,
+            value: selectedValue,
             text: selectedText,
         });
         // it is possible to use function here inside filter, but in this case we are trying to return an expression
@@ -406,7 +409,7 @@ function App() {
 
         //set the number of selected filter here instead for instant update
         const filterLength = pokemons.filter((pokemon) => {
-            return eval(regionFilterFn(pokemon, +selected.value));
+            return eval(regionFilterFn(pokemon, selectedValue));
         }).length;
 
         setTotalPokemons(filterLength);
