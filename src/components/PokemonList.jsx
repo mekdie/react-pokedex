@@ -14,18 +14,21 @@ const PokemonList = ({ pokemons, loading }) => {
             ) : (
                 <div className="container">
                     {pokemons.map((p) => {
-                        // console.log(p.name);
                         return (
                             // <p key={p.id}>{p.name}</p>
                             <div className="box" key={p.id}>
                                 <h4> {capitalizeFirstLetter(p.name)} </h4>
                                 <ul>
                                     <li>Number: #{p.number}</li>
-                                    <li>
-                                        Types:&nbsp;
-                                        <span key={p.types}>
-                                            {p.types.toString()}
-                                        </span>
+                                    <li className="type-list">
+                                        {p.types.map((type) => (
+                                            <span
+                                                key={type}
+                                                className={`pkm-type ${type}`}
+                                            >
+                                                {type}
+                                            </span>
+                                        ))}
                                     </li>
 
                                     {/* <img

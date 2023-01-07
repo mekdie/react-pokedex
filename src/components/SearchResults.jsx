@@ -116,11 +116,15 @@ const SearchResults = ({
                             <h4>{capitalizeFirstLetter(pokemon.name)}</h4>
                             <ul>
                                 <li>Number: #{pokemon.number}</li>
-                                <li>
-                                    Types:&nbsp;
-                                    <span key={pokemon.types}>
-                                        {pokemon.types.toString()}
-                                    </span>
+                                <li className="type-list">
+                                    {pokemon.types.map((type) => (
+                                        <span
+                                            key={type}
+                                            className={`pkm-type ${type}`}
+                                        >
+                                            {type}
+                                        </span>
+                                    ))}
                                 </li>
                                 <li>
                                     <LazyLoadImage
