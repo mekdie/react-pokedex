@@ -16,12 +16,12 @@ function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
 
     //dark mode toggle
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("light-theme");
     const toggleTheme = () => {
-        if (theme === "light") {
-            setTheme("dark");
+        if (theme === "light-theme") {
+            setTheme("dark-theme");
         } else {
-            setTheme("light");
+            setTheme("light-theme");
         }
     };
 
