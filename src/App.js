@@ -11,6 +11,7 @@ import Preloader from "./components/Preloader";
 import SearchBar from "./components/SearchBar";
 import Filters from "./components/Filters";
 import Home from "./components/Home";
+import PokemonInfo from "./components/PokemonInfo";
 
 function App() {
     const pokeAPI = "https://pokeapi.co/api/v2";
@@ -476,6 +477,10 @@ function App() {
                                 />
                             }
                         ></Route>
+                        <Route
+                            path="pokemon/:pokemonId"
+                            element={<PokemonInfo />}
+                        />
                         <Route
                             path="*"
                             element={

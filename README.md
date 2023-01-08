@@ -32,12 +32,13 @@ https://mekdie-reactpokedex.netlify.app/
 -   Scroll to top (need to be enhanced further) ✔️
 -   Sort Pokemons (Number and Letters) ✔️
 -   Type colors ✔️
+-   Separate / Router page for pokemon info (on progress)
+-   Add type weaknesses, etc. for each pokemon
 -   Generate random pokemons (surprise me feature)
 -   Load more for generate random pokemons
 -   Generate Pokemons Loading (for live search directly from API)
 -   Designs on all pages using CSS Framework (Either bootstrap, Tailwind, or Material UI)
 -   Modal box on pokemon info
--   Separate / Router page for pokemon info
 -   Responsive Design
 -   Dark Mode toggle (can be achieved with bootstrap / tailwind - daisyUI)
 -   Change the select options with react-select
