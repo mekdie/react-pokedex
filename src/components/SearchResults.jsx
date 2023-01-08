@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import PokemonList from "./PokemonList";
 const SearchResults = ({
     pokemons,
     typeFilter,
@@ -31,11 +31,6 @@ const SearchResults = ({
     // var insensitiveRegex = new RegExp(allPokemons.join("|"), "i");
     // const regex = insensitiveRegex.test(searchQuery);
     // console.log(regex);
-
-    //capitalize first letter function
-    function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
 
     //filtering the result according to name or number or types
 
@@ -109,42 +104,7 @@ const SearchResults = ({
                     </h3>
                 )}
             </div>
-            <div className="container">
-                {result.map((pokemon) => {
-                    return (
-                        <div className="box" key={pokemon.id}>
-                            <h4>{capitalizeFirstLetter(pokemon.name)}</h4>
-                            <ul>
-                                <li>Number: #{pokemon.number}</li>
-                                <li className="type-list">
-                                    {pokemon.types.map((type) => (
-                                        <span
-                                            key={type}
-                                            className={`pkm-type ${type}`}
-                                        >
-                                            {type}
-                                        </span>
-                                    ))}
-                                </li>
-                                <li>
-                                    <LazyLoadImage
-                                        src={pokemon.imageUrl}
-                                        placeholderSrc={pokemon.pixelImage}
-                                        width={150}
-                                        height={150}
-                                        alt={`${pokemon.name} model`}
-                                    />
-                                </li>
-                            </ul>
-                        </div>
-                    );
-                })}
-                {result.length === 0 && (
-                    <h3>
-                        <i>Pokemons not found</i>
-                    </h3>
-                )}
-            </div>
+            <PokemonList pokemons={result} />
         </>
     );
 };

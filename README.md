@@ -27,12 +27,13 @@ https://mekdie-reactpokedex.netlify.app/
 -   Generate options:
     -   Quantity ✔️
     -   Sort ✔️
-    -   Number Range
 -   Preloader loading ✔️
 -   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) ✔️
 -   Scroll to top (need to be enhanced further) ✔️
 -   Sort Pokemons (Number and Letters) ✔️
--   Type colors
+-   Type colors ✔️
+-   Generate random pokemons (surprise me feature)
+-   Load more for generate random pokemons
 -   Generate Pokemons Loading (for live search directly from API)
 -   Designs on all pages using CSS Framework (Either bootstrap, Tailwind, or Material UI)
 -   Modal box on pokemon info

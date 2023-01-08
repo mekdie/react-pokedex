@@ -30,17 +30,6 @@ const PokemonList = ({ pokemons, loading }) => {
                                             </span>
                                         ))}
                                     </li>
-
-                                    {/* <img
-                                            src={p.imageUrl}
-                                            alt={`${p.name} model`}
-                                            width={150}
-                                        />
-                                        <img
-                                            src={p.pixelImage}
-                                            alt={`${p.name} model`}
-                                            width={150}
-                                        /> */}
                                     <LazyLoadImage
                                         src={p.imageUrl}
                                         placeholderSrc={p.pixelImage}
