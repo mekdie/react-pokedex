@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 const PokemonInfo = () => {
     //get the pokemonid from params
     const { pokemonId } = useParams();
+    const [data, setData] = useState({});
     async function fetchData() {
         const basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`;
         const speciesUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemonId}`;
@@ -41,13 +42,33 @@ const PokemonInfo = () => {
             speed: basicInfo.stats[5].base_stat,
         };
 
-        console.log(pokemonData);
+        setData((data) => [...data, ...pokemonData]);
     }
     useEffect(() => {
         fetchData();
     });
 
-    return <div>Pokemon id: {pokemonId} </div>;
+    return (
+        <div>
+            Pokemon id: {pokemonId}
+            <ul>
+                <li>Name{data.name}</li>
+                <li>{data.id}</li>
+                <li>{data.number}</li>
+                <li>{data.description}</li>
+                <li>{data.types}</li>
+                <li>{data.abilities}</li>
+                <li>{data.height}</li>
+                <li>{data.weight}</li>
+                <li>{data.hp}</li>
+                <li>{data.attack}</li>
+                <li>{data.defense}</li>
+                <li>{data.spAttack}</li>
+                <li>{data.spDefense}</li>
+                <li>{data.speed}</li>
+            </ul>
+        </div>
+    );
 };
 
 export default PokemonInfo;
