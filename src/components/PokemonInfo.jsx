@@ -70,5 +70,5 @@ const PokemonInfo = () => {
         </div>
     );
 };
-
+// test commit fomr another device
 export default PokemonInfo;
