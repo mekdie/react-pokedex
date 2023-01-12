@@ -81,7 +81,7 @@ function App() {
     const [notFound, setNotFound] = useState(false);
 
     //pokemonInfo state
-    const [pokemonInfoPage, setPokemonInfoPage] = useState(false);
+    const [pokemonInfoPage, setPokemonInfoPage] = useState(true);
     const [pokemonInfo, setPokemonInfo] = useState({});
     const [pokemonLoading, setPokemonLoading] = useState(true);
 
@@ -487,6 +487,7 @@ function App() {
     }, [currentUrl]);
 
     const inPokemonPage = (flag) => {
+        console.log(flag);
         setPokemonInfoPage(flag);
     };
 
@@ -494,7 +495,6 @@ function App() {
     //     console.log(searchbar.current);
     //     searchbar.current.innerHTML = "test";
     // }, []);
-    console.log(pokemonInfoPage);
     return (
         <>
             {loading && <Preloader loadingProgress={loadingProgress} />}
