@@ -13,6 +13,7 @@ const Home = ({
     totalPokemons,
     type,
     region,
+    fetchPokemonInfo,
 }) => {
     return (
         <>
@@ -29,7 +30,11 @@ const Home = ({
                 Showing {totalPokemons} Pokémons of {type} type
                 {type === "all" ? "s" : null} in {region}
             </h3>
-            <PokemonList pokemons={pokemonsPaginate} loading={loading} />
+            <PokemonList
+                onFetchPokemonInfo={fetchPokemonInfo}
+                pokemons={pokemonsPaginate}
+                loading={loading}
+            />
         </>
     );
 };

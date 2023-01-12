@@ -43,6 +43,7 @@ https://mekdie-reactpokedex.netlify.app/
 -   Dark Mode toggle (can be achieved with bootstrap / tailwind - daisyUI)
 -   Change the select options with react-select
 -   multiple type filters
+-   code clean up
 
 ## Pages
 
@@ -96,3 +97,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+BUG WHEN LOAD THE POKEMON INFO AND WHEN GO BACK TO HOMEPAGE AFTER GOING TO POKEMON INFO
+
+-   fix a bug when loading the pokemon info
+-   fix a bug when press the back button
+-   fix the component showing / hiding when going to pokemon info page

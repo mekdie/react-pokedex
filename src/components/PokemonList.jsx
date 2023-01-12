@@ -2,7 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 // import axios from "axios";
-const PokemonList = ({ pokemons, loading }) => {
+const PokemonList = ({ pokemons, loading, onFetchPokemonInfo }) => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
@@ -19,6 +19,7 @@ const PokemonList = ({ pokemons, loading }) => {
                             // <p key={p.id}>{p.name}</p>
                             <div className="box" key={p.id}>
                                 <Link
+                                    onClick={() => onFetchPokemonInfo(p.id)}
                                     className="card-link"
                                     to={`/pokemon/${p.id}`}
                                 >
