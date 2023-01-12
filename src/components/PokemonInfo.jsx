@@ -23,9 +23,15 @@ const PokemonInfo = ({
     return (
         <div>
             {/* set notFound to false because we are going back to non not found page  */}
-            <Link onClick={() => setPokemonInfoPage(false)} to="/">
-                Go back to home
-            </Link>
+            <button>
+                <Link
+                    className="card-link"
+                    onClick={() => setPokemonInfoPage(false)}
+                    to="/"
+                >
+                    Go back to home
+                </Link>
+            </button>
             <br />
             {loading ? (
                 <h3>
@@ -44,7 +50,9 @@ const PokemonInfo = ({
                         <li>Name: {data.name}</li>
                         <li>ID: {data.id}</li>
                         <li>Number: {data.number}</li>
-                        <li>Description: {data.description}</li>
+                        <li>
+                            Description: {data.description.replace("\f", " ")}
+                        </li>
                         <li>Types: {data.types}</li>
                         <li>Abilities: {data.abilities}</li>
                         {/* <li>{data.abilities}</li> */}

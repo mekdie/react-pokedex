@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import axios from "axios";
 import SearchResults from "./components/SearchResults";
 import NotFound from "./components/NotFound";
@@ -432,17 +432,10 @@ function App() {
         setFilterReset(flag);
     }
 
-    //url useEffect to also detech the path changes
-    const currentUrl = useLocation();
-    useEffect(() => {
-        console.log(currentUrl);
-        if (currentUrl.pathname === "/") {
-            setPokemonInfoPage(false);
-        }
-    }, [currentUrl]);
-
     //pokemon info if from home page
     async function fetchPokemonInfo(pokemonId) {
+        //add loading here so that
+        setPokemonLoading(true);
         const basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`;
         const speciesUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemonId}`;
 
@@ -482,6 +475,20 @@ function App() {
         setPokemonInfo((prev) => ({ ...prev, ...pokemonData })); //updating the object values
         setPokemonLoading(false);
     }
+
+    //url useEffect to also detect the path changes
+    const currentUrl = useLocation();
+    useEffect(() => {
+        if (currentUrl.pathname !== "/pokemon/:pokemonId") {
+            //show the filters etc
+            setPokemonInfoPage(false);
+        }
+    }, [currentUrl]);
+
+    // useEffect(() => {
+    //     console.log(searchbar.current);
+    //     searchbar.current.innerHTML = "test";
+    // }, []);
 
     return (
         <>
@@ -528,11 +535,14 @@ function App() {
                                     regionFilter={selectedRegion.value}
                                     regionFilterFn={regionFilterFn}
                                     filterReset={filterReset}
+                                    onFetchPokemonInfo={(childID) =>
+                                        fetchPokemonInfo(childID)
+                                    }
                                 />
                             }
                         ></Route>
                         <Route
-                            path="pokemon/:pokemonId"
+                            path="/pokemon/:pokemonId"
                             element={
                                 <PokemonInfo
                                     data={pokemonInfo}
@@ -547,7 +557,7 @@ function App() {
                             }
                         />
                         <Route
-                            path="*"
+                            path="/*"
                             element={
                                 <NotFound
                                     back={() => setNotFound(false)}

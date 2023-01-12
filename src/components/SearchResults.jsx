@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import PokemonList from "./PokemonList";
+import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 const SearchResults = ({
     pokemons,
     typeFilter,
@@ -8,6 +14,7 @@ const SearchResults = ({
     sortFilterFn,
     regionFilter,
     regionFilterFn,
+    onFetchPokemonInfo,
 }) => {
     // Get the q param from the URL
     const [searchParams] = useSearchParams();
@@ -104,7 +111,43 @@ const SearchResults = ({
                     </h3>
                 )}
             </div>
-            <PokemonList pokemons={result} />
+            {/* The reason this is being put back again is because if it using a reusable component from PokemonList, simply the Link doesnt work idk why  */}
+            <div className="pokemon-container">
+                {result.map((p) => {
+                    return (
+                        // <p key={p.id}>{p.name}</p>
+                        <div className="box" key={p.id}>
+                            <Link
+                                onClick={() => onFetchPokemonInfo(p.id)}
+                                className="card-link"
+                                to={`/pokemon/${p.id}`}
+                            >
+                                <h4> {capitalizeFirstLetter(p.name)} </h4>
+                                <ul>
+                                    <li>Number: #{p.number}</li>
+                                    <li className="type-list">
+                                        {p.types.map((type) => (
+                                            <span
+                                                key={type}
+                                                className={`pkm-type ${type}`}
+                                            >
+                                                {type}
+                                            </span>
+                                        ))}
+                                    </li>
+                                    <LazyLoadImage
+                                        src={p.imageUrl}
+                                        placeholderSrc={p.pixelImage}
+                                        width={150}
+                                        height={150}
+                                        alt={`${p.name} model`}
+                                    />
+                                </ul>
+                            </Link>
+                        </div>
+                    );
+                })}
+            </div>
         </>
     );
 };

@@ -33,6 +33,7 @@ https://mekdie-reactpokedex.netlify.app/
 -   Sort Pokemons (Number and Letters) ✔️
 -   Type colors ✔️
 -   Separate / Router page for pokemon info (on progress)
+-   Add previous or next pokemon inside the pokemon info
 -   Add type weaknesses, etc. for each pokemon
 -   Generate random pokemons (surprise me feature)
 -   Load more for generate random pokemons
@@ -43,7 +44,7 @@ https://mekdie-reactpokedex.netlify.app/
 -   Dark Mode toggle (can be achieved with bootstrap / tailwind - daisyUI)
 -   Change the select options with react-select
 -   multiple type filters
--   code clean up
+-   code clean up and bug fixes
 
 ## Pages
 
