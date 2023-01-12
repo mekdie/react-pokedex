@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PokemonInfo = () => {
     //get the pokemonid from params
@@ -31,7 +32,9 @@ const PokemonInfo = () => {
                 .toString()
                 .padStart(3, "0")}.png`,
             pixelImage: basicInfo.sprites.front_default,
-            abilities: basicInfo.abilities,
+            abilities: basicInfo.abilities.map((ability) => {
+                return ability.ability.name;
+            }),
             height: basicInfo.height / 10, //convert to metres
             weight: basicInfo.weight / 10, //convert to kg
             hp: basicInfo.stats[0].base_stat,
@@ -41,8 +44,7 @@ const PokemonInfo = () => {
             spDefense: basicInfo.stats[4].base_stat,
             speed: basicInfo.stats[5].base_stat,
         };
-
-        setData((data) => [...data, ...pokemonData]);
+        setData((prev) => ({ ...prev, ...pokemonData }));
     }
     useEffect(() => {
         fetchData();
@@ -52,20 +54,28 @@ const PokemonInfo = () => {
         <div>
             Pokemon id: {pokemonId}
             <ul>
-                <li>Name{data.name}</li>
-                <li>{data.id}</li>
-                <li>{data.number}</li>
-                <li>{data.description}</li>
-                <li>{data.types}</li>
-                <li>{data.abilities}</li>
-                <li>{data.height}</li>
-                <li>{data.weight}</li>
-                <li>{data.hp}</li>
-                <li>{data.attack}</li>
-                <li>{data.defense}</li>
-                <li>{data.spAttack}</li>
-                <li>{data.spDefense}</li>
-                <li>{data.speed}</li>
+                <LazyLoadImage
+                    src={data.imageUrl}
+                    placeholderSrc={data.pixelImage}
+                    width={150}
+                    height={150}
+                    alt={`${data.name} model`}
+                />
+                <li>Name: {data.name}</li>
+                <li>ID: {data.id}</li>
+                <li>Number: {data.number}</li>
+                <li>Description: {data.description}</li>
+                <li>Types: {data.types}</li>
+                <li>Abilities: {data.abilities}</li>
+                {/* <li>{data.abilities}</li> */}
+                <li>Height: {data.height}m</li>
+                <li>Weight: {data.weight}kg</li>
+                <li>HP: {data.hp}</li>
+                <li>ATK: {data.attack}</li>
+                <li>DEF: {data.defense}</li>
+                <li>SpATK: {data.spAttack}</li>
+                <li>SpDEF: {data.spDefense}</li>
+                <li>SPEED: {data.speed}</li>
             </ul>
         </div>
     );
