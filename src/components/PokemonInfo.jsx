@@ -3,12 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const PokemonInfo = ({
-    setPokemonInfoPage,
-    data,
-    fetchPokemonInfo,
-    loading,
-}) => {
+const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
     //get the pokemonid from params if the user visit the link directly through the URL
     const { pokemonId } = useParams();
 
@@ -17,7 +12,8 @@ const PokemonInfo = ({
         if (Object.keys(data).length === 0) {
             fetchPokemonInfo(pokemonId);
         }
-        setPokemonInfoPage(true);
+        console.log("in pokemon info page, pokemon info page === true");
+        inPokemonPage(true);
     }, []);
 
     return (
@@ -26,7 +22,7 @@ const PokemonInfo = ({
             <button>
                 <Link
                     className="card-link"
-                    onClick={() => setPokemonInfoPage(false)}
+                    onClick={() => inPokemonPage(false)}
                     to="/"
                 >
                     Go back to home

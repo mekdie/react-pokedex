@@ -486,6 +486,10 @@ function App() {
         }
     }, [currentUrl]);
 
+    const inPokemonPage = (flag) => {
+        setPokemonInfoPage(flag);
+    };
+
     // useEffect(() => {
     //     console.log(searchbar.current);
     //     searchbar.current.innerHTML = "test";
@@ -550,9 +554,7 @@ function App() {
                                     fetchPokemonInfo={(childID) =>
                                         fetchPokemonInfo(childID)
                                     }
-                                    setPokemonInfoPage={(el) =>
-                                        setPokemonInfoPage(el)
-                                    }
+                                    inPokemonPage={(el) => inPokemonPage(el)}
                                     loading={pokemonLoading}
                                 />
                             }
