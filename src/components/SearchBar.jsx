@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 
-const SearchBar = ({ onFilterReset, searchbar }) => {
+const SearchBar = ({ onFilterReset }) => {
     //random string placeholder to avoid several condition
 
     // SEARCH CONDITION
@@ -36,6 +36,10 @@ const SearchBar = ({ onFilterReset, searchbar }) => {
     const onSearch = (value) => {
         setQuery(value);
     };
+
+    //url useEffect to also detect the path changes
+    const currentUrl = useLocation();
+
     return (
         <div>
             <input
@@ -44,11 +48,13 @@ const SearchBar = ({ onFilterReset, searchbar }) => {
                 placeholder="Number, Name, Types"
                 // if query equals to random string placeholder then it means user enter manual url
                 value={
-                    query === "tHr2VR7PSMEGTCBwEyWk"
-                        ? searchParams.get("q")
+                    currentUrl.pathname === "/search"
+                        ? query === "tHr2VR7PSMEGTCBwEyWk"
                             ? searchParams.get("q")
-                            : ""
-                        : query
+                                ? searchParams.get("q")
+                                : ""
+                            : query
+                        : ""
                 }
                 size={25}
             />

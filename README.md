@@ -29,6 +29,7 @@ https://mekdie-reactpokedex.netlify.app/
     -   Sort ✔️
 -   Preloader loading ✔️
 -   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) ✔️
+-   Clear search function
 -   Scroll to top (need to be enhanced further) ✔️
 -   Sort Pokemons (Number and Letters) ✔️
 -   Type colors ✔️

@@ -480,6 +480,7 @@ function App() {
     const currentUrl = useLocation();
     useEffect(() => {
         if (currentUrl.pathname !== "/pokemon/:pokemonId") {
+            console.log(currentUrl.pathname);
             //show the filters etc
             setPokemonInfoPage(false);
         }
@@ -489,7 +490,7 @@ function App() {
     //     console.log(searchbar.current);
     //     searchbar.current.innerHTML = "test";
     // }, []);
-
+    console.log(pokemonInfoPage);
     return (
         <>
             {loading && <Preloader loadingProgress={loadingProgress} />}
