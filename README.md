@@ -20,21 +20,21 @@ https://mekdie-reactpokedex.netlify.app/
 ## Features (and TO-DO):
 
 -   Pagination ✔️
--   Filters:
+-   Filters (FIX THE SHOWING FILTERS FOR DIFFERENT PAGES BUG) ⚠️
     -   Types ✔️
     -   Region ✔️
-    -   Reset Filter
+    -   Reset Filter ✔️
 -   Generate options:
     -   Quantity ✔️
     -   Sort ✔️
 -   Preloader loading ✔️
 -   Search Pokemons by name and ID (live search inspired / referring to Netflix's search) ✔️
--   Clear search function
+-   Clear search function ✔️
 -   Scroll to top (need to be enhanced further) ✔️
 -   Sort Pokemons (Number and Letters) ✔️
 -   Type colors ✔️
--   Separate / Router page for pokemon info (on progress)
--   Add previous or next pokemon inside the pokemon info
+-   Separate / Router page for pokemon info 🔄
+-   Add previous or next pokemon inside the pokemon info 🔄
 -   Add type weaknesses, etc. for each pokemon
 -   Generate random pokemons (surprise me feature)
 -   Load more for generate random pokemons

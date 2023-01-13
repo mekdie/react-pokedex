@@ -480,11 +480,9 @@ function App() {
     const currentUrl = useLocation();
     useEffect(() => {
         if (currentUrl.pathname !== "/pokemon/:pokemonId") {
-            console.log(currentUrl.pathname);
             //show the filters etc
             setPokemonInfoPage(false);
         } else if (currentUrl.pathname === "/pokemon/:pokemonId") {
-            console.log("in pokemoninfo page");
             setPokemonInfoPage(true);
         }
     }, [currentUrl]);
