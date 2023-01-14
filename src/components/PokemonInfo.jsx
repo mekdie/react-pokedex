@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function capitalizeFirstLetter(string) {
@@ -10,65 +10,73 @@ function capitalizeFirstLetter(string) {
 const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
     //get the pokemonid from params if the user visit the link directly through the URL
     const { pokemonId } = useParams();
+    const navigate = useNavigate();
 
     const [prevPokemon, setPrevPokemon] = useState();
     const [nextPokemon, setNextPokemon] = useState();
 
     useEffect(() => {
         //check if data undefined (user visit the link directly)
-        // if (Object.keys(data).length === 0) {
-        fetchPokemonInfo(pokemonId);
-        // }
-        inPokemonPage(true);
-        fetchPrev(pokemonId);
-        fetchNext(pokemonId);
+        if (pokemonId >= 1 && pokemonId <= 905) {
+            // if (Object.keys(data).length === 0) {
+            fetchPokemonInfo(pokemonId);
+            // }
+            inPokemonPage(true);
+            fetchPrev(pokemonId);
+            fetchNext(pokemonId);
+        }
+        //if the user enter random pokemonId, redirect to notfound page
+        else {
+            navigate("/404");
+        }
     }, [pokemonId]);
 
     //pokemon info if from home page
     async function fetchPrev(pokemonId) {
+        var prevId;
+
         if (+pokemonId === 1) {
-            setPrevPokemon(false);
+            prevId = 905;
         } else {
-            var basicInfoUrl;
-
-            basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${
-                +pokemonId - 1
-            }`;
-            const data = await fetch(basicInfoUrl);
-
-            const basicInfo = await data.json();
-
-            //add required data here
-            let pokemonData = {
-                name: basicInfo.name,
-                id: basicInfo.id,
-                number: basicInfo.id.toString().padStart(3, "0"),
-            };
-            setPrevPokemon((prev) => ({ ...prev, ...pokemonData })); //updating the object values
+            prevId = +pokemonId - 1;
         }
+
+        const basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${prevId}`;
+        const data = await fetch(basicInfoUrl);
+
+        const basicInfo = await data.json();
+
+        //add required data here
+        let pokemonData = {
+            name: basicInfo.name,
+            id: basicInfo.id,
+            number: basicInfo.id.toString().padStart(3, "0"),
+        };
+        setPrevPokemon((prev) => ({ ...prev, ...pokemonData })); //updating the object values
     }
     //pokemon info if from home page
     async function fetchNext(pokemonId) {
+        var nextId;
+
         if (+pokemonId === 905) {
-            setNextPokemon(false);
+            nextId = 1;
         } else {
-            var basicInfoUrl;
-
-            basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${
-                +pokemonId + 1
-            }`;
-            const data = await fetch(basicInfoUrl);
-
-            const basicInfo = await data.json();
-
-            //add required data here
-            let pokemonData = {
-                name: basicInfo.name,
-                id: basicInfo.id,
-                number: basicInfo.id.toString().padStart(3, "0"),
-            };
-            setNextPokemon((prev) => ({ ...prev, ...pokemonData })); //updating the object values
+            nextId = +pokemonId + 1;
         }
+        var basicInfoUrl;
+
+        basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${nextId}`;
+        const data = await fetch(basicInfoUrl);
+
+        const basicInfo = await data.json();
+
+        //add required data here
+        let pokemonData = {
+            name: basicInfo.name,
+            id: basicInfo.id,
+            number: basicInfo.id.toString().padStart(3, "0"),
+        };
+        setNextPokemon((prev) => ({ ...prev, ...pokemonData })); //updating the object values
     }
 
     return (
@@ -128,7 +136,14 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                         <li>
                             Description: {data.description.replace("\f", " ")}
                         </li>
-                        <li>Types: {data.types}</li>
+                        <li>
+                            Types:{" "}
+                            {data.types.map((type) => (
+                                <span key={type} className={`pkm-type ${type}`}>
+                                    {type}
+                                </span>
+                            ))}
+                        </li>
                         <li>Abilities: {data.abilities}</li>
                         {/* <li>{data.abilities}</li> */}
                         <li>Height: {data.height}m</li>

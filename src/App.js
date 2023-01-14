@@ -77,11 +77,11 @@ function App() {
     const [filterReset, setFilterReset] = useState(false);
     const [resetAll, setResetAll] = useState(false);
 
-    //set notFound conditional
+    //set notFound conditionalFcons
     const [notFound, setNotFound] = useState(false);
 
     //pokemonInfo state
-    const [pokemonInfoPage, setPokemonInfoPage] = useState(true);
+    const [pokemonInfoPage, setPokemonInfoPage] = useState(false);
     const [pokemonInfo, setPokemonInfo] = useState({});
     const [pokemonLoading, setPokemonLoading] = useState(true);
 
@@ -452,7 +452,9 @@ function App() {
             name: basicInfo.name,
             id: basicInfo.id,
             number: basicInfo.id.toString().padStart(3, "0"),
-            description: species.flavor_text_entries[0].flavor_text,
+            description: species.flavor_text_entries.find(
+                (text) => text.language.name === "en"
+            ).flavor_text,
             types: basicInfo.types.map((types) => {
                 return types.type.name;
             }),
@@ -552,6 +554,9 @@ function App() {
                                 <NotFound
                                     back={() => setNotFound(false)}
                                     notFound={(child) => setNotFound(child)}
+                                    setPokemonInfoPage={(e) =>
+                                        setPokemonInfoPage(e)
+                                    }
                                 />
                             }
                         ></Route>

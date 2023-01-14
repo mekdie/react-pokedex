@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const NotFound = ({ notFound, back }) => {
+const NotFound = ({ notFound, back, setPokemonInfoPage }) => {
     //passing not found condition to parents
     useEffect(() => {
         //true we are in not found
+        setPokemonInfoPage(false);
         notFound(true);
     });
     return (

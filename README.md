@@ -20,7 +20,7 @@ https://mekdie-reactpokedex.netlify.app/
 ## Features (and TO-DO):
 
 -   Pagination ✔️
--   Filters (FIX THE SHOWING FILTERS FOR DIFFERENT PAGES BUG) ⚠️
+-   Filters
     -   Types ✔️
     -   Region ✔️
     -   Reset Filter ✔️
@@ -33,8 +33,9 @@ https://mekdie-reactpokedex.netlify.app/
 -   Scroll to top (need to be enhanced further) ✔️
 -   Sort Pokemons (Number and Letters) ✔️
 -   Type colors ✔️
--   Separate / Router page for pokemon info 🔄
--   Add previous or next pokemon inside the pokemon info 🔄
+-   Separate / Router page for pokemon info ✔️
+-   Add previous or next pokemon inside the pokemon info ✔️\
+-   Add evolution chain for each pokemon
 -   Add type weaknesses, etc. for each pokemon
 -   Generate random pokemons (surprise me feature)
 -   Load more for generate random pokemons
