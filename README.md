@@ -34,7 +34,7 @@ https://mekdie-reactpokedex.netlify.app/
 -   Sort Pokemons (Number and Letters) ✔️
 -   Type colors ✔️
 -   Separate / Router page for pokemon info ✔️
--   Add previous or next pokemon inside the pokemon info ✔️\
+-   Add previous or next pokemon inside the pokemon info ✔️
 -   Add evolution chain for each pokemon
 -   Add type weaknesses, etc. for each pokemon
 -   Generate random pokemons (surprise me feature)

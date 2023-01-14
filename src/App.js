@@ -432,6 +432,19 @@ function App() {
         setFilterReset(flag);
     }
 
+    function evolutionObj(data) {
+        return {
+            name: data.name,
+            id: data.id,
+            number: data.id.toString().padStart(3, "0"),
+
+            imageUrl: `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${data.id
+                .toString()
+                .padStart(3, "0")}.png`,
+            pixelImage: data.sprites.front_default,
+        };
+    }
+
     //pokemon info if from home page
     async function fetchPokemonInfo(pokemonId) {
         //add loading here so that
@@ -448,6 +461,57 @@ function App() {
         const species = data[1];
 
         //add required data here
+
+        //evolution chain
+        const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/`;
+
+        const evolution_data = await fetch(species.evolution_chain.url).then(
+            (res) => res.json()
+        );
+
+        let firstStage = evolution_data.chain.species.name;
+        let secondStage =
+            evolution_data.chain.evolves_to.length !== 0
+                ? evolution_data.chain.evolves_to[0].species.name
+                : null;
+        let finalStage =
+            evolution_data.chain.evolves_to[0].evolves_to.length !== 0
+                ? evolution_data.chain.evolves_to[0].evolves_to[0].species.name
+                : false;
+
+        var stage1, stage2, stage3;
+        if (firstStage) {
+            const res = await fetch(`${pokemonUrl}${firstStage}`);
+            const evolution_data = await res.json();
+
+            stage1 = evolutionObj(evolution_data);
+        } else {
+            stage1 = null;
+        }
+
+        if (secondStage) {
+            const res = await fetch(`${pokemonUrl}${secondStage}`);
+            const evolution_data = await res.json();
+
+            stage2 = evolutionObj(evolution_data);
+        } else {
+            stage2 = null;
+        }
+        if (finalStage) {
+            const res = await fetch(`${pokemonUrl}${finalStage}`);
+            const evolution_data = await res.json();
+
+            stage3 = evolutionObj(evolution_data);
+        } else {
+            stage3 = null;
+        }
+
+        let evolution_chain = {
+            first: stage1,
+            second: stage2,
+            final: stage3,
+        };
+
         let pokemonData = {
             name: basicInfo.name,
             id: basicInfo.id,
@@ -473,6 +537,7 @@ function App() {
             spAttack: basicInfo.stats[3].base_stat,
             spDefense: basicInfo.stats[4].base_stat,
             speed: basicInfo.stats[5].base_stat,
+            evolution_chain: evolution_chain,
         };
         setPokemonInfo((prev) => ({ ...prev, ...pokemonData })); //updating the object values
         setPokemonLoading(false);
