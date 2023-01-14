@@ -46,6 +46,7 @@ https://mekdie-reactpokedex.netlify.app/
 -   Change the select options with react-select
 -   multiple type filters
 -   code clean up and bug fixes
+-   change fetch api into using react query
 
 ## Pages
 

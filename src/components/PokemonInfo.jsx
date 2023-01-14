@@ -2,9 +2,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
 const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
     //get the pokemonid from params if the user visit the link directly through the URL
     const { pokemonId } = useParams();

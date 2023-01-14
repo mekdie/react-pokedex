@@ -476,22 +476,6 @@ function App() {
         setPokemonLoading(false);
     }
 
-    //url useEffect to also detect the path changes
-    const currentUrl = useLocation();
-    useEffect(() => {
-        if (currentUrl.pathname !== "/pokemon/:pokemonId") {
-            //show the filters etc
-            setPokemonInfoPage(false);
-        } else if (currentUrl.pathname === "/pokemon/:pokemonId") {
-            setPokemonInfoPage(true);
-        }
-    }, [currentUrl]);
-
-    const inPokemonPage = (flag) => {
-        console.log(flag);
-        setPokemonInfoPage(flag);
-    };
-
     // useEffect(() => {
     //     console.log(searchbar.current);
     //     searchbar.current.innerHTML = "test";
@@ -555,7 +539,9 @@ function App() {
                                     fetchPokemonInfo={(childID) =>
                                         fetchPokemonInfo(childID)
                                     }
-                                    inPokemonPage={(el) => inPokemonPage(el)}
+                                    inPokemonPage={(el) =>
+                                        setPokemonInfoPage(el)
+                                    }
                                     loading={pokemonLoading}
                                 />
                             }
