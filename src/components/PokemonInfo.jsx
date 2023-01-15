@@ -6,9 +6,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 //react loading
 import ReactLoading from "react-loading";
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+//capitalize
+import { capitalizeFirstLetter as capitalize } from "../Helpers";
 
 const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
     //get the pokemonid from params if the user visit the link directly through the URL
@@ -51,7 +50,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
 
         //add required data here
         let pokemonData = {
-            name: basicInfo.name,
+            name: capitalize(basicInfo.name),
             id: basicInfo.id,
             number: basicInfo.id.toString().padStart(3, "0"),
         };
@@ -74,7 +73,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
 
         //add required data here
         let pokemonData = {
-            name: basicInfo.name,
+            name: capitalize(basicInfo.name),
             id: basicInfo.id,
             number: basicInfo.id.toString().padStart(3, "0"),
         };
@@ -90,8 +89,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                         className="card-link"
                         to={`/pokemon/${prevPokemon.id}`}
                     >
-                        #{prevPokemon.number}{" "}
-                        {capitalizeFirstLetter(prevPokemon.name)}
+                        #{prevPokemon.number} {prevPokemon.name}
                     </Link>
                 </button>
             )}
@@ -101,8 +99,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                         className="card-link"
                         to={`/pokemon/${nextPokemon.id}`}
                     >
-                        #{nextPokemon.number}{" "}
-                        {capitalizeFirstLetter(nextPokemon.name)}
+                        #{nextPokemon.number} {nextPokemon.name}
                     </Link>
                 </button>
             )}
@@ -141,7 +138,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                             height={150}
                             alt={`${data.name} model`}
                         />
-                        <li>Name: {data.name}</li>
+                        <li>Name: {capitalize(data.name)}</li>
                         <li>ID: {data.id}</li>
                         <li>Number: {data.number}</li>
                         <li>
@@ -176,7 +173,9 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                                             {data.evolution_chain.first.number}
                                         </li>
                                         <li>
-                                            {data.evolution_chain.first.name}
+                                            {capitalize(
+                                                data.evolution_chain.first.name
+                                            )}
                                         </li>
                                         <LazyLoadImage
                                             src={
@@ -203,10 +202,10 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                                                 }
                                             </li>
                                             <li>
-                                                {
+                                                {capitalize(
                                                     data.evolution_chain.second
                                                         .name
-                                                }
+                                                )}
                                             </li>
                                             <LazyLoadImage
                                                 src={
@@ -234,10 +233,10 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                                                 }
                                             </li>
                                             <li>
-                                                {
+                                                {capitalize(
                                                     data.evolution_chain.final
                                                         .name
-                                                }
+                                                )}
                                             </li>
                                             <LazyLoadImage
                                                 src={

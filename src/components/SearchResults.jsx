@@ -3,10 +3,7 @@ import { useSearchParams, useNavigate } from "react-router-dom";
 import PokemonList from "./PokemonList";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+import { capitalizeFirstLetter as capitalize } from "../Helpers";
 const SearchResults = ({
     pokemons,
     typeFilter,
@@ -122,7 +119,7 @@ const SearchResults = ({
                                 className="card-link"
                                 to={`/pokemon/${p.id}`}
                             >
-                                <h4> {capitalizeFirstLetter(p.name)} </h4>
+                                <h4> {capitalize(p.name)} </h4>
                                 <ul>
                                     <li>Number: #{p.number}</li>
                                     <li className="type-list">
