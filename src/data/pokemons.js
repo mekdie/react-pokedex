@@ -3850,7 +3850,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png",
     },
     {
-        name: "deoxys-normal",
+        name: "deoxys",
         id: 386,
         number: "386",
         types: ["psychic"],
@@ -4120,7 +4120,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png",
     },
     {
-        name: "wormadam-plant",
+        name: "wormadam",
         id: 413,
         number: "413",
         types: ["bug", "grass"],
@@ -4860,7 +4860,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png",
     },
     {
-        name: "giratina-altered",
+        name: "giratina",
         id: 487,
         number: "487",
         types: ["ghost", "dragon"],
@@ -4910,7 +4910,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png",
     },
     {
-        name: "shaymin-land",
+        name: "shaymin",
         id: 492,
         number: "492",
         types: ["grass"],
@@ -5490,7 +5490,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
     },
     {
-        name: "basculin-red-striped",
+        name: "basculin",
         id: 550,
         number: "550",
         types: ["water"],
@@ -5540,7 +5540,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/554.png",
     },
     {
-        name: "darmanitan-standard",
+        name: "darmanitan",
         id: 555,
         number: "555",
         types: ["fire"],
@@ -6400,7 +6400,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png",
     },
     {
-        name: "tornadus-incarnate",
+        name: "tornadus",
         id: 641,
         number: "641",
         types: ["flying"],
@@ -6410,7 +6410,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
     },
     {
-        name: "thundurus-incarnate",
+        name: "thundurus",
         id: 642,
         number: "642",
         types: ["electric", "flying"],
@@ -6440,7 +6440,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
     },
     {
-        name: "landorus-incarnate",
+        name: "landorus",
         id: 645,
         number: "645",
         types: ["ground", "flying"],
@@ -6460,7 +6460,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png",
     },
     {
-        name: "keldeo-ordinary",
+        name: "keldeo",
         id: 647,
         number: "647",
         types: ["water", "fighting"],
@@ -6470,7 +6470,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png",
     },
     {
-        name: "meloetta-aria",
+        name: "meloetta",
         id: 648,
         number: "648",
         types: ["normal", "psychic"],
@@ -6770,7 +6770,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/677.png",
     },
     {
-        name: "meowstic-male",
+        name: "meowstic",
         id: 678,
         number: "678",
         types: ["psychic"],
@@ -6800,7 +6800,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png",
     },
     {
-        name: "aegislash-shield",
+        name: "aegislash",
         id: 681,
         number: "681",
         types: ["steel", "ghost"],
@@ -7090,7 +7090,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/709.png",
     },
     {
-        name: "pumpkaboo-average",
+        name: "pumpkaboo",
         id: 710,
         number: "710",
         types: ["ghost", "grass"],
@@ -7100,7 +7100,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png",
     },
     {
-        name: "gourgeist-average",
+        name: "gourgeist",
         id: 711,
         number: "711",
         types: ["ghost", "grass"],
@@ -7170,7 +7170,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png",
     },
     {
-        name: "zygarde-50",
+        name: "zygarde",
         id: 718,
         number: "718",
         types: ["dragon", "ground"],
@@ -7400,7 +7400,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png",
     },
     {
-        name: "oricorio-baile",
+        name: "oricorio",
         id: 741,
         number: "741",
         types: ["fire", "flying"],
@@ -7440,7 +7440,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
     },
     {
-        name: "lycanroc-midday",
+        name: "lycanroc",
         id: 745,
         number: "745",
         types: ["rock"],
@@ -7450,7 +7450,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
     },
     {
-        name: "wishiwashi-solo",
+        name: "wishiwashi",
         id: 746,
         number: "746",
         types: ["water"],
@@ -7730,7 +7730,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png",
     },
     {
-        name: "minior-red-meteor",
+        name: "minior",
         id: 774,
         number: "774",
         types: ["rock", "flying"],
@@ -7770,7 +7770,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png",
     },
     {
-        name: "mimikyu-disguised",
+        name: "mimikyu",
         id: 778,
         number: "778",
         types: ["ghost", "fairy"],
@@ -8480,7 +8480,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/848.png",
     },
     {
-        name: "toxtricity-amped",
+        name: "toxtricity",
         id: 849,
         number: "849",
         types: ["electric", "poison"],
@@ -8740,7 +8740,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png",
     },
     {
-        name: "eiscue-ice",
+        name: "eiscue",
         id: 875,
         number: "875",
         types: ["ice"],
@@ -8750,7 +8750,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png",
     },
     {
-        name: "indeedee-male",
+        name: "indeedee",
         id: 876,
         number: "876",
         types: ["psychic", "normal"],
@@ -8760,7 +8760,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png",
     },
     {
-        name: "morpeko-full-belly",
+        name: "morpeko",
         id: 877,
         number: "877",
         types: ["electric", "dark"],
@@ -8910,7 +8910,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png",
     },
     {
-        name: "urshifu-single-strike",
+        name: "urshifu",
         id: 892,
         number: "892",
         types: ["fighting", "dark"],
@@ -9010,7 +9010,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png",
     },
     {
-        name: "basculegion-male",
+        name: "basculegion",
         id: 902,
         number: "902",
         types: ["water", "ghost"],
@@ -9040,7 +9040,7 @@ export const pokemonsData = [
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/904.png",
     },
     {
-        name: "enamorus-incarnate",
+        name: "enamorus",
         id: 905,
         number: "905",
         types: ["fairy", "flying"],

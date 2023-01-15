@@ -13,6 +13,8 @@ import Filters from "./components/Filters";
 import Home from "./components/Home";
 import PokemonInfo from "./components/PokemonInfo";
 
+import { scale } from "./Helpers";
+
 function App() {
     //dark mode toggle
     const [theme, setTheme] = useState("light-theme");
@@ -129,15 +131,6 @@ function App() {
     //     setLoading(false);
     // }
 
-    // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
-
-    // a function to scale a range of number into another range of number
-    function scale(number, inMin, inMax, outMin, outMax) {
-        return (
-            ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin
-        );
-    }
-
     //sort filter function on global
     const sortFilterFn = (localSort, a, b) => {
         if (localSort !== "letterAsc" && localSort !== "letterDsc") {
@@ -196,11 +189,11 @@ function App() {
     };
 
     //get 1000++ of pokemons data
-    function getAllPokemons() {
+    async function getAllPokemons() {
         //uncomment to generate the API and objects
 
         // setLoading(true);
-        // let fetchUrl = `${pokeAPI}/pokemon?limit=905&offset=0`;
+        // let fetchUrl = `https://pokeapi.co/api/v2/pokemon?limit=905&offset=0`;
         // let res = await fetch(fetchUrl);
         // let data = await res.json();
 
@@ -208,15 +201,16 @@ function App() {
         // // //get the pokemon data
         // var pokemonsObject = [];
         // for (let i = 0; i < pokemonsArr.length; i++) {
-        //     setLoadingProgress(
-        //         scale(i, 0, pokemonsArr.length, 0, 100).toFixed(0)
-        //     );
+        //     const basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${i + 1}`;
 
-        //     let res = await fetch(`${pokeAPI}/pokemon/${pokemonsArr[i].name}`);
-        //     let data = await res.json();
+        //     const data = await fetch(basicInfoUrl).then((res) => res.json());
 
         //     let obj = {
-        //         name: data.name,
+        //         name: await fetch(
+        //             `https://pokeapi.co/api/v2/pokemon-species/${data.id}`
+        //         )
+        //             .then((res) => res.json())
+        //             .then((res) => res.name),
         //         id: data.id,
         //         number: data.id.toString().padStart(3, "0"),
         //         types: data.types.map((types) => {
@@ -231,8 +225,8 @@ function App() {
         //     // setPokemons([...pokemons, obj]);
         //     pokemonsObject.push(obj);
         // }
-        // // //get pokemons data from data javascript
-        // // console.log(pokemonsObject);
+        // // get pokemons data from data javascript
+        // console.log(pokemonsObject);
         // setPokemons(pokemonsObject); //fetching API object result
         // setLoading(true);
 
