@@ -155,69 +155,99 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                         <li>SpDEF: {data.spDefense}</li>
                         <li>SPEED: {data.speed}</li>
                     </ul>
+                    {data.evolution_chain && (
+                        <>
+                            <h2>Evolutions:</h2>
+                            <div className="evolution-panel pokemon-container">
+                                <div className="evolution-item box">
+                                    <ul>
+                                        <li>
+                                            {data.evolution_chain.first.number}
+                                        </li>
+                                        <li>
+                                            {data.evolution_chain.first.name}
+                                        </li>
+                                        <LazyLoadImage
+                                            src={
+                                                data.evolution_chain.first
+                                                    .imageUrl
+                                            }
+                                            placeholderSrc={
+                                                data.evolution_chain.first
+                                                    .imageUrl
+                                            }
+                                            width={150}
+                                            height={150}
+                                            alt={`${data.evolution_chain.first.name} model`}
+                                        />
+                                    </ul>
+                                </div>
+                                <div className="evolution-item box">
+                                    {data.evolution_chain.second && (
+                                        <ul>
+                                            <li>
+                                                {
+                                                    data.evolution_chain.second
+                                                        .number
+                                                }
+                                            </li>
+                                            <li>
+                                                {
+                                                    data.evolution_chain.second
+                                                        .name
+                                                }
+                                            </li>
+                                            <LazyLoadImage
+                                                src={
+                                                    data.evolution_chain.second
+                                                        .imageUrl
+                                                }
+                                                placeholderSrc={
+                                                    data.evolution_chain.second
+                                                        .imageUrl
+                                                }
+                                                width={150}
+                                                height={150}
+                                                alt={`${data.evolution_chain.second.name} model`}
+                                            />
+                                        </ul>
+                                    )}
+                                </div>
+                                <div className="evolution-item box">
+                                    {data.evolution_chain.final && (
+                                        <ul>
+                                            <li>
+                                                {
+                                                    data.evolution_chain.final
+                                                        .number
+                                                }
+                                            </li>
+                                            <li>
+                                                {
+                                                    data.evolution_chain.final
+                                                        .name
+                                                }
+                                            </li>
+                                            <LazyLoadImage
+                                                src={
+                                                    data.evolution_chain.final
+                                                        .imageUrl
+                                                }
+                                                placeholderSrc={
+                                                    data.evolution_chain.final
+                                                        .imageUrl
+                                                }
+                                                width={150}
+                                                height={150}
+                                                alt={`${data.evolution_chain.final.name} model`}
+                                            />
+                                        </ul>
+                                    )}
+                                </div>
+                            </div>
+                        </>
+                    )}
                 </>
-            )}
-            {data.evolution_chain && (
-                <div className="evolution-panel">
-                    <h2>Evolutions:</h2>
-                    <ul>
-                        <li>
-                            <ul>
-                                <li>{data.evolution_chain.first.number}</li>
-                                <li>{data.evolution_chain.first.name}</li>
-                                <LazyLoadImage
-                                    src={data.evolution_chain.first.imageUrl}
-                                    placeholderSrc={
-                                        data.evolution_chain.first.imageUrl
-                                    }
-                                    width={150}
-                                    height={150}
-                                    alt={`${data.evolution_chain.first.name} model`}
-                                />
-                            </ul>
-                        </li>
-                        {data.evolution_chain.second && (
-                            <li>
-                                <ul>
-                                    <li>
-                                        {data.evolution_chain.second.number}
-                                    </li>
-                                    <li>{data.evolution_chain.second.name}</li>
-                                    <LazyLoadImage
-                                        src={
-                                            data.evolution_chain.second.imageUrl
-                                        }
-                                        placeholderSrc={
-                                            data.evolution_chain.second.imageUrl
-                                        }
-                                        width={150}
-                                        height={150}
-                                        alt={`${data.evolution_chain.second.name} model`}
-                                    />
-                                </ul>
-                            </li>
-                        )}
-                        {data.evolution_chain.final && (
-                            <li>
-                                <ul>
-                                    <li>{data.evolution_chain.final.number}</li>
-                                    <li>{data.evolution_chain.final.name}</li>
-                                    <LazyLoadImage
-                                        src={
-                                            data.evolution_chain.final.imageUrl
-                                        }
-                                        placeholderSrc={
-                                            data.evolution_chain.final.imageUrl
-                                        }
-                                        width={150}
-                                        height={150}
-                                        alt={`${data.evolution_chain.final.name} model`}
-                                    />
-                                </ul>
-                            </li>
-                        )}
-                    </ul>
-                </div>
             )}
         </div>
     );

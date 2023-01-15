@@ -35,7 +35,7 @@ https://mekdie-reactpokedex.netlify.app/
 -   Type colors ✔️
 -   Separate / Router page for pokemon info ✔️
 -   Add previous or next pokemon inside the pokemon info ✔️
--   Add evolution chain for each pokemon
+-   Add evolution chain for each pokemon 🔄
 -   Add type weaknesses, etc. for each pokemon
 -   Generate random pokemons (surprise me feature)
 -   Load more for generate random pokemons

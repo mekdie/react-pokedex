@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useParams } from "react-router-dom";
 import axios from "axios";
 import SearchResults from "./components/SearchResults";
 import NotFound from "./components/NotFound";
@@ -431,6 +431,18 @@ function App() {
     function resetFilter(flag) {
         setFilterReset(flag);
     }
+
+    //url useEffect to also detect the path changes
+
+    //1. fixed a bug where filters are not shown after you clicked pokemonInfo then go back using browser
+    const currentUrl = useLocation();
+    useEffect(() => {
+        if (currentUrl.pathname === "/") {
+            //show the filters etc
+            setPokemonInfoPage(false);
+        }
+        console.log(currentUrl);
+    }, [currentUrl]);
 
     function evolutionObj(data) {
         return {
