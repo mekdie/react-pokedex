@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+//react loading
+import ReactLoading from "react-loading";
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -117,9 +120,18 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
             </button>
             <br />
             {loading ? (
-                <h3>
-                    <i>Loading ... </i>
-                </h3>
+                <div style={{ marginTop: "25%" }}>
+                    <ReactLoading
+                        style={{
+                            margin: "auto",
+                            display: "block",
+                            height: "5rem",
+                            width: "5rem",
+                        }}
+                        type="spin"
+                        color="black"
+                    />
+                </div>
             ) : (
                 <>
                     <ul>
@@ -174,7 +186,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                                             }
                                             placeholderSrc={
                                                 data.evolution_chain.first
-                                                    .imageUrl
+                                                    .pixelImage
                                             }
                                             width={150}
                                             height={150}
@@ -204,7 +216,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                                                 }
                                                 placeholderSrc={
                                                     data.evolution_chain.second
-                                                        .imageUrl
+                                                        .pixelImage
                                                 }
                                                 width={150}
                                                 height={150}
@@ -235,7 +247,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                                                 }
                                                 placeholderSrc={
                                                     data.evolution_chain.final
-                                                        .imageUrl
+                                                        .pixelImage
                                                 }
                                                 width={150}
                                                 height={150}

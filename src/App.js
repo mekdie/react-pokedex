@@ -487,8 +487,16 @@ function App() {
                 ? evolution_data.chain.evolves_to[0].species.name
                 : null;
         let finalStage =
-            evolution_data.chain.evolves_to[0].evolves_to.length !== 0
-                ? evolution_data.chain.evolves_to[0].evolves_to[0].species.name
+            // chained checking if there are any evolution previously
+            // check if there are any evolution ?
+            //      check the next evolution ?
+            //          check if there are any evolution : false
+            // : false
+            evolution_data.chain.evolves_to.length !== 0
+                ? evolution_data.chain.evolves_to[0].evolves_to.length !== 0
+                    ? evolution_data.chain.evolves_to[0].evolves_to[0].species
+                          .name
+                    : false
                 : false;
 
         var stage1, stage2, stage3;

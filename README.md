@@ -33,21 +33,29 @@ https://mekdie-reactpokedex.netlify.app/
 -   Scroll to top (need to be enhanced further) ✔️
 -   Sort Pokemons (Number and Letters) ✔️
 -   Type colors ✔️
--   Separate / Router page for pokemon info ✔️
--   Add previous or next pokemon inside the pokemon info ✔️
--   Add evolution chain for each pokemon 🔄
--   Add type weaknesses, etc. for each pokemon
+-   Pokemon Info Page:
+    -   Separate / Router page for pokemon info ✔️
+    -   Add previous or next pokemon inside the pokemon info ✔️
+    -   Add evolution chain for each pokemon 🔄
+    -   Add accordion for pokemon info section (Basic Info, Stats (min-max), Evolutions, Moves/Abilities etc.)
+    -   Add type weaknesses, etc. for each pokemon
+    -   Styling
+-   Found bugs:
+    -   Fix pokemon description
+    -   Fix pokemons name for some of it (e.g. nidoran-f, enamorus-incarnate etc.)
+    -   Fix multiple pokemons evolution (e.g. eevee)
 -   Generate random pokemons (surprise me feature)
 -   Load more for generate random pokemons
 -   Generate Pokemons Loading (for live search directly from API)
 -   Designs on all pages using CSS Framework (Either bootstrap, Tailwind, or Material UI)
--   Modal box on pokemon info
+-   Modal box on pokemon info (?)
 -   Responsive Design
 -   Dark Mode toggle (can be achieved with bootstrap / tailwind - daisyUI)
 -   Change the select options with react-select
 -   multiple type filters
 -   code clean up and bug fixes
 -   change fetch api into using react query
+-   Make the fetch process / loading page faster
 
 ## Pages
 
@@ -67,6 +75,7 @@ https://mekdie-reactpokedex.netlify.app/
         -   useSearchParams
     -   Custom hooks
     -   React Router DOM (Routing and Links)
+    -   React's open source libraries
 -   JavaScript:
     -   String and Array Manipulation
     -   Logical Operators
