@@ -44,8 +44,8 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
             prevId = +pokemonId - 1;
         }
 
-        const basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${prevId}`;
-        const data = await fetch(basicInfoUrl);
+        const speciesUrl = `https://pokeapi.co/api/v2/pokemon-species/${prevId}`;
+        const data = await fetch(speciesUrl);
 
         const basicInfo = await data.json();
 
@@ -66,10 +66,9 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
         } else {
             nextId = +pokemonId + 1;
         }
-        var basicInfoUrl;
 
-        basicInfoUrl = `https://pokeapi.co/api/v2/pokemon/${nextId}`;
-        const data = await fetch(basicInfoUrl);
+        const speciesUrl = `https://pokeapi.co/api/v2/pokemon-species/${nextId}`;
+        const data = await fetch(speciesUrl);
 
         const basicInfo = await data.json();
 
@@ -137,7 +136,7 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                     <ul>
                         <LazyLoadImage
                             src={data.imageUrl}
-                            placeholderSrc={data.imageUrl}
+                            placeholderSrc={data.pixelImage}
                             width={150}
                             height={150}
                             alt={`${data.name} model`}

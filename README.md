@@ -42,7 +42,7 @@ https://mekdie-reactpokedex.netlify.app/
     -   Styling
 -   Found bugs:
     -   Fix pokemon description
-    -   Fix pokemons name for some of it (e.g. nidoran-f, enamorus-incarnate etc.)
+    -   Fix pokemons name with dash (-)
     -   Fix multiple pokemons evolution (e.g. eevee)
 -   Generate random pokemons (surprise me feature)
 -   Load more for generate random pokemons

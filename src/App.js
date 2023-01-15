@@ -441,10 +441,9 @@ function App() {
             //show the filters etc
             setPokemonInfoPage(false);
         }
-        console.log(currentUrl);
     }, [currentUrl]);
 
-    function evolutionObj(data) {
+    async function evolutionObj(data) {
         return {
             name: data.name,
             id: data.id,
@@ -453,7 +452,11 @@ function App() {
             imageUrl: `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${data.id
                 .toString()
                 .padStart(3, "0")}.png`,
-            pixelImage: data.sprites.front_default,
+            pixelImage: await fetch(
+                `https://pokeapi.co/api/v2/pokemon/${data.id}`
+            )
+                .then((res) => res.json())
+                .then((res) => res.sprites.front_default),
         };
     }
 
@@ -474,17 +477,15 @@ function App() {
 
         //add required data here
 
-        //evolution chain
-        const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/`;
-
         const evolution_data = await fetch(species.evolution_chain.url).then(
             (res) => res.json()
         );
 
-        let firstStage = evolution_data.chain.species.name;
+        //get all the urls for all stages (pokemon-species)
+        let firstStage = evolution_data.chain.species.url;
         let secondStage =
             evolution_data.chain.evolves_to.length !== 0
-                ? evolution_data.chain.evolves_to[0].species.name
+                ? evolution_data.chain.evolves_to[0].species.url
                 : null;
         let finalStage =
             // chained checking if there are any evolution previously
@@ -495,33 +496,33 @@ function App() {
             evolution_data.chain.evolves_to.length !== 0
                 ? evolution_data.chain.evolves_to[0].evolves_to.length !== 0
                     ? evolution_data.chain.evolves_to[0].evolves_to[0].species
-                          .name
+                          .url
                     : false
                 : false;
 
         var stage1, stage2, stage3;
         if (firstStage) {
-            const res = await fetch(`${pokemonUrl}${firstStage}`);
+            const res = await fetch(firstStage);
             const evolution_data = await res.json();
 
-            stage1 = evolutionObj(evolution_data);
+            stage1 = await evolutionObj(evolution_data);
         } else {
             stage1 = null;
         }
 
         if (secondStage) {
-            const res = await fetch(`${pokemonUrl}${secondStage}`);
+            const res = await fetch(secondStage);
             const evolution_data = await res.json();
 
-            stage2 = evolutionObj(evolution_data);
+            stage2 = await evolutionObj(evolution_data);
         } else {
             stage2 = null;
         }
         if (finalStage) {
-            const res = await fetch(`${pokemonUrl}${finalStage}`);
+            const res = await fetch(finalStage);
             const evolution_data = await res.json();
 
-            stage3 = evolutionObj(evolution_data);
+            stage3 = await evolutionObj(evolution_data);
         } else {
             stage3 = null;
         }
@@ -533,7 +534,7 @@ function App() {
         };
 
         let pokemonData = {
-            name: basicInfo.name,
+            name: species.name, // get real name from species instead of basic info
             id: basicInfo.id,
             number: basicInfo.id.toString().padStart(3, "0"),
             description: species.flavor_text_entries.find(
