@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import PokemonList from "./PokemonList";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { capitalizeFirstLetter as capitalize } from "../Helpers";
@@ -11,7 +10,6 @@ const SearchResults = ({
     sortFilterFn,
     regionFilter,
     regionFilterFn,
-    onFetchPokemonInfo,
 }) => {
     // Get the q param from the URL
     const [searchParams] = useSearchParams();
@@ -114,11 +112,7 @@ const SearchResults = ({
                     return (
                         // <p key={p.id}>{p.name}</p>
                         <div className="box" key={p.id}>
-                            <Link
-                                onClick={() => onFetchPokemonInfo(p.id)}
-                                className="card-link"
-                                to={`/pokemon/${p.id}`}
-                            >
+                            <Link className="card-link" to={`/pokemon/${p.id}`}>
                                 <h4> {capitalize(p.name)} </h4>
                                 <ul>
                                     <li>Number: #{p.number}</li>

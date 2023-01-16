@@ -42,7 +42,6 @@ https://mekdie-reactpokedex.netlify.app/
     -   Styling
 -   Found bugs:
     -   Fix pokemon description
-    -   Fix pokemons name with dash (-) in pagination
     -   Fix multiple pokemons evolution (e.g. eevee)
 -   Generate random pokemons (surprise me feature)
 -   Load more for generate random pokemons

@@ -20,9 +20,9 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
     useEffect(() => {
         //check if data undefined (user visit the link directly)
         if (pokemonId >= 1 && pokemonId <= 905) {
-            // if (Object.keys(data).length === 0) {
+            //fetching pokemonInfo based on the param pokemonId
             fetchPokemonInfo(pokemonId);
-            // }
+
             inPokemonPage(true);
             fetchPrev(pokemonId);
             fetchNext(pokemonId);
@@ -168,90 +168,109 @@ const PokemonInfo = ({ inPokemonPage, data, fetchPokemonInfo, loading }) => {
                             <h2>Evolutions:</h2>
                             <div className="evolution-panel pokemon-container">
                                 <div className="evolution-item box">
-                                    <ul>
-                                        <li>
-                                            {data.evolution_chain.first.number}
-                                        </li>
-                                        <li>
-                                            {capitalize(
-                                                data.evolution_chain.first.name
-                                            )}
-                                        </li>
-                                        <LazyLoadImage
-                                            src={
-                                                data.evolution_chain.first
-                                                    .imageUrl
-                                            }
-                                            placeholderSrc={
-                                                data.evolution_chain.first
-                                                    .pixelImage
-                                            }
-                                            width={150}
-                                            height={150}
-                                            alt={`${data.evolution_chain.first.name} model`}
-                                        />
-                                    </ul>
-                                </div>
-                                <div className="evolution-item box">
-                                    {data.evolution_chain.second && (
+                                    <Link
+                                        className="card-link"
+                                        to={`/pokemon/${data.evolution_chain.first.id}`}
+                                    >
                                         <ul>
                                             <li>
                                                 {
-                                                    data.evolution_chain.second
+                                                    data.evolution_chain.first
                                                         .number
                                                 }
                                             </li>
                                             <li>
                                                 {capitalize(
-                                                    data.evolution_chain.second
+                                                    data.evolution_chain.first
                                                         .name
                                                 )}
                                             </li>
                                             <LazyLoadImage
                                                 src={
-                                                    data.evolution_chain.second
+                                                    data.evolution_chain.first
                                                         .imageUrl
                                                 }
                                                 placeholderSrc={
-                                                    data.evolution_chain.second
+                                                    data.evolution_chain.first
                                                         .pixelImage
                                                 }
                                                 width={150}
                                                 height={150}
-                                                alt={`${data.evolution_chain.second.name} model`}
+                                                alt={`${data.evolution_chain.first.name} model`}
                                             />
                                         </ul>
+                                    </Link>
+                                </div>
+                                <div className="evolution-item box">
+                                    {data.evolution_chain.second && (
+                                        <Link
+                                            className="card-link"
+                                            to={`/pokemon/${data.evolution_chain.second.id}`}
+                                        >
+                                            <ul>
+                                                <li>
+                                                    {
+                                                        data.evolution_chain
+                                                            .second.number
+                                                    }
+                                                </li>
+                                                <li>
+                                                    {capitalize(
+                                                        data.evolution_chain
+                                                            .second.name
+                                                    )}
+                                                </li>
+                                                <LazyLoadImage
+                                                    src={
+                                                        data.evolution_chain
+                                                            .second.imageUrl
+                                                    }
+                                                    placeholderSrc={
+                                                        data.evolution_chain
+                                                            .second.pixelImage
+                                                    }
+                                                    width={150}
+                                                    height={150}
+                                                    alt={`${data.evolution_chain.second.name} model`}
+                                                />
+                                            </ul>
+                                        </Link>
                                     )}
                                 </div>
                                 <div className="evolution-item box">
                                     {data.evolution_chain.final && (
-                                        <ul>
-                                            <li>
-                                                {
-                                                    data.evolution_chain.final
-                                                        .number
-                                                }
-                                            </li>
-                                            <li>
-                                                {capitalize(
-                                                    data.evolution_chain.final
-                                                        .name
-                                                )}
-                                            </li>
-                                            <LazyLoadImage
-                                                src={
-                                                    data.evolution_chain.final
-                                                        .imageUrl
-                                                }
-                                                placeholderSrc={
-                                                    data.evolution_chain.final
-                                                        .pixelImage
-                                                }
-                                                width={150}
-                                                height={150}
-                                                alt={`${data.evolution_chain.final.name} model`}
-                                            />
-                                        </ul>
+                                        <Link
+                                            className="card-link"
+                                            to={`/pokemon/${data.evolution_chain.final.id}`}
+                                        >
+                                            <ul>
+                                                <li>
+                                                    {
+                                                        data.evolution_chain
+                                                            .final.number
+                                                    }
+                                                </li>
+                                                <li>
+                                                    {capitalize(
+                                                        data.evolution_chain
+                                                            .final.name
+                                                    )}
+                                                </li>
+                                                <LazyLoadImage
+                                                    src={
+                                                        data.evolution_chain
+                                                            .final.imageUrl
+                                                    }
+                                                    placeholderSrc={
+                                                        data.evolution_chain
+                                                            .final.pixelImage
+                                                    }
+                                                    width={150}
+                                                    height={150}
+                                                    alt={`${data.evolution_chain.final.name} model`}
+                                                />
+                                            </ul>
+                                        </Link>
                                     )}
                                 </div>
                             </div>

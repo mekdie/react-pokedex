@@ -607,9 +607,6 @@ function App() {
                                     regionFilter={selectedRegion.value}
                                     regionFilterFn={regionFilterFn}
                                     filterReset={filterReset}
-                                    onFetchPokemonInfo={(childID) =>
-                                        fetchPokemonInfo(childID)
-                                    }
                                 />
                             }
                         ></Route>

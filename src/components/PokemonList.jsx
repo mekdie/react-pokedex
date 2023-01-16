@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 // import axios from "axios";
 import { capitalizeFirstLetter as capitalize } from "../Helpers";
-const PokemonList = ({ pokemons, loading, onFetchPokemonInfo }) => {
+const PokemonList = ({ pokemons, loading }) => {
     return (
         <>
             {loading ? (
@@ -17,7 +17,6 @@ const PokemonList = ({ pokemons, loading, onFetchPokemonInfo }) => {
                             // <p key={p.id}>{p.name}</p>
                             <div className="box" key={p.id}>
                                 <Link
-                                    onClick={() => onFetchPokemonInfo(p.id)}
                                     className="card-link"
                                     to={`/pokemon/${p.id}`}
                                 >
