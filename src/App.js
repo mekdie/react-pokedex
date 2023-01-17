@@ -453,7 +453,11 @@ function App() {
                 .then((res) => res.sprites.front_default),
         };
     }
-
+    function multipleEvolvesURL(evolves_to) {
+        let arr = [];
+        evolves_to.map((evolve) => arr.push(evolve.species.url));
+        return arr;
+    }
     //pokemon info if from home page
     async function fetchPokemonInfo(pokemonId) {
         //add loading here so that
@@ -489,8 +493,13 @@ function App() {
             // : false
             evolution_data.chain.evolves_to.length !== 0
                 ? evolution_data.chain.evolves_to[0].evolves_to.length !== 0
-                    ? evolution_data.chain.evolves_to[0].evolves_to[0].species
-                          .url
+                    ? evolution_data.chain.evolves_to[0].evolves_to.length >= 1
+                        ? //multiple evolution fn, else single evolution (direct url)
+                          multipleEvolvesURL(
+                              evolution_data.chain.evolves_to[0].evolves_to
+                          )
+                        : evolution_data.chain.evolves_to[0].evolves_to[0]
+                              .species.url
                     : false
                 : false;
 
@@ -512,11 +521,18 @@ function App() {
         } else {
             stage2 = null;
         }
-        if (finalStage) {
+        if (finalStage && finalStage.length === 1) {
             const res = await fetch(finalStage);
             const evolution_data = await res.json();
 
             stage3 = await evolutionObj(evolution_data);
+        } else if (finalStage.length > 1) {
+            stage3 = [];
+            finalStage.forEach(async (url) => {
+                const res = await fetch(url);
+                const data = await res.json();
+                stage3.push(await evolutionObj(data));
+            });
         } else {
             stage3 = null;
         }
@@ -554,7 +570,9 @@ function App() {
             speed: basicInfo.stats[5].base_stat,
             evolution_chain: evolution_chain,
         };
-        setPokemonInfo((prev) => ({ ...prev, ...pokemonData })); //updating the object values
+
+        setPokemonInfo((prev) => ({ ...prev, ...pokemonData }));
+        //updating the object values
         setPokemonLoading(false);
     }
 
