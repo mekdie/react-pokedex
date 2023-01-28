@@ -111,11 +111,6 @@ const EvolutionChain = ({ data }) => {
                                             </ul>
                                         </Link>
                                     );
-                                    // return (
-                                    //     <h1>
-                                    //         HAUIHASIHDIAHSIDUHuaishdi
-                                    //     </h1>
-                                    // );
                                 })}
                             </>
                         )}
