@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Routes, Route, useLocation, useParams } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import SearchResults from "./components/SearchResults";
 import NotFound from "./components/NotFound";
 
@@ -12,6 +13,9 @@ import SearchBar from "./components/SearchBar";
 import Filters from "./components/Filters";
 import Home from "./components/Home";
 import PokemonInfo from "./components/PokemonInfo";
+
+//importing pages
+import About from "./components/pages/About";
 
 import { scale } from "./Helpers";
 
@@ -87,6 +91,8 @@ function App() {
     const [pokemonInfo, setPokemonInfo] = useState({});
     const [pokemonLoading, setPokemonLoading] = useState(true);
 
+    //pages state
+    const [aboutPage, setAboutPage] = useState(false);
     //rerun the useEffect whenever the currentPageUrl or limit changes
     // async function paginatePokemons() {
     //     // console.log(currentUrl);
@@ -434,6 +440,7 @@ function App() {
         if (currentUrl.pathname === "/") {
             //show the filters etc
             setPokemonInfoPage(false);
+            setAboutPage(false);
         }
     }, [currentUrl]);
 
@@ -596,8 +603,13 @@ function App() {
                             )}
                         </div>
                     </div>
-                    {!notFound && <SearchBar onFilterReset={resetFilter} />}
-                    {!notFound && !pokemonInfoPage && (
+                    {!notFound && !aboutPage && (
+                        <>
+                            <Link to="/about">About page</Link>
+                            <SearchBar onFilterReset={resetFilter} />
+                        </>
+                    )}
+                    {!notFound && !aboutPage && !pokemonInfoPage && (
                         <Filters
                             types={allTypes}
                             onTypeSelect={onTypeSelect}
@@ -614,6 +626,12 @@ function App() {
                             path="/"
                             element={<Home {...homeProps} />}
                         ></Route>
+                        <Route
+                            path="/about"
+                            element={
+                                <About inAboutPage={(el) => setAboutPage(el)} />
+                            }
+                        />
                         <Route
                             path="/search"
                             element={
