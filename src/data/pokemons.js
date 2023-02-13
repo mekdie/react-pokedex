@@ -9049,4 +9049,1034 @@ export const pokemonsData = [
         pixelImage:
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png",
     },
+    {
+        name: "sprigatito",
+        id: 906,
+        number: "906",
+        types: ["grass"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/906.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png",
+    },
+    {
+        name: "floragato",
+        id: 907,
+        number: "907",
+        types: ["grass"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/907.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/907.png",
+    },
+    {
+        name: "meowscarada",
+        id: 908,
+        number: "908",
+        types: ["grass", "dark"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/908.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png",
+    },
+    {
+        name: "fuecoco",
+        id: 909,
+        number: "909",
+        types: ["fire"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/909.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png",
+    },
+    {
+        name: "crocalor",
+        id: 910,
+        number: "910",
+        types: ["fire"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/910.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/910.png",
+    },
+    {
+        name: "skeledirge",
+        id: 911,
+        number: "911",
+        types: ["fire", "ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/911.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png",
+    },
+    {
+        name: "quaxly",
+        id: 912,
+        number: "912",
+        types: ["water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/912.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
+    },
+    {
+        name: "quaxwell",
+        id: 913,
+        number: "913",
+        types: ["water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/913.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/913.png",
+    },
+    {
+        name: "quaquaval",
+        id: 914,
+        number: "914",
+        types: ["water", "fighting"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/914.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png",
+    },
+    {
+        name: "lechonk",
+        id: 915,
+        number: "915",
+        types: ["normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/915.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/915.png",
+    },
+    {
+        name: "oinkologne",
+        id: 916,
+        number: "916",
+        types: ["normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/916.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png",
+    },
+    {
+        name: "tarountula",
+        id: 917,
+        number: "917",
+        types: ["bug"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/917.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/917.png",
+    },
+    {
+        name: "spidops",
+        id: 918,
+        number: "918",
+        types: ["bug"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/918.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/918.png",
+    },
+    {
+        name: "nymble",
+        id: 919,
+        number: "919",
+        types: ["bug"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/919.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/919.png",
+    },
+    {
+        name: "lokix",
+        id: 920,
+        number: "920",
+        types: ["bug", "dark"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/920.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png",
+    },
+    {
+        name: "pawmi",
+        id: 921,
+        number: "921",
+        types: ["electric"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/921.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/921.png",
+    },
+    {
+        name: "pawmo",
+        id: 922,
+        number: "922",
+        types: ["electric", "fighting"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/922.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/922.png",
+    },
+    {
+        name: "pawmot",
+        id: 923,
+        number: "923",
+        types: ["electric", "fighting"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/923.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png",
+    },
+    {
+        name: "tandemaus",
+        id: 924,
+        number: "924",
+        types: ["normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/924.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png",
+    },
+    {
+        name: "maushold",
+        id: 925,
+        number: "925",
+        types: ["normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/925.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png",
+    },
+    {
+        name: "fidough",
+        id: 926,
+        number: "926",
+        types: ["fairy"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/926.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/926.png",
+    },
+    {
+        name: "dachsbun",
+        id: 927,
+        number: "927",
+        types: ["fairy"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/927.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png",
+    },
+    {
+        name: "smoliv",
+        id: 928,
+        number: "928",
+        types: ["grass", "normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/928.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
+    },
+    {
+        name: "dolliv",
+        id: 929,
+        number: "929",
+        types: ["grass", "normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/929.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/929.png",
+    },
+    {
+        name: "arboliva",
+        id: 930,
+        number: "930",
+        types: ["grass", "normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/930.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png",
+    },
+    {
+        name: "squawkabilly",
+        id: 931,
+        number: "931",
+        types: ["normal", "flying"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/931.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png",
+    },
+    {
+        name: "nacli",
+        id: 932,
+        number: "932",
+        types: ["rock"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/932.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/932.png",
+    },
+    {
+        name: "naclstack",
+        id: 933,
+        number: "933",
+        types: ["rock"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/933.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/933.png",
+    },
+    {
+        name: "garganacl",
+        id: 934,
+        number: "934",
+        types: ["rock"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/934.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png",
+    },
+    {
+        name: "charcadet",
+        id: 935,
+        number: "935",
+        types: ["fire"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/935.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/935.png",
+    },
+    {
+        name: "armarouge",
+        id: 936,
+        number: "936",
+        types: ["fire", "psychic"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/936.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png",
+    },
+    {
+        name: "ceruledge",
+        id: 937,
+        number: "937",
+        types: ["fire", "ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/937.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png",
+    },
+    {
+        name: "tadbulb",
+        id: 938,
+        number: "938",
+        types: ["electric"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/938.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/938.png",
+    },
+    {
+        name: "bellibolt",
+        id: 939,
+        number: "939",
+        types: ["electric"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/939.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/939.png",
+    },
+    {
+        name: "wattrel",
+        id: 940,
+        number: "940",
+        types: ["electric", "flying"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/940.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/940.png",
+    },
+    {
+        name: "kilowattrel",
+        id: 941,
+        number: "941",
+        types: ["electric", "flying"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/941.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png",
+    },
+    {
+        name: "maschiff",
+        id: 942,
+        number: "942",
+        types: ["dark"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/942.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png",
+    },
+    {
+        name: "mabosstiff",
+        id: 943,
+        number: "943",
+        types: ["dark"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/943.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png",
+    },
+    {
+        name: "shroodle",
+        id: 944,
+        number: "944",
+        types: ["poison", "normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/944.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/944.png",
+    },
+    {
+        name: "grafaiai",
+        id: 945,
+        number: "945",
+        types: ["poison", "normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/945.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png",
+    },
+    {
+        name: "bramblin",
+        id: 946,
+        number: "946",
+        types: ["grass", "ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/946.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png",
+    },
+    {
+        name: "brambleghast",
+        id: 947,
+        number: "947",
+        types: ["grass", "ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/947.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png",
+    },
+    {
+        name: "toedscool",
+        id: 948,
+        number: "948",
+        types: ["ground", "grass"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/948.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/948.png",
+    },
+    {
+        name: "toedscruel",
+        id: 949,
+        number: "949",
+        types: ["ground", "grass"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/949.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/949.png",
+    },
+    {
+        name: "klawf",
+        id: 950,
+        number: "950",
+        types: ["rock"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/950.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png",
+    },
+    {
+        name: "capsakid",
+        id: 951,
+        number: "951",
+        types: ["grass"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/951.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/951.png",
+    },
+    {
+        name: "scovillain",
+        id: 952,
+        number: "952",
+        types: ["grass", "fire"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/952.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
+    },
+    {
+        name: "rellor",
+        id: 953,
+        number: "953",
+        types: ["bug"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/953.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png",
+    },
+    {
+        name: "rabsca",
+        id: 954,
+        number: "954",
+        types: ["bug", "psychic"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/954.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png",
+    },
+    {
+        name: "flittle",
+        id: 955,
+        number: "955",
+        types: ["psychic"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/955.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/955.png",
+    },
+    {
+        name: "espathra",
+        id: 956,
+        number: "956",
+        types: ["psychic"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/956.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png",
+    },
+    {
+        name: "tinkatink",
+        id: 957,
+        number: "957",
+        types: ["fairy", "steel"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/957.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png",
+    },
+    {
+        name: "tinkatuff",
+        id: 958,
+        number: "958",
+        types: ["fairy", "steel"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/958.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/958.png",
+    },
+    {
+        name: "tinkaton",
+        id: 959,
+        number: "959",
+        types: ["fairy", "steel"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/959.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
+    },
+    {
+        name: "wiglett",
+        id: 960,
+        number: "960",
+        types: ["water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/960.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/960.png",
+    },
+    {
+        name: "wugtrio",
+        id: 961,
+        number: "961",
+        types: ["water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/961.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/961.png",
+    },
+    {
+        name: "bombirdier",
+        id: 962,
+        number: "962",
+        types: ["flying", "dark"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/962.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png",
+    },
+    {
+        name: "finizen",
+        id: 963,
+        number: "963",
+        types: ["water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/963.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/963.png",
+    },
+    {
+        name: "palafin",
+        id: 964,
+        number: "964",
+        types: ["water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/964.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png",
+    },
+    {
+        name: "varoom",
+        id: 965,
+        number: "965",
+        types: ["steel", "poison"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/965.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/965.png",
+    },
+    {
+        name: "revavroom",
+        id: 966,
+        number: "966",
+        types: ["steel", "poison"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/966.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/966.png",
+    },
+    {
+        name: "cyclizar",
+        id: 967,
+        number: "967",
+        types: ["dragon", "normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/967.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/967.png",
+    },
+    {
+        name: "orthworm",
+        id: 968,
+        number: "968",
+        types: ["steel"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/968.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png",
+    },
+    {
+        name: "glimmet",
+        id: 969,
+        number: "969",
+        types: ["rock", "poison"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/969.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/969.png",
+    },
+    {
+        name: "glimmora",
+        id: 970,
+        number: "970",
+        types: ["rock", "poison"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/970.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/970.png",
+    },
+    {
+        name: "greavard",
+        id: 971,
+        number: "971",
+        types: ["ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/971.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png",
+    },
+    {
+        name: "houndstone",
+        id: 972,
+        number: "972",
+        types: ["ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/972.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png",
+    },
+    {
+        name: "flamigo",
+        id: 973,
+        number: "973",
+        types: ["flying", "fighting"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/973.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png",
+    },
+    {
+        name: "cetoddle",
+        id: 974,
+        number: "974",
+        types: ["ice"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/974.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png",
+    },
+    {
+        name: "cetitan",
+        id: 975,
+        number: "975",
+        types: ["ice"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/975.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/975.png",
+    },
+    {
+        name: "veluza",
+        id: 976,
+        number: "976",
+        types: ["water", "psychic"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/976.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/976.png",
+    },
+    {
+        name: "dondozo",
+        id: 977,
+        number: "977",
+        types: ["water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/977.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/977.png",
+    },
+    {
+        name: "tatsugiri",
+        id: 978,
+        number: "978",
+        types: ["dragon", "water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/978.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png",
+    },
+    {
+        name: "annihilape",
+        id: 979,
+        number: "979",
+        types: ["fighting", "ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/979.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/979.png",
+    },
+    {
+        name: "clodsire",
+        id: 980,
+        number: "980",
+        types: ["poison", "ground"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/980.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png",
+    },
+    {
+        name: "farigiraf",
+        id: 981,
+        number: "981",
+        types: ["normal", "psychic"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/981.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png",
+    },
+    {
+        name: "dudunsparce",
+        id: 982,
+        number: "982",
+        types: ["normal"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/982.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png",
+    },
+    {
+        name: "kingambit",
+        id: 983,
+        number: "983",
+        types: ["dark", "steel"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/983.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/983.png",
+    },
+    {
+        name: "great-tusk",
+        id: 984,
+        number: "984",
+        types: ["ground", "fighting"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/984.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/984.png",
+    },
+    {
+        name: "scream-tail",
+        id: 985,
+        number: "985",
+        types: ["fairy", "psychic"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/985.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/985.png",
+    },
+    {
+        name: "brute-bonnet",
+        id: 986,
+        number: "986",
+        types: ["grass", "dark"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/986.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/986.png",
+    },
+    {
+        name: "flutter-mane",
+        id: 987,
+        number: "987",
+        types: ["ghost", "fairy"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/987.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/987.png",
+    },
+    {
+        name: "slither-wing",
+        id: 988,
+        number: "988",
+        types: ["bug", "fighting"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/988.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/988.png",
+    },
+    {
+        name: "sandy-shocks",
+        id: 989,
+        number: "989",
+        types: ["electric", "ground"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/989.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png",
+    },
+    {
+        name: "iron-treads",
+        id: 990,
+        number: "990",
+        types: ["ground", "steel"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/990.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png",
+    },
+    {
+        name: "iron-bundle",
+        id: 991,
+        number: "991",
+        types: ["ice", "water"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/991.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png",
+    },
+    {
+        name: "iron-hands",
+        id: 992,
+        number: "992",
+        types: ["fighting", "electric"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/992.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/992.png",
+    },
+    {
+        name: "iron-jugulis",
+        id: 993,
+        number: "993",
+        types: ["dark", "flying"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/993.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png",
+    },
+    {
+        name: "iron-moth",
+        id: 994,
+        number: "994",
+        types: ["fire", "poison"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/994.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png",
+    },
+    {
+        name: "iron-thorns",
+        id: 995,
+        number: "995",
+        types: ["rock", "electric"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/995.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/995.png",
+    },
+    {
+        name: "frigibax",
+        id: 996,
+        number: "996",
+        types: ["dragon", "ice"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/996.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png",
+    },
+    {
+        name: "arctibax",
+        id: 997,
+        number: "997",
+        types: ["dragon", "ice"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/997.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/997.png",
+    },
+    {
+        name: "baxcalibur",
+        id: 998,
+        number: "998",
+        types: ["dragon", "ice"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/998.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png",
+    },
+    {
+        name: "gimmighoul",
+        id: 999,
+        number: "999",
+        types: ["ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/999.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png",
+    },
+    {
+        name: "gholdengo",
+        id: 1000,
+        number: "1000",
+        types: ["steel", "ghost"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1000.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
+    },
+    {
+        name: "wo-chien",
+        id: 1001,
+        number: "1001",
+        types: ["dark", "grass"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1001.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png",
+    },
+    {
+        name: "chien-pao",
+        id: 1002,
+        number: "1002",
+        types: ["dark", "ice"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1002.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png",
+    },
+    {
+        name: "ting-lu",
+        id: 1003,
+        number: "1003",
+        types: ["dark", "ground"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1003.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png",
+    },
+    {
+        name: "chi-yu",
+        id: 1004,
+        number: "1004",
+        types: ["dark", "fire"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1004.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png",
+    },
+    {
+        name: "roaring-moon",
+        id: 1005,
+        number: "1005",
+        types: ["dragon", "dark"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1005.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png",
+    },
+    {
+        name: "iron-valiant",
+        id: 1006,
+        number: "1006",
+        types: ["fairy", "fighting"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1006.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png",
+    },
+    {
+        name: "koraidon",
+        id: 1007,
+        number: "1007",
+        types: ["fighting", "dragon"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1007.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
+    },
+    {
+        name: "miraidon",
+        id: 1008,
+        number: "1008",
+        types: ["electric", "dragon"],
+        imageUrl:
+            "https://assets.pokemon.com/assets/cms2/img/pokedex/full/1008.png",
+        pixelImage:
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
+    },
 ];
